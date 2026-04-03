@@ -21,11 +21,13 @@
 If you find this survey useful, please cite:
 
 ```bibtex
-@article{meng2026agentharness,
-  title   = {Agent Harness for {LLM} Agents: A Survey},
+@misc{meng2026agentharness,
+  title   = {Agent Harness for Large Language Model Agents: A Survey},
   author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
-  year    = {2026}
+  year    = {2026},
+  url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
+  note    = {Work in progress}
 }
 ```
 
