@@ -1,7 +1,7 @@
 # Agent Harness for Large Language Model Agents: A Survey
 
 <p align="center">
-  <a href="https://github.com/youkai-gloria/agent-harness-survey/stargazers"><img src="https://github.com/Gloriaameng/AgentHarnessSurvey" alt="GitHub Stars"></a>
+  <a href="https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers"><img src="https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social" alt="GitHub Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/Papers-140%2B-green" alt="Papers">
   <img src="https://img.shields.io/badge/Version-v16-orange" alt="Version">
@@ -15,16 +15,17 @@
 
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
 > This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 140+ papers across 22 systems, and maps 9 open technical challenges.  
-> 📄 **[Read the Paper] 
-> ✉️ Corrections & suggestions: gloriamenng@gmail.com；chenliyi@xiaohongshu.com
+> 📄 **[Read the Paper](#)** (coming soon)  
+> ✉️ Corrections & suggestions: gloriamenng@gmail.com; chenliyi@xiaohongshu.com
 
 If you find this survey useful, please cite:
 
 ```bibtex
-@article{Agent Harness for Large Language Model Agents: A Survey,
-  title   = {Agent Harness Engineering for {Large Language Model} Agents: A Survey},
+@article{meng2026agentharness,
+  title   = {Agent Harness for {LLM} Agents: A Survey},
   author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
+  year    = {2026}
 }
 ```
 
@@ -32,7 +33,7 @@ If you find this survey useful, please cite:
 
 ## 🆕 News & Updates
 
-- **[2026-04]** Initial released 
+- **[2026-04]** Initial release
 
 ---
 
@@ -65,7 +66,7 @@ If you find this survey useful, please cite:
 
 LLM agents are increasingly deployed in agentic settings where they autonomously plan, use tools, and act in multi-step environments. The dominant narrative attributes agent performance to the underlying model. **This survey challenges that assumption.**
 
-We introduce a formal definition of the **agent harness** as a six-component tuple:
+We introduce a formal definition of the **agent execution harness** as a six-component tuple:
 
 | Component | Symbol | Role |
 |-----------|--------|------|
@@ -240,12 +241,12 @@ We introduce a formal definition of the **agent harness** as a six-component tup
 
 #### 3.1 Software Test Harnesses (1990s–2000s)
 
-1. <u>JUnit</u>: **"JUnit: A Cook's Tour"**. *Beck & Gamma.* Java Report 2000. [[Paper](https://junit.org/junit5/)]
+1. <u>JUnit</u>: **"JUnit: A Cook's Tour"**. *Beck & Gamma.* Java Report, 4(5), May 1999. [[Article](http://junit.sourceforge.net/doc/cookstour/cookstour.htm)]
 
 #### 3.2 RL Environment Harnesses (2016–2022)
 
 1. <u>OpenAI Gym</u>: **"OpenAI Gym"**. *Brockman et al.* arXiv 2016. [[Paper](https://arxiv.org/abs/1606.01540)] [[Code](https://github.com/openai/gym)]
-2. <u>Gymnasium</u>: **"Gymnasium: A Standard Interface for Reinforcement Learning Environments"**. *Towers et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2407.17032)] [[Code](https://github.com/Farama-Foundation/Gymnasium)]
+2. <u>Gymnasium</u>: **"Gymnasium: A Standard Interface for Reinforcement Learning Environments"**. *Towers et al.* NeurIPS 2025. [[Paper](https://arxiv.org/abs/2407.17032)] [[Code](https://github.com/Farama-Foundation/Gymnasium)]
 
 #### 3.3 Early LLM Agent Frameworks (2023–2024)
 
@@ -260,30 +261,30 @@ We introduce a formal definition of the **agent harness** as a six-component tup
 
 #### 4.1 Full-Stack Harnesses
 
-1. <u>PRISM/OpenClaw</u>: **"PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.11853)]
+1. <u>PRISM/OpenClaw</u>: **"OpenClaw PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents"**. *Li.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.11853)]
 2. <u>AIOS</u>: **"AIOS: LLM Agent Operating System"**. *Mei et al.* COLM 2025. [[Paper](https://arxiv.org/abs/2403.16971)] [[Code](https://github.com/agiresearch/AIOS)]
-3. <u>OpenHands</u>: **"OpenHands: An Open Platform for AI Software Developers as Generalist Agents"**. *Wang et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2407.16741)] [[Code](https://github.com/All-Hands-AI/OpenHands)]
+3. <u>OpenHands</u>: **"OpenHands: An Open Platform for AI Software Developers as Generalist Agents"**. *Wang et al.* ICLR 2025. [[Paper](https://arxiv.org/abs/2407.16741)] [[Code](https://github.com/All-Hands-AI/OpenHands)]
 4. <u>SWE-agent</u>: **"SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"**. *Yang et al.* NeurIPS 2024. [[Paper](https://arxiv.org/abs/2405.15793)] [[Code](https://github.com/SWE-agent/SWE-agent)]
-5. <u>HAL</u>: **"HAL: The Missing Infrastructure for AI Agent Evaluation"**. *Kapoor et al.* NeurIPS 2025. [[Paper](https://arxiv.org/abs/2510.11977)]
+5. <u>HAL</u>: **"Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation"**. *Kapoor et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.11977)]
 
 #### 4.2 Multi-Agent Harnesses
 
 1. <u>MetaGPT</u>: **"MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework"**. *Hong et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2308.00352)] [[Code](https://github.com/geekan/MetaGPT)]
 2. <u>AutoGen</u>: **"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation"**. *Wu et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2308.08155)] [[Code](https://github.com/microsoft/autogen)]
-3. <u>ChatDev</u>: **"Communicative Agents for Software Development"**. *Qian et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2307.07924)] [[Code](https://github.com/OpenBMB/ChatDev)]
+3. <u>ChatDev</u>: **"ChatDev: Communicative Agents for Software Development"**. *Qian et al.* ACL 2024. [[Paper](https://arxiv.org/abs/2307.07924)] [[Code](https://github.com/OpenBMB/ChatDev)]
 4. <u>CAMEL</u>: **"CAMEL: Communicative Agents for 'Mind' Exploration of Large Language Model Society"**. *Li et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.17760)] [[Code](https://github.com/camel-ai/camel)]
 
 #### 4.3 Frameworks & Modules
 
 1. <u>LangGraph</u>: **"LangGraph: Build Resilient Language Agents as Graphs"**. *LangChain team.* GitHub 2024. [[Code](https://github.com/langchain-ai/langgraph)]
 2. <u>MemGPT</u>: **"MemGPT: Towards LLMs as Operating Systems"**. *Packer et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2310.08560)] [[Code](https://github.com/cpacker/MemGPT)]
-3. <u>Voyager</u>: **"Voyager: An Open-Ended Embodied Agent with Large Language Models"**. *Wang et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2305.16291)] [[Code](https://github.com/MineDreamer/Voyager)]
+3. <u>Voyager</u>: **"Voyager: An Open-Ended Embodied Agent with Large Language Models"**. *Wang et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2305.16291)] [[Code](https://github.com/MineDojo/Voyager)]
 4. <u>Reflexion</u>: **"Reflexion: Language Agents with Verbal Reinforcement Learning"**. *Shinn et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.11366)] [[Code](https://github.com/noahshinn/reflexion)]
-5. <u>Generative Agents</u>: **"Generative Agents: Interactive Simulacra of Human Behavior"**. *Park et al.* CHI 2023. [[Paper](https://arxiv.org/abs/2304.03442)] [[Code](https://github.com/joonspk-research/generative_agents)]
+5. <u>Generative Agents</u>: **"Generative Agents: Interactive Simulacra of Human Behavior"**. *Park et al.* UIST 2023. [[Paper](https://arxiv.org/abs/2304.03442)] [[Code](https://github.com/joonspk-research/generative_agents)]
 
 #### 4.4 Evaluation Infrastructure
 
-1. <u>AgentBench</u>: **"AgentBench: Evaluating LLMs as Agents"**. *Liu et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2308.03688)] [[Code](https://github.com/THUDM/AgentBench)]
+1. <u>AgentBench</u>: **"AgentBench: Evaluating LLMs as Agents"**. *Liu et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2308.03688)] [[Code](https://github.com/THUDM/AgentBench)]
 2. <u>SWE-bench</u>: **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"**. *Jimenez et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2310.06770)] [[Code](https://github.com/swebench/SWE-bench)]
 3. <u>OSWorld</u>: **"OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"**. *Xie et al.* NeurIPS 2024. [[Paper](https://arxiv.org/abs/2404.07972)] [[Code](https://github.com/xlang-ai/OSWorld)]
 4. <u>WebArena</u>: **"WebArena: A Realistic Web Environment for Building Autonomous Agents"**. *Zhou et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2307.13854)] [[Code](https://github.com/web-arena-x/webarena)]
@@ -296,25 +297,25 @@ We introduce a formal definition of the **agent harness** as a six-component tup
 
 > **Key numbers:** SandboxEscapeBench — frontier LLMs achieve **15–35% container escape rates**; PRISM — 10-hook zero-fork runtime reduces escape to near-zero with <5ms overhead.
 
-1. <u>SandboxEscapeBench</u>†: **"SandboxEscapeBench: Evaluating Containment Failures in LLM Agent Harnesses"**. *Meng et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.02277)]
-2. <u>PRISM</u>†: **"PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.11853)]
-3. <u>InjecAgent</u>: **"InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated LLM Agents"**. *Zhan et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2403.02691)]
-4. <u>ToolHijacker</u>†: **"ToolHijacker: Red-Teaming Tool-Augmented LLMs"**. *Xu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2504.19793)]
-5. <u>Securing MCP</u>†: **"Securing the Model Context Protocol"**. *Hou et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2511.20920)]
-6. <u>SHIELDA</u>†: **"SHIELDA: Safety-Hardened Infrastructure for Executing LLM-Driven Agents"**. *Kang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2508.07935)]
-7. <u>PALADIN</u>†: **"PALADIN: Policy-Aligned LLM Agent Defense and Isolation Network"**. *Liu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2509.25238)]
-8. <u>AgentBound</u>†: **"AgentBound: Certified Safety Boundaries for Autonomous LLM Agents"**. *Zhang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.21236)]
+1. <u>SandboxEscapeBench</u>†: **"Quantifying Frontier LLM Capabilities for Container Sandbox Escape"**. *Marchand et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.02277)]
+2. <u>PRISM</u>†: **"OpenClaw PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents"**. *Li.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.11853)]
+3. <u>InjecAgent</u>: **"InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents"**. *Zhan et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2403.02691)]
+4. <u>ToolHijacker</u>†: **"Prompt Injection Attack to Tool Selection in LLM Agents"**. *Shi et al.* NDSS 2026. [[Paper](https://arxiv.org/abs/2504.19793)]
+5. <u>Securing MCP</u>†: **"Securing the Model Context Protocol (MCP): Risks, Controls, and Governance"**. *Errico et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2511.20920)]
+6. <u>SHIELDA</u>†: **"SHIELDA: Structured Handling of Exceptions in LLM-Driven Agentic Workflows"**. *Zhou et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2508.07935)]
+7. <u>PALADIN</u>†: **"PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases"**. *Vuddanti et al.* ICLR 2026. [[Paper](https://arxiv.org/abs/2509.25238)]
+8. <u>AgentBound</u>†: **"Securing AI Agent Execution"**. *Bühler et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.21236)]
 
 #### 5.2 Evaluation & Benchmarking
 
 > **Key numbers:** HAL unified **21,730 rollouts**, compressing weeks of evaluation to hours; OSWorld reports **28% false negative rate** in automated evaluation; METR finds benchmark-passing PRs have **24.2pp lower** human merge rate, widening at 9.6pp/year.
 
-1. <u>HAL</u>: **"HAL: The Missing Infrastructure for AI Agent Evaluation"**. *Kapoor et al.* NeurIPS 2025. [[Paper](https://arxiv.org/abs/2510.11977)]
-2. <u>AgencyBench</u>†: **"AgencyBench: Evaluating LLM Agents at Scale Under Realistic Cost Constraints"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2601.11044)]
+1. <u>HAL</u>: **"Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation"**. *Kapoor et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.11977)]
+2. <u>AgencyBench</u>†: **"AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2601.11044)]
 3. <u>OSWorld</u>: **"OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"**. *Xie et al.* NeurIPS 2024. [[Paper](https://arxiv.org/abs/2404.07972)]
 4. <u>SWE-bench</u>: **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"**. *Jimenez et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2310.06770)]
-5. <u>AEGIS</u>†: **"AEGIS: Automated Evaluation of Generalist Intelligent Systems"**. *Park et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.12621)]
-6. <u>Hell or High Water</u>†: **"Hell or High Water: On the Validity of Agent Benchmarks Under Distribution Shift"**. *Rao et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2508.11027)]
+5. <u>AEGIS</u>†: **"AEGIS: No Tool Call Left Unchecked -- A Pre-Execution Firewall and Audit Layer for AI Agents"**. *Yuan et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.12621)]
+6. <u>Hell or High Water</u>†: **"Hell or High Water: Evaluating Agentic Recovery from External Failures"**. *Wang et al.* COLM 2025. [[Paper](https://arxiv.org/abs/2508.11027)]
 
 #### 5.3 Protocol Standardization
 
@@ -322,28 +323,28 @@ We introduce a formal definition of the **agent harness** as a six-component tup
 
 1. <u>MCP</u>: **"Model Context Protocol"**. *Anthropic.* Technical Report 2024. [[Spec](https://modelcontextprotocol.io)]
 2. <u>A2A</u>: **"Agent-to-Agent Protocol"**. *Google.* Technical Report 2025. [[Spec](https://google.github.io/A2A/)]
-3. <u>Protocol Comparison</u>†: **"A Comparative Study of LLM Agent Communication Protocols: MCP, A2A, and ACP"**. *Pan et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2505.02279)]
+3. <u>Protocol Comparison</u>†: **"A Survey of Agent Interoperability Protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)"**. *Ehtesham et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2505.02279)]
 4. <u>Gorilla</u>: **"Gorilla: Large Language Model Connected with Massive APIs"**. *Patil et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2305.15334)] [[Code](https://github.com/ShishirPatil/gorilla)]
 
 #### 5.4 Runtime Context Management
 
 > **Key numbers:** SkillsBench — curated skill injection yields **+16.2pp** improvement; "Lost in the Middle" effect documented; long-context models shift the problem from *retention* to *salience*.
 
-1. <u>SkillsBench</u>†: **"SkillsBench: Measuring the Impact of Skill-Augmented Context on LLM Agents"**. *Lu et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.12670)]
-2. <u>ReadAgent</u>: **"ReadAgent: A System for Long-Context Tasks using LLMs"**. *Lee et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.09727)]
-3. <u>MemoryOS</u>: **"MemoryOS: A Memory Operating System for LLM Agents"**. *Huang et al.* EMNLP 2025. [[Paper](https://arxiv.org/abs/2506.06326)]
+1. <u>SkillsBench</u>†: **"SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.12670)]
+2. <u>ReadAgent</u>: **"A Human-Inspired Reading Agent with Gist Memory of Very Long Contexts"**. *Lee et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.09727)]
+3. <u>MemoryOS</u>: **"Memory OS of AI Agent"**. *Kang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2506.06326)]
 4. <u>CoALA</u>: **"Cognitive Architectures for Language Agents"**. *Sumers et al.* TMLR 2024. [[Paper](https://arxiv.org/abs/2309.02427)]
-5. <u>SkillFortify</u>†: **"SkillFortify: Hardening Skill Libraries Against Poisoning and Drift"**. *Chen et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.00195)]
+5. <u>SkillFortify</u>†: **"Formal Analysis and Supply Chain Security for Agentic AI Skills"**. *Bhardwaj.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.00195)]
 
 #### 5.5 Tool Use & Registry
 
 > **Key numbers:** Vercel found removing **80% of tools** helped more than any model upgrade; Schema First reduces tool misuse by **>40%**; CodeAct outperforms on **17/17 Mint benchmarks** with **−20% turns**.
 
 1. <u>CodeAct</u>: **"Executable Code Actions Elicit Better LLM Agents"**. *Wang et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.01030)] [[Code](https://github.com/xingyaoww/code-act)]
-2. <u>Schema First</u>†: **"Schema First: Disciplined Tool Design Reduces LLM Agent Misuse by 40%"**. *Yu et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.13404)]
+2. <u>Schema First</u>†: **"Schema First Tool APIs for LLM Agents: A Controlled Study of Tool Misuse, Recovery, and Budgeted Performance"**. *Sigdel & Baral.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.13404)]
 3. <u>ToolLLM</u>: **"ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"**. *Qin et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2307.16789)] [[Code](https://github.com/OpenBMB/ToolBench)]
 4. <u>ToolSandbox</u>†: **"ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities"**. *Lu et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2408.04682)]
-5. <u>AutoTool</u>†: **"AutoTool: Automatic Tool Augmentation for Large Language Models"**. *Shi et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2511.14650)]
+5. <u>AutoTool</u>†: **"AutoTool: Efficient Tool Selection for Large Language Model Agents"**. *Jia & Li.* AAAI 2026. [[Paper](https://arxiv.org/abs/2511.14650)]
 6. <u>Gorilla</u>: **"Gorilla: Large Language Model Connected with Massive APIs"**. *Patil et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2305.15334)]
 
 #### 5.6 Memory Architecture
@@ -353,9 +354,9 @@ We introduce a formal definition of the **agent harness** as a six-component tup
 1. <u>MemGPT</u>: **"MemGPT: Towards LLMs as Operating Systems"**. *Packer et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2310.08560)]
 2. <u>CoALA</u>: **"Cognitive Architectures for Language Agents"**. *Sumers et al.* TMLR 2024. [[Paper](https://arxiv.org/abs/2309.02427)]
 3. <u>Agent Workflow Memory (AWM)</u>†: **"Agent Workflow Memory"**. *Wang et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2409.07429)]
-4. <u>Mem0</u>†: **"Mem0: The Memory Layer for Personalized AI"**. *Tariq et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2504.19413)]
-5. <u>A-MEM</u>†: **"A-MEM: Agentic Memory for LLM Agents"**. *Xu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2502.12110)]
-6. <u>MemAct</u>†: **"MemAct: Memory-Augmented Agent for Long-Horizon Task Planning"**. *Wu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.12635)]
+4. <u>Mem0</u>†: **"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory"**. *Khant et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2504.19413)]
+5. <u>A-MEM</u>†: **"A-MEM: Agentic Memory for LLM Agents"**. *Xu et al.* NeurIPS 2025. [[Paper](https://arxiv.org/abs/2502.12110)]
+6. <u>MemAct</u>†: **"Memory as Action: Autonomous Context Curation for Long-Horizon Agentic Tasks"**. *Zhang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.12635)]
 
 #### 5.7 Planning & Reasoning
 
@@ -374,30 +375,30 @@ We introduce a formal definition of the **agent harness** as a six-component tup
 
 1. <u>MetaGPT</u>: **"MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework"**. *Hong et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2308.00352)]
 2. <u>CAMEL</u>: **"CAMEL: Communicative Agents for 'Mind' Exploration"**. *Li et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.17760)]
-3. <u>SAGA</u>†: **"SAGA: Self-Adaptive Group Agents for Multi-Agent Collaboration"**. *Wu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2504.21034)]
-4. <u>MAS-FIRE</u>†: **"MAS-FIRE: Multi-Agent System Fault Isolation and Recovery"**. *Zhao et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.19843)]
-5. <u>Byzantine fault tolerance</u>†: **"Towards Byzantine Fault-Tolerant Multi-Agent LLM Systems"**. *Liu et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2511.10400)]
-6. <u>Multi-agent baseline study</u>†: **"A Systematic Study of Multi-Agent LLM Baselines"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2601.12307)]
-7. <u>InjecAgent</u>: **"InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated LLM Agents"**. *Zhan et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2403.02691)]
+3. <u>SAGA</u>†: **"SAGA: A Security Architecture for Governing AI Agentic Systems"**. *Syros et al.* NDSS 2026. [[Paper](https://arxiv.org/abs/2504.21034)]
+4. <u>MAS-FIRE</u>†: **"MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems"**. *Jia et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.19843)]
+5. <u>Byzantine fault tolerance</u>†: **"Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance"**. *Zheng et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2511.10400)]
+6. <u>Multi-agent baseline study</u>†: **"Rethinking the Value of Multi-Agent Workflow: A Strong Single Agent Baseline"**. *Xu et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2601.12307)]
+7. <u>InjecAgent</u>: **"InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents"**. *Zhan et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2403.02691)]
 
 #### 5.9 Compute Economics
 
 > **Key numbers:** OpenRouter reports **13T tokens/week** (Feb 2026), doubling every 4 weeks; AgencyBench measures **1M tokens/task** average; 1000× agent compute growth projected by 2027; AIOS achieves **2.1× throughput speedup** via proper agent scheduling.
 
-1. <u>AgencyBench</u>†: **"AgencyBench: Evaluating LLM Agents at Scale Under Realistic Cost Constraints"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2601.11044)]
+1. <u>AgencyBench</u>†: **"AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts"**. *Li et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2601.11044)]
 2. <u>AIOS</u>: **"AIOS: LLM Agent Operating System"**. *Mei et al.* COLM 2025. [[Paper](https://arxiv.org/abs/2403.16971)]
-3. <u>Repo2Run</u>†: **"Repo2Run: Automated Environment Setup for Arbitrary Code Repositories"**. *Zhang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2502.13681)]
-4. <u>Policy-First</u>†: **"Policy-First Agent Design: Harness Constraints as a First-Class Concern"**. *Meng et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.18059)]
+3. <u>Repo2Run</u>†: **"Repo2Run: Automated Building Executable Environment for Code Repository at Scale"**. *Hu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2502.13681)]
+4. <u>Policy-First</u>†: **"Guardrails as Infrastructure: Policy-First Control for Tool-Orchestrated Workflows"**. *Sigdel & Baral.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.18059)]
 
 ---
 
 ### §6 Emerging Topics
 
-1. <u>SkillFortify</u>†: **"SkillFortify: Hardening Skill Libraries Against Poisoning and Drift"**. *Chen et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.00195)]
-2. <u>AEGIS</u>†: **"AEGIS: Automated Evaluation of Generalist Intelligent Systems"**. *Park et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.12621)]
-3. <u>Policy-First</u>†: **"Policy-First Agent Design: Harness Constraints as a First-Class Concern"**. *Meng et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.18059)]
-4. <u>MemoryOS</u>: **"MemoryOS: A Memory Operating System for LLM Agents"**. *Huang et al.* EMNLP 2025. [[Paper](https://arxiv.org/abs/2506.06326)]
-5. <u>Protocol Comparison</u>†: **"A Comparative Study of LLM Agent Communication Protocols"**. *Pan et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2505.02279)]
+1. <u>SkillFortify</u>†: **"Formal Analysis and Supply Chain Security for Agentic AI Skills"**. *Bhardwaj.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.00195)]
+2. <u>AEGIS</u>†: **"AEGIS: No Tool Call Left Unchecked -- A Pre-Execution Firewall and Audit Layer for AI Agents"**. *Yuan et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.12621)]
+3. <u>Policy-First</u>†: **"Guardrails as Infrastructure: Policy-First Control for Tool-Orchestrated Workflows"**. *Sigdel & Baral.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.18059)]
+4. <u>MemoryOS</u>: **"Memory OS of AI Agent"**. *Kang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2506.06326)]
+5. <u>Protocol Comparison</u>†: **"A Survey of Agent Interoperability Protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)"**. *Ehtesham et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2505.02279)]
 
 ---
 
@@ -432,5 +433,6 @@ See BibTeX at the top of this README.
 
 <p align="center">
   <i>† denotes preprint, not yet peer-reviewed.</i><br>
+  <i>This survey is under active development; the full manuscript will be released soon.</i><br>
   <i>Maintained by Qianyu Meng & Liyi Chen. PRs welcome for missing papers or updated links.</i>
 </p>
