@@ -1,7 +1,6 @@
 # Agent Harness for Large Language Model Agents: A Survey
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
   <a href="https://github.com/youkai-gloria/agent-harness-survey/stargazers"><img src="https://img.shields.io/github/stars/youkai-gloria/agent-harness-survey?style=social" alt="GitHub Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/Papers-140%2B-green" alt="Papers">
@@ -26,9 +25,6 @@ If you find this survey useful, please cite:
   title   = {Agent Harness for {LLM} Agents: A Survey},
   author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026},
-  url     = {https://arxiv.org/abs/XXXX.XXXXX}
 }
 ```
 
