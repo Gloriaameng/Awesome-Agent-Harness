@@ -375,6 +375,10 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 > **Key numbers:** AgencyBench — agents achieve **48.4% success on native SDK harness** vs substantially lower on independent harnesses, demonstrating tight harness-agent coupling. Byzantine fault tolerance remains an open problem for adversarial multi-agent settings.
 
+<p align="center">
+  <img src="assets/multi_agent_topology.png" width="680" alt="Multi-Agent Coordination Topologies"/>
+</p>
+
 1. <u>MetaGPT</u>: **"MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework"**. *Hong et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2308.00352)]
 2. <u>CAMEL</u>: **"CAMEL: Communicative Agents for 'Mind' Exploration"**. *Li et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.17760)]
 3. <u>SAGA</u>†: **"SAGA: A Security Architecture for Governing AI Agentic Systems"**. *Syros et al.* NDSS 2026. [[Paper](https://arxiv.org/abs/2504.21034)]
