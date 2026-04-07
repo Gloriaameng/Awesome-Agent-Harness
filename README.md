@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers"><img src="https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social" alt="GitHub Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
-  <img src="https://img.shields.io/badge/Papers-115%2B-green" alt="Papers">
+  <img src="https://img.shields.io/badge/Papers-110%2B-green" alt="Papers">
   <img src="https://img.shields.io/badge/Version-v2-orange" alt="Version">
 </p>
 
@@ -95,7 +95,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 **Conceptual contribution:** We formalize the agent harness as an architectural object with six governable components (E, T, C, S, L, V), elevating it from implicit infrastructure to an explicit research target.
 
-**Empirical scope:** We systematically review 115+ papers spanning academic research (evaluation benchmarks, security frameworks, memory architectures) and production deployments (Stripe, OpenAI, Cursor, METR), establishing that harness design is a binding constraint on deployed agent reliability.
+**Empirical scope:** We systematically review 110+ papers spanning academic research (evaluation benchmarks, security frameworks, memory architectures) and production deployments (Stripe, OpenAI, Cursor, METR), establishing that harness design is a binding constraint on deployed agent reliability.
 
 **Methodological advance:** We introduce the **Harness Completeness Matrix** — a structured assessment framework mapping which of the six components each system implements — enabling direct comparison across heterogeneous agent systems that prior surveys could not evaluate on common terms.
 
@@ -304,6 +304,10 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 - <u>Voyager</u>: **"Voyager: An Open-Ended Embodied Agent with Large Language Models"**. *Wang et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2305.16291)] [[Code](https://github.com/MineDojo/Voyager)]
 - <u>Reflexion</u>: **"Reflexion: Language Agents with Verbal Reinforcement Learning"**. *Shinn et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.11366)] [[Code](https://github.com/noahshinn/reflexion)]
 - <u>Generative Agents</u>: **"Generative Agents: Interactive Simulacra of Human Behavior"**. *Park et al.* UIST 2023. [[Paper](https://arxiv.org/abs/2304.03442)] [[Code](https://github.com/joonspk-research/generative_agents)]
+- <u>LangChain</u>: **"LangChain: Building Applications with LLMs through Composability"**. *Chase et al.* GitHub 2022. [[Code](https://github.com/langchain-ai/langchain)]
+- <u>LlamaIndex</u>: **"LlamaIndex: A Data Framework for LLM Applications"**. *Liu et al.* GitHub 2022. [[Code](https://github.com/run-llama/llama_index)]
+- <u>DeerFlow</u>: **"DeerFlow: Distributed Workflow Engine for LLM Agents"**. *GitHub 2024.* [[Code](https://github.com/modelscope/DeerFlow)]
+- <u>DeepAgents</u>: **"DeepAgents: Multi-Agent Framework for Deep Learning"**. *GitHub 2024.* [[Code](https://github.com/deepagents/deepagents)]
 
 #### Evaluation Infrastructure
 
@@ -485,14 +489,14 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 Eight open research directions identified in the survey (no curated paper list — these are forward-looking):
 
-1. **Formal Harness Specification Language** — DSL for specifying and verifying H=(E,T,C,S,L,V) components
-2. **Cross-Harness Benchmark Suite** — portability testing across incompatible harness ecosystems
-3. **Security Taxonomy & Threat Model** — extension of OWASP Top 10 to agent harness attack surfaces
-4. **Protocol Interoperability (MCP/A2A)** — bridging tool-level and agent-level protocols
-5. **Long-Horizon Evaluation Methodology** — metrics that don't degrade under multi-session, multi-day tasks
-6. **Harness-Aware Fine-Tuning** — training models that are aware of their execution environment
-7. **Memory Interface Standardization** — portable memory APIs across flat, episodic, and graph stores
-8. **Harness Transparency Specification** — auditability and explainability for runtime decisions
+- **Formal Harness Specification Language** — DSL for specifying and verifying H=(E,T,C,S,L,V) components
+- **Cross-Harness Benchmark Suite** — portability testing across incompatible harness ecosystems
+- **Security Taxonomy & Threat Model** — extension of OWASP Top 10 to agent harness attack surfaces
+- **Protocol Interoperability (MCP/A2A)** — bridging tool-level and agent-level protocols
+- **Long-Horizon Evaluation Methodology** — metrics that don't degrade under multi-session, multi-day tasks
+- **Harness-Aware Fine-Tuning** — training models that are aware of their execution environment
+- **Memory Interface Standardization** — portable memory APIs across flat, episodic, and graph stores
+- **Harness Transparency Specification** — auditability and explainability for runtime decisions
 
 ---
 
