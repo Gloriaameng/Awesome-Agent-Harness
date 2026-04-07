@@ -46,9 +46,9 @@ If you find this survey useful, please cite:
 - [Historical Timeline](#historical-timeline)
 - [Harness Completeness Matrix](#harness-completeness-matrix)
 - [Paper List](#paper-list)
-  - [§3 Historical Lineages](#3-historical-lineages)
-  - [§4 Harness Taxonomy](#4-harness-taxonomy)
-  - [§5 Technical Challenges](#5-technical-challenges)
+  - [Historical Lineages](#historical-lineages)
+  - [Harness Taxonomy](#harness-taxonomy)
+  - [Technical Challenges](#technical-challenges)
     - [5.1 Security & Sandboxing](#51-security--sandboxing)
     - [5.2 Evaluation & Benchmarking](#52-evaluation--benchmarking)
     - [5.3 Protocol Standardization](#53-protocol-standardization)
@@ -58,8 +58,8 @@ If you find this survey useful, please cite:
     - [5.7 Planning & Reasoning](#57-planning--reasoning)
     - [5.8 Multi-Agent Coordination](#58-multi-agent-coordination)
     - [5.9 Compute Economics](#59-compute-economics)
-  - [§6 Emerging Topics](#6-emerging-topics)
-  - [§7 Future Directions](#7-future-directions)
+  - [Emerging Topics](#emerging-topics)
+  - [Future Directions](#future-directions)
 - [Citation](#citation)
 - [Update Log](#update-log)
 
@@ -254,7 +254,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 ## Paper List
 
-### §3 Historical Lineages
+### Historical Lineages
 
 #### Software Test Harnesses (1990s–2000s)
 
@@ -274,7 +274,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 ---
 
-### §4 Harness Taxonomy
+### Harness Taxonomy
 
 **What we classify:** We categorize agent systems by **harness completeness** — which of the six components (E, T, C, S, L, V) each system implements — distinguishing full-stack harnesses (all six components) from specialized frameworks (partial implementations).
 
@@ -318,7 +318,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 ---
 
-### §5 Technical Challenges
+### Technical Challenges
 
 **Scope:** We identify nine open research problems where current harness infrastructure provides partial solutions but no production-grade, generalizable frameworks. Each challenge represents a gap between what academic prototypes demonstrate and what deployed systems require.
 
@@ -332,7 +332,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 **State of the art:** SandboxEscapeBench shows frontier models can escape containers; PRISM demonstrates zero-fork defense-in-depth is possible but requires OS-level instrumentation. No generalizable sandbox exists that works across all agent use cases without manual per-task configuration.
 
-**Open问题:** Compositional security properties (proving agent + harness + environment satisfy a safety specification) remain unsolved. Current defenses are reactive (detecting escapes) rather than preventive (proving impossibility of escape).
+**Open problems:** Compositional security properties (proving agent + harness + environment satisfy a safety specification) remain unsolved. Current defenses are reactive (detecting escapes) rather than preventive (proving impossibility of escape).
 
 > **Key numbers:** SandboxEscapeBench — frontier LLMs achieve **15–35% container escape rates**; PRISM — 10-hook zero-fork runtime reduces escape to near-zero with <5ms overhead.
 
@@ -456,7 +456,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 ---
 
-### §6 Emerging Topics
+### Emerging Topics
 
 - <u>Self-Evolving Agents Survey</u>†: **"A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence"**. *Gao et al.* TMLR 2026. [[Paper](https://arxiv.org/abs/2507.21046)]
 - <u>Self-RAG</u>: **"Self-RAG: Learning to Retrieve, Generate, and Critique Through Self-Reflection"**. *Asai et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2310.11511)]
@@ -481,7 +481,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 ---
 
-### §7 Future Directions
+### Future Directions
 
 Eight open research directions identified in the survey (no curated paper list — these are forward-looking):
 
