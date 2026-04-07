@@ -14,7 +14,7 @@
 ---
 
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
-> This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 140+ papers across 22 systems, and maps 9 open technical challenges.  
+> This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 110+ papers, blogs and reports across 23 systems, and maps 9 open technical challenges.  
 > 📄 **[Read the Paper](#)** (coming soon)  
 > ✉️ Corrections & suggestions: gloriamenng@gmail.com; chenliyi@xiaohongshu.com
 
@@ -35,7 +35,8 @@ If you find this survey useful, please cite:
 
 ## 🆕 News & Updates
 
-- **[2026-04]** Initial release
+- **[2026-04-03]** Initial release
+- **[2026-04-07]** Repo updated
 
 ---
 
@@ -94,7 +95,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 **Conceptual contribution:** We formalize the agent harness as an architectural object with six governable components (E, T, C, S, L, V), elevating it from implicit infrastructure to an explicit research target.
 
-**Empirical scope:** We systematically review 180+ papers spanning academic research (evaluation benchmarks, security frameworks, memory architectures) and production deployments (Stripe, OpenAI, Cursor, METR), establishing that harness design is a binding constraint on deployed agent reliability.
+**Empirical scope:** We systematically review 115+ papers spanning academic research (evaluation benchmarks, security frameworks, memory architectures) and production deployments (Stripe, OpenAI, Cursor, METR), establishing that harness design is a binding constraint on deployed agent reliability.
 
 **Methodological advance:** We introduce the **Harness Completeness Matrix** — a structured assessment framework mapping which of the six components each system implements — enabling direct comparison across heterogeneous agent systems that prior surveys could not evaluate on common terms.
 
@@ -506,7 +507,8 @@ See BibTeX at the top of this README.
 
 | Version | Date | Changes |
 |---------|------|---------|
-|  v1 | 2026-04 | Initial preprint |
+|  v1 | 2026-04-03 | Initial preprint |
+|  v2 | 2026-04-07 | Repo updated |
 
 ---
 
