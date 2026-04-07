@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README_zh.md)
+
 # Agent Harness for Large Language Model Agents: A Survey
 
 <p align="center">
@@ -14,7 +16,7 @@
 ---
 
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
-> This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 110+ papers, blogs and reports across 22 systems, and maps 9 open technical challenges.  
+> This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 110+ papers, blogs and reports across 23 systems, and maps 9 open technical challenges.  
 > 📄 **[Read the Paper](#)** (coming soon)  
 > ✉️ Corrections & suggestions: gloriamenng@gmail.com; chenliyi@xiaohongshu.com
 
@@ -137,10 +139,6 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 **Legend:** ✓ full support · ≈ partial · ✗ absent
 
-<p align="center">
-  <img src="assets/completeness_heatmap.png" width="700" alt="22-System Harness Completeness Heatmap"/>
-</p>
-
 <table align="center">
   <thead>
     <tr>
@@ -156,7 +154,11 @@ We introduce a formal definition of the **agent execution harness** as a six-com
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5"><strong>Full-Stack<br>Harnesses</strong></td>
+      <td rowspan="4"><strong>Full-Stack<br>Harnesses</strong></td>
+      <td>Claude Code</td>
+      <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>≈</td>
+    </tr>
+    <tr>
       <td>OpenClaw / PRISM</td>
       <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
     </tr>
@@ -169,28 +171,12 @@ We introduce a formal definition of the **agent execution harness** as a six-com
       <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>≈</td>
     </tr>
     <tr>
-      <td>SWE-agent</td>
-      <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✓</td>
-    </tr>
-    <tr>
-      <td>HAL</td>
-      <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>✓</td>
-    </tr>
-    <tr>
       <td rowspan="6"><strong>Multi-Agent<br>Harnesses</strong></td>
       <td>MetaGPT</td>
       <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>≈</td>
     </tr>
     <tr>
       <td>AutoGen</td>
-      <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>≈</td>
-    </tr>
-    <tr>
-      <td>DeerFlow</td>
-      <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>≈</td>
-    </tr>
-    <tr>
-      <td>DeepAgents</td>
       <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>≈</td>
     </tr>
     <tr>
@@ -202,7 +188,15 @@ We introduce a formal definition of the **agent execution harness** as a six-com
       <td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>✗</td><td>≈</td>
     </tr>
     <tr>
-      <td rowspan="8"><strong>Frameworks &amp;<br>Modules</strong></td>
+      <td>DeerFlow</td>
+      <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>≈</td>
+    </tr>
+    <tr>
+      <td>DeepAgents</td>
+      <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>≈</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>General<br>Frameworks</strong></td>
       <td>LangChain</td>
       <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✗</td>
     </tr>
@@ -215,6 +209,12 @@ We introduce a formal definition of the **agent execution harness** as a six-com
       <td>≈</td><td>✓</td><td>✓</td><td>≈</td><td>✗</td><td>✗</td>
     </tr>
     <tr>
+      <td rowspan="1"><strong>Specialized<br>Harnesses</strong></td>
+      <td>SWE-agent</td>
+      <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✓</td>
+    </tr>
+    <tr>
+      <td rowspan="5"><strong>Capability<br>Modules</strong></td>
       <td>MemGPT</td>
       <td>✗</td><td>✗</td><td>✓</td><td>✓</td><td>✗</td><td>✗</td>
     </tr>
@@ -235,7 +235,11 @@ We introduce a formal definition of the **agent execution harness** as a six-com
       <td>✓</td><td>✗</td><td>≈</td><td>✓</td><td>✗</td><td>≈</td>
     </tr>
     <tr>
-      <td rowspan="3"><strong>Evaluation<br>Infrastructure</strong></td>
+      <td rowspan="4"><strong>Evaluation<br>Infrastructure</strong></td>
+      <td>HAL</td>
+      <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>✓</td>
+    </tr>
+    <tr>
       <td>AgentBench</td>
       <td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>✗</td><td>✓</td>
     </tr>
