@@ -1,13 +1,37 @@
+---
+license: cc-by-4.0
+language:
+  - en
+  - zh
+tags:
+  - survey
+  - llm-agents
+  - agent-harness
+  - agent-frameworks
+  - harness-engineering
+  - evaluation
+  - agent-memory
+  - multi-agent-systems
+pretty_name: "Agent Harness for Large Language Model Agents: A Survey"
+size_categories:
+  - n<1K
+---
+
+<!-- HuggingFace 元数据在上方，GitHub 会忽略 YAML frontmatter -->
+
+<div align="center">
+
 [English](README.md) | [中文](README_zh.md)
 
 # 大语言模型智能体约束工程框架综述
 
-<p align="center">
-  <a href="https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers"><img src="https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social" alt="GitHub Stars"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg" alt="License"></a>
-  <img src="https://img.shields.io/badge/Papers-110%2B-green" alt="Papers">
-  <img src="https://img.shields.io/badge/Version-v2-orange" alt="Version">
-</p>
+[![GitHub Stars](https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social)](https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers)
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)](LICENSE)
+[![Papers](https://img.shields.io/badge/Papers-110%2B-green)]()
+[![Version](https://img.shields.io/badge/Version-v2-orange)]()
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
+
+</div>
 
 <p align="center">
   <img src="assets/architecture_diagram.png" width="720" alt="H=(E,T,C,S,L,V) 六组件架构"/>
@@ -20,18 +44,18 @@
 > **智能体约束工程框架——而非模型本身——是智能体大规模部署可靠性的首要决定因素。**  
 > 本综述将约束工程框架形式化为一级架构对象 **H = (E, T, C, S, L, V)**，系统调研了涵盖23个系统的110余篇论文、博客和报告，并总结了9项开放性技术挑战。  
 > 📄 **[阅读论文](#)** （即将发布）  
-> ✉️ 勘误与建议：gloriamenng@gmail.com; chenliyi@xiaohongshu.com
+> ✉️ 勘误与建议：gloriamenng@gmail.com (孟倩宇); wangyanan@mail.dlut.edu.cn (王亚楠); chenliyi@xiaohongshu.com (陈力毅)
 
 如果本综述对您有所帮助，请引用：
 
 ```bibtex
 @misc{meng2026agentharness,
   title   = {Agent Harness for Large Language Model Agents: A Survey},
-  author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
+  author  = {Meng, Qianyu* and Wang, Yanan* and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
   year    = {2026},
   url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
-  note    = {Work in progress}
+  note    = {*共同第一作者 (Equal contribution). Work in progress}
 }
 ```
 
@@ -368,7 +392,7 @@
 
 #### 工具使用与注册
 
-> **关键数据：**Vercel 发现移除**80%工具**比任何模型升级都更有帮助；Schema First 将工具误用减少**>40%**；CodeAct 在**17/17项Mint基准**上表现优异，**回合数减少20%**。
+> **关键数据：**Vercel 发现移除**80%工具**比任何模型升级都更有帮助；Schema First (Sigdel & Baral, 2026) —— 一项受控的初步研究表明，基于 schema 的工具契约可以减少**接口层面**的误用（如格式校验失败），但无法减少**语义层面**的误用（即格式正确但任务不当的调用），且各实验条件下端到端任务成功率均为零，表明仅靠接口设计不足以保证工具调用的可靠性；CodeAct 在**17/17项Mint基准**上表现优异，**回合数减少20%**。
 
 *（工具使用与注册相关论文列表与英文版相同，此处省略重复）*
 
@@ -380,9 +404,14 @@
 
 #### 规划与推理
 
-> **关键数据：**SWE-agent ACI 研究表明，接口设计超越模型能力成为性能的首要决定因素。LATS 将MCTS与语言模型反馈集成用于状态空间搜索。
+> **关键数据：**SWE-agent ACI 研究表明，接口设计超越模型能力成为性能的首要决定因素。LATS 将MCTS与语言模型反馈集成用于状态空间搜索。Plan-on-Graph通过引导、记忆和反思机制在知识图谱上实现自适应自我修正规划。
 
-*（规划与推理相关论文列表与英文版相同，此处省略重复）*
+**代表性论文：**
+- <u>Tree of Thoughts</u>: **"Tree of Thoughts: Deliberate Problem Solving with Large Language Models"**. *Yao et al.* NeurIPS 2023. [[论文](https://arxiv.org/abs/2305.10601)] [[代码](https://github.com/princeton-nlp/tree-of-thought-llm)]
+- <u>LATS</u>: **"Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models"**. *Zhou et al.* arXiv 2023. [[论文](https://arxiv.org/abs/2310.04406)] [[代码](https://github.com/lapisrocks/LanguageAgentTreeSearch)]
+- <u>Plan-on-Graph</u>: **"Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs"**. *Chen et al.* NeurIPS 2024. [[论文](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4254e856d01a5e7b7ea050477c3ef9b9-Abstract-Conference.html)]
+
+*（更多规划与推理相关论文见英文版）*
 
 #### 多智能体协同
 

@@ -1,13 +1,37 @@
+---
+license: cc-by-4.0
+language:
+  - en
+  - zh
+tags:
+  - survey
+  - llm-agents
+  - agent-harness
+  - agent-frameworks
+  - harness-engineering
+  - evaluation
+  - agent-memory
+  - multi-agent-systems
+pretty_name: "Agent Harness for Large Language Model Agents: A Survey"
+size_categories:
+  - n<1K
+---
+
+<!-- HuggingFace metadata above, GitHub ignores YAML frontmatter -->
+
+<div align="center">
+
 [English](README.md) | [中文](README_zh.md)
 
 # Agent Harness for Large Language Model Agents: A Survey
 
-<p align="center">
-  <a href="https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers"><img src="https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social" alt="GitHub Stars"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg" alt="License"></a>
-  <img src="https://img.shields.io/badge/Papers-110%2B-green" alt="Papers">
-  <img src="https://img.shields.io/badge/Version-v2-orange" alt="Version">
-</p>
+[![GitHub Stars](https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social)](https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers)
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)](LICENSE)
+[![Papers](https://img.shields.io/badge/Papers-110%2B-green)]()
+[![Version](https://img.shields.io/badge/Version-v2-orange)]()
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
+
+</div>
 
 <p align="center">
   <img src="assets/architecture_diagram.png" width="720" alt="H=(E,T,C,S,L,V) Six-Component Architecture"/>
@@ -20,18 +44,18 @@
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
 > This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 110+ papers, blogs and reports across 23 systems, and maps 9 open technical challenges.  
 > 📄 **[Read the Paper](#)** (coming soon)  
-> ✉️ Corrections & suggestions: gloriamenng@gmail.com; chenliyi@xiaohongshu.com
+> ✉️ Corrections & suggestions: gloriamenng@gmail.com (Qianyu Meng); wangyanan@mail.dlut.edu.cn (Yanan Wang); chenliyi@xiaohongshu.com (Liyi Chen)
 
 If you find this survey useful, please cite:
 
 ```bibtex
 @misc{meng2026agentharness,
   title   = {Agent Harness for Large Language Model Agents: A Survey},
-  author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
+  author  = {Meng, Qianyu* and Wang, Yanan* and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
   year    = {2026},
   url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
-  note    = {Work in progress}
+  note    = {*Equal contribution. Work in progress}
 }
 ```
 
@@ -400,7 +424,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 #### Tool Use & Registry
 
-> **Key numbers:** Vercel found removing **80% of tools** helped more than any model upgrade; Schema First reduces tool misuse by **>40%**; CodeAct outperforms on **17/17 Mint benchmarks** with **−20% turns**.
+> **Key numbers:** Vercel found removing **80% of tools** helped more than any model upgrade; Schema First (Sigdel & Baral, 2026) — a controlled pilot showing that schema-based tool contracts reduce *interface* misuse but not *semantic* misuse, with end-task success at zero across all conditions, suggesting interface design alone is insufficient for tool reliability; CodeAct outperforms on **17/17 Mint benchmarks** with **−20% turns**.
 
 - <u>CodeAct</u>: **"Executable Code Actions Elicit Better LLM Agents"**. *Wang et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.01030)] [[Code](https://github.com/xingyaoww/code-act)]
 - <u>Schema First</u>†: **"Schema First Tool APIs for LLM Agents: A Controlled Study of Tool Misuse, Recovery, and Budgeted Performance"**. *Sigdel & Baral.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.13404)]
@@ -427,10 +451,11 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 #### Planning & Reasoning
 
-> **Key numbers:** SWE-agent ACI study shows interface design outweighs model capability as the primary performance determinant. LATS integrates MCTS with language model feedback for state-space search.
+> **Key numbers:** SWE-agent ACI study shows interface design outweighs model capability as the primary performance determinant. LATS integrates MCTS with language model feedback for state-space search. Plan-on-Graph enables adaptive self-correcting planning on knowledge graphs through guidance, memory, and reflection mechanisms.
 
 - <u>Tree of Thoughts</u>: **"Tree of Thoughts: Deliberate Problem Solving with Large Language Models"**. *Yao et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2305.10601)] [[Code](https://github.com/princeton-nlp/tree-of-thought-llm)]
 - <u>LATS</u>: **"Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models"**. *Zhou et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2310.04406)] [[Code](https://github.com/lapisrocks/LanguageAgentTreeSearch)]
+- <u>Plan-on-Graph</u>: **"Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs"**. *Chen et al.* NeurIPS 2024. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4254e856d01a5e7b7ea050477c3ef9b9-Abstract-Conference.html)]
 - <u>AFlow</u>†: **"AFlow: Automating Agentic Workflow Generation"**. *Zhang et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2410.10762)]
 - <u>Agent Q</u>†: **"Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents"**. *Putta et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2408.07199)]
 - <u>OPENDEV</u>†: **"Building Effective AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned"**. *Bui.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.05344)]
