@@ -13,6 +13,8 @@
   <img src="assets/architecture_diagram.png" width="720" alt="H=(E,T,C,S,L,V) 六组件架构"/>
 </p>
 
+> ⭐ **本 survey 持续更新中。如果对你有帮助，欢迎 Star 关注最新进展，也帮助更多人发现它。**
+
 ---
 
 > **智能体约束工程框架——而非模型本身——是智能体大规模部署可靠性的首要决定因素。**  

@@ -13,6 +13,8 @@
   <img src="assets/architecture_diagram.png" width="720" alt="H=(E,T,C,S,L,V) Six-Component Architecture"/>
 </p>
 
+> ⭐ **This survey is actively maintained. If you find it useful, please star the repo to stay updated and help others find it.**
+
 ---
 
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
