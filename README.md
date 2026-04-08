@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers"><img src="https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social" alt="GitHub Stars"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/Papers-110%2B-green" alt="Papers">
   <img src="https://img.shields.io/badge/Version-v2-orange" alt="Version">
 </p>
