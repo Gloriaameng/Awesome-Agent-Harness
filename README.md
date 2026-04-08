@@ -1,24 +1,3 @@
----
-license: cc-by-4.0
-language:
-  - en
-  - zh
-tags:
-  - survey
-  - llm-agents
-  - agent-harness
-  - agent-frameworks
-  - harness-engineering
-  - evaluation
-  - agent-memory
-  - multi-agent-systems
-pretty_name: "Agent Harness for Large Language Model Agents: A Survey"
-size_categories:
-  - n<1K
----
-
-<!-- HuggingFace metadata above, GitHub ignores YAML frontmatter -->
-
 <div align="center">
 
 [English](README.md) | [中文](README_zh.md)
