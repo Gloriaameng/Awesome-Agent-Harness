@@ -23,7 +23,7 @@
 > **智能体约束工程框架——而非模型本身——是智能体大规模部署可靠性的首要决定因素。**  
 > 本综述将约束工程框架形式化为一级架构对象 **H = (E, T, C, S, L, V)**，系统调研了涵盖23个系统的110余篇论文、博客和报告，并总结了9项开放性技术挑战。  
 > 📄 **[阅读论文](#)** （即将发布）  
-> ✉️ 勘误与建议：gloriamenng@gmail.com (孟倩宇); wangyanan@mail.dlut.edu.cn (王亚楠); chenliyi@xiaohongshu.com (陈力毅)
+> ✉️ 勘误与建议：gloriamenng@gmail.com; wangyanan@mail.dlut.edu.cn; chenliyi@xiaohongshu.com 
 
 如果本综述对您有所帮助，请引用：
 
