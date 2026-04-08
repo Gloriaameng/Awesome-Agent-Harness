@@ -1,24 +1,3 @@
----
-license: cc-by-4.0
-language:
-  - en
-  - zh
-tags:
-  - survey
-  - llm-agents
-  - agent-harness
-  - agent-frameworks
-  - harness-engineering
-  - evaluation
-  - agent-memory
-  - multi-agent-systems
-pretty_name: "Agent Harness for Large Language Model Agents: A Survey"
-size_categories:
-  - n<1K
----
-
-<!-- HuggingFace metadata above, GitHub ignores YAML frontmatter -->
-
 <div align="center">
 
 [English](README.md) | [中文](README_zh.md)
@@ -51,11 +30,11 @@ If you find this survey useful, please cite:
 ```bibtex
 @misc{meng2026agentharness,
   title   = {Agent Harness for Large Language Model Agents: A Survey},
-  author  = {Meng, Qianyu* and Wang, Yanan* and Chen, Liyi and Wang, Qimeng and
+  author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
   year    = {2026},
   url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
-  note    = {*Equal contribution. Work in progress}
+  note    = {Qianyu Meng and Yanan Wang contributed equally as co-first authors. Work in progress}
 }
 ```
 

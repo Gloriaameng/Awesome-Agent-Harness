@@ -30,11 +30,11 @@
 ```bibtex
 @misc{meng2026agentharness,
   title   = {Agent Harness for Large Language Model Agents: A Survey},
-  author  = {Meng, Qianyu* and Wang, Yanan* and Chen, Liyi and Wang, Qimeng and
+  author  = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
   year    = {2026},
   url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
-  note    = {* Equal contribution. Work in progress}
+  note    = {孟倩宇、王亚楠为共同第一作者。工作进行中}
 }
 ```
 
