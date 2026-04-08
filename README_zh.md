@@ -1,24 +1,3 @@
----
-license: cc-by-4.0
-language:
-  - en
-  - zh
-tags:
-  - survey
-  - llm-agents
-  - agent-harness
-  - agent-frameworks
-  - harness-engineering
-  - evaluation
-  - agent-memory
-  - multi-agent-systems
-pretty_name: "Agent Harness for Large Language Model Agents: A Survey"
-size_categories:
-  - n<1K
----
-
-<!-- HuggingFace 元数据在上方，GitHub 会忽略 YAML frontmatter -->
-
 <div align="center">
 
 [English](README.md) | [中文](README_zh.md)
@@ -55,7 +34,7 @@ size_categories:
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
   year    = {2026},
   url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
-  note    = {*共同第一作者 (Equal contribution). Work in progress}
+  note    = {* Equal contribution. Work in progress}
 }
 ```
 
@@ -72,10 +51,10 @@ size_categories:
 
 - [概述](#概述)
 - [历史时间线](#历史时间线)
-- [约束工程框架完备性矩阵](#执行器完备性矩阵)
+- [约束工程框架完备性矩阵](#约束工程框架完备性矩阵)
 - [论文列表](#论文列表)
   - [历史渊源](#历史渊源)
-  - [约束工程框架分类](#执行器分类)
+  - [约束工程框架分类](#约束工程框架分类)
   - [技术挑战](#技术挑战)
     - [安全与沙箱](#安全与沙箱)
     - [评估与基准测试](#评估与基准测试)
