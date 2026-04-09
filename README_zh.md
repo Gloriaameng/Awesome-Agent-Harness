@@ -7,7 +7,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social)](https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers)
 [![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)](LICENSE)
 [![Papers](https://img.shields.io/badge/Papers-110%2B-green)]()
-[![Version](https://img.shields.io/badge/Version-v2-orange)]()
+[![Version](https://img.shields.io/badge/Version-v3-orange)]()
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
 [![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v2-blue)](https://www.preprints.org/manuscript/202604.0428/v2)
 
