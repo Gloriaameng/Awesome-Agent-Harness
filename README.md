@@ -9,6 +9,7 @@
 [![Papers](https://img.shields.io/badge/Papers-110%2B-green)]()
 [![Version](https://img.shields.io/badge/Version-v2-orange)]()
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
+[![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v2-blue)](https://www.preprints.org/manuscript/202604.0428/v2)
 
 </div>
 
@@ -16,13 +17,14 @@
   <img src="assets/architecture_diagram.png" width="720" alt="H=(E,T,C,S,L,V) Six-Component Architecture"/>
 </p>
 
-> ⭐ **This survey is actively maintained. If you find it useful, please star the repo to stay updated and help others find it.**
+> ⭐ **This repo is actively maintained. If you find it useful, please star the repo to stay updated and help others find it.**
 
 ---
 
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
 > This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 110+ papers, blogs and reports across 23 systems, and maps 9 open technical challenges.  
-> 📄 **[Read the Paper](#)** (coming soon)  
+> 📄 **[Read the Paper](./Agent_Harness_for_LLM_Agents__A_Survey_v3.pdf)** (Latest version, under review)  
+> 🌐 **[Preprints Version (v2)](https://www.preprints.org/manuscript/202604.0428/v2)**  
 > ✉️ Corrections & suggestions: gloriamenng@gmail.com (Qianyu Meng); wangyanan@mail.dlut.edu.cn (Yanan Wang); chenliyi@xiaohongshu.com (Liyi Chen)
 
 If you find this survey useful, please cite:
@@ -33,8 +35,10 @@ If you find this survey useful, please cite:
   author  = {Meng, Qianyu* and Wang, Yanan* and Chen, Liyi and Wang, Qimeng and
              Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
   year    = {2026},
-  url     = {https://github.com/Gloriaameng/LLM-Agent-Harness-Survey},
-  note    = {*Equal contribution. Work in progress}
+  doi     = {10.20944/preprints202604.0428.v2},
+  url     = {https://www.preprints.org/manuscript/202604.0428/v2},
+  publisher = {Preprints},
+  note    = {* Equal contribution. Under review, latest version available at: https://github.com/Gloriaameng/LLM-Agent-Harness-Survey}
 }
 ```
 
@@ -44,6 +48,7 @@ If you find this survey useful, please cite:
 
 - **[2026-04-03]** Initial release
 - **[2026-04-07]** Repo updated
+- **[2026-04-09]** Preprint released
 
 ---
 
@@ -520,9 +525,9 @@ See BibTeX at the top of this README.
 
 | Version | Date | Changes |
 |---------|------|---------|
-|  v1 | 2026-04-03 | Initial preprint |
+|  v1 | 2026-04-03 | Initial release |
 |  v2 | 2026-04-07 | Repo updated |
-
+|  v3 | 2026-04-09 | Preprint added |
 ---
 
 <p align="center">
