@@ -30,16 +30,16 @@
 If you find this survey useful, please cite:
 
 ```bibtex
-@misc{meng2026agentharness,
-  title   = {Agent Harness for Large Language Model Agents: A Survey},
-  author  = {Meng, Qianyu* and Wang, Yanan* and Chen, Liyi and Wang, Qimeng and
-             Lu, Chengqiang and Wu, Wei and Gao, Yan and Wu, Yi and Hu, Yao},
-  year    = {2026},
-  doi     = {10.20944/preprints202604.0428.v2},
-  url     = {https://www.preprints.org/manuscript/202604.0428/v2},
-  publisher = {Preprints},
-  note    = {* Equal contribution. Under review, latest version available at: https://github.com/Gloriaameng/LLM-Agent-Harness-Survey}
-}
+@article{meng2026agentharness,  
+  title     = {Agent Harness for Large Language Model Agents: A Survey},  
+  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wu, Wei and  
+               Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and  
+               Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},  
+  year      = {2026},  
+  doi       = {10.20944/preprints202604.0428.v2},  
+  url       = {https://www.preprints.org/manuscript/202604.0428/v2},  
+  publisher = {Preprints},  
+}  
 ```
 
 ---
@@ -49,6 +49,7 @@ If you find this survey useful, please cite:
 - **[2026-04-03]** Initial release
 - **[2026-04-07]** Repo updated
 - **[2026-04-09]** Preprint released
+- **[2026-04-14]** Citation Updated
 
 ---
 
@@ -284,6 +285,8 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 - <u>ReAct</u>: **"ReAct: Synergizing Reasoning and Acting in Language Models"**. *Yao et al.* ICLR 2023. [[Paper](https://arxiv.org/abs/2210.03629)] [[Code](https://github.com/ysymyth/ReAct)]
 - <u>Toolformer</u>: **"Toolformer: Language Models Can Teach Themselves to Use Tools"**. *Schick et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2302.04761)]
 - <u>AutoGPT</u>: **"Auto-GPT: An Autonomous GPT-4 Experiment"**. *Gravitas et al.* GitHub 2023. [[Code](https://github.com/Significant-Gravitas/AutoGPT)]
+- <u>BabyAGI</u>: **"BabyAGI"**. *Nakajima.* GitHub 2023. [[Code](https://github.com/yoheinakajima/babyagi)]
+- <u>HuggingGPT</u>: **"HuggingGPT: Solving AI Tasks with ChatGPT and Its Friends in Hugging Face"**. *Shen et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.17580)]
 - <u>LangChain</u>: **"LangChain: Building Applications with LLMs through Composability"**. *Chase et al.* GitHub 2022. [[Code](https://github.com/langchain-ai/langchain)]
 
 ---
@@ -314,6 +317,11 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 #### Frameworks & Modules
 
 - <u>LangGraph</u>: **"LangGraph: Build Resilient Language Agents as Graphs"**. *LangChain team.* GitHub 2024. [[Code](https://github.com/langchain-ai/langgraph)]
+- <u>CrewAI</u>: **"CrewAI: Framework for Orchestrating Role-Playing, Autonomous AI Agents"**. *Moura et al.* GitHub 2024. [[Code](https://github.com/crewAIInc/crewAI)]
+- <u>PydanticAI</u>: **"PydanticAI: Agent Framework for Production-Grade GenAI Applications"**. *Pydantic Team.* GitHub 2024. [[Code](https://github.com/pydantic/pydantic-ai)]
+- <u>smolagents</u>: **"smolagents: A Smol Library to Build Great Agentic Systems"**. *Roucher et al.* GitHub 2025. [[Code](https://github.com/huggingface/smolagents)]
+- <u>Hermes Agent</u>: **"Hermes Agent: Self-Improving AI Agent Framework"**. *Nous Research.* GitHub 2026. [[Code](https://github.com/nousresearch/hermes-agent)] [[Docs](https://hermes-agent.nousresearch.com/docs/)]
+- <u>AWS Multi-Agent Orchestrator</u>: **"Multi-Agent Orchestrator"**. *Amazon Web Services.* GitHub 2024. [[Code](https://github.com/awslabs/agent-squad)]
 - <u>MemGPT</u>: **"MemGPT: Towards LLMs as Operating Systems"**. *Packer et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2310.08560)] [[Code](https://github.com/cpacker/MemGPT)]
 - <u>Voyager</u>: **"Voyager: An Open-Ended Embodied Agent with Large Language Models"**. *Wang et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2305.16291)] [[Code](https://github.com/MineDojo/Voyager)]
 - <u>Reflexion</u>: **"Reflexion: Language Agents with Verbal Reinforcement Learning"**. *Shinn et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2303.11366)] [[Code](https://github.com/noahshinn/reflexion)]
@@ -325,6 +333,8 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 #### Evaluation Infrastructure
 
+- <u>lm-evaluation-harness</u>: **"lm-evaluation-harness"**. *Gao et al.* GitHub 2021. [[Code](https://github.com/EleutherAI/lm-evaluation-harness)]
+- <u>API-Bank</u>: **"Api-bank: A comprehensive benchmark for tool-augmented llms"**. *Li et al.* EMNLP 2023. [[Paper](https://aclanthology.org/2023.emnlp-main.187/)]
 - <u>AgentBench</u>: **"AgentBench: Evaluating LLMs as Agents"**. *Liu et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2308.03688)] [[Code](https://github.com/THUDM/AgentBench)]
 - <u>SWE-bench</u>: **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"**. *Jimenez et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2310.06770)] [[Code](https://github.com/swebench/SWE-bench)]
 - <u>OSWorld</u>: **"OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"**. *Xie et al.* NeurIPS 2024. [[Paper](https://arxiv.org/abs/2404.07972)] [[Code](https://github.com/xlang-ai/OSWorld)]
@@ -361,8 +371,15 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 - <u>SHIELDA</u>†: **"SHIELDA: Structured Handling of Exceptions in LLM-Driven Agentic Workflows"**. *Zhou et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2508.07935)]
 - <u>PALADIN</u>†: **"PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases"**. *Vuddanti et al.* ICLR 2026. [[Paper](https://arxiv.org/abs/2509.25238)]
 - <u>AgentBound</u>†: **"Securing AI Agent Execution"**. *Bühler et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.21236)]
+- <u>AgentSpec</u>†: **"Agentspec: Customizable runtime enforcement for safe and reliable llm agents"**. *Wang et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2503.18666)]
 - <u>AgentSys</u>†: **"AgentSys: Secure and Dynamic LLM Agents Through Explicit Hierarchical Memory Management"**. *Wen et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.07398)]
+- <u>Docker</u>: **"Docker: Lightweight Linux Containers for Consistent Development and Deployment"**. *Merkel.* Linux Journal 2014(239). [[Paper](https://www.linuxjournal.com/content/docker-lightweight-linux-containers-consistent-development-and-deployment)]
+- <u>gVisor</u>: **"The True Cost of Containing: A gVisor Case Study"**. *Young et al.* HotCloud '19. [[Paper](https://www.usenix.org/conference/hotcloud19/presentation/young)]
+- <u>Firecracker</u>: **"Firecracker: Lightweight Virtualization for Serverless Applications"**. *Agache et al.* NSDI 2020. [[Paper](https://www.usenix.org/conference/nsdi20/presentation/agache)]
+- <u>WebAssembly</u>: **"Bringing the Web up to Speed with WebAssembly"**. *Haas et al.* PLDI 2017. [[Paper](https://doi.org/10.1145/3062341.3062363)]
 - <u>Indirect Prompt Injection</u>: **"Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"**. *Greshake et al.* AISec 2023. [[Paper](https://arxiv.org/abs/2302.12173)]
+- <u>Misevolution Risks</u>†: **"Your agent may misevolve: Emergent risks in self-evolving llm agents"**. *Shao et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2509.26354)]
+- <u>Security Threat Modeling</u>†: **"Security Threat Modeling for Emerging AI-Agent Protocols: A Comparative Analysis of MCP, A2A, Agora, and ANP"**. *Anbiaee et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.11327)]
 - <u>AgentHarm</u>†: **"AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents"**. *Andriushchenko et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2410.09024)]
 - <u>TrustAgent</u>: **"TrustAgent: Towards Safe and Trustworthy LLM-Based Agents"**. *Hua et al.* EMNLP 2024. [[Paper](https://arxiv.org/abs/2402.01586)]
 - <u>ToolEmu</u>†: **"Identifying the Risks of LM Agents with an LM-Emulated Sandbox"**. *Ruan et al.* arXiv 2023. [[Paper](https://arxiv.org/abs/2309.15817)]
@@ -377,6 +394,9 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 - <u>Hell or High Water</u>†: **"Hell or High Water: Evaluating Agentic Recovery from External Failures"**. *Wang et al.* COLM 2025. [[Paper](https://arxiv.org/abs/2508.11027)]
 - <u>SearchLLM</u>†: **"Aligning Large Language Models with Searcher Preferences"**. *Wu et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.10473)]
 - <u>Meta-Harness</u>†: **"Meta-Harness: End-to-End Optimization of Model Harnesses"**. *Lee et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.28052)]
+- <u>AutoHarness</u>†: **"AutoHarness: improving LLM agents by automatically synthesizing a code harness"**. *Lou et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.03329)]
+- <u>MASEval</u>†: **"MASEval: Extending Multi-Agent Evaluation from Models to Systems"**. *Emde et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.08835)]
+- <u>VeRO</u>†: **"VeRO: An Evaluation Harness for Agents to Optimize Agents"**. *Ursekar et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.22480)]
 - <u>TheAgentCompany</u>†: **"TheAgentCompany: Benchmarking LLM Agents on Consequential Real-World Tasks"**. *Xu et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2412.14161)]
 - <u>BrowserGym</u>†: **"The BrowserGym Ecosystem for Web Agent Research"**. *Le Sellier De Chezelles et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2412.05467)]
 - <u>WorkArena</u>†: **"WorkArena: How Capable are Web Agents at Solving Common Knowledge Work Tasks?"**. *Drouin et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2403.07718)]
@@ -390,7 +410,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 > **Key numbers:** MCP (tool↔harness): 2–15ms latency; A2A (agent↔agent): 50–200ms; ACP (intent-level, IBM) — three protocols serve complementary roles.
 
 - <u>MCP</u>: **"Model Context Protocol"**. *Anthropic.* Technical Report 2024. [[Spec](https://modelcontextprotocol.io)]
-- <u>A2A</u>: **"Agent-to-Agent Protocol"**. *Google.* Technical Report 2025. [[Spec](https://google.github.io/A2A/)]
+- <u>A2A</u>: **"Agent-to-Agent Protocol"**. *Google.* Technical Report 2025. [[Spec](https://google.github.io/A2A/)] [[Announcement](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)]
 - <u>Protocol Comparison</u>†: **"A Survey of Agent Interoperability Protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)"**. *Ehtesham et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2505.02279)]
 - <u>Gorilla</u>: **"Gorilla: Large Language Model Connected with Massive APIs"**. *Patil et al.* NeurIPS 2023. [[Paper](https://arxiv.org/abs/2305.15334)] [[Code](https://github.com/ShishirPatil/gorilla)]
 
@@ -457,6 +477,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
   <img src="assets/multi_agent_topology.png" width="680" alt="Multi-Agent Coordination Topologies"/>
 </p>
 
+- <u>AdaptOrch</u>†: **"AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence"**. *Yu.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.16873)]
 - <u>SAGA</u>†: **"SAGA: A Security Architecture for Governing AI Agentic Systems"**. *Syros et al.* NDSS 2026. [[Paper](https://arxiv.org/abs/2504.21034)]
 - <u>MAS-FIRE</u>†: **"MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems"**. *Jia et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.19843)]
 - <u>Byzantine fault tolerance</u>†: **"Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance"**. *Zheng et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2511.10400)]
@@ -470,6 +491,10 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 > **Key numbers:** OpenRouter reports **13T tokens/week** (Feb 2026), doubling every 4 weeks; AgencyBench measures **1M tokens/task** average; 1000× agent compute growth projected by 2027; AIOS achieves **2.1× throughput speedup** via proper agent scheduling.
 
+- <u>State of AI Report</u>: **"State of AI: An Empirical 100 Trillion Token Study with OpenRouter"**. *Aubakirova et al.* Andreessen Horowitz (a16z) and OpenRouter Inc., December 2025. [[Report](https://openrouter.ai/state-of-ai)]
+- <u>BentoML Inference Report</u>: **"Beyond Tokens-per-Second: How to Balance Speed, Cost, and Quality in LLM Inference"**. *Yang.* BentoML Blog, January 2026. [[Blog](https://www.bentoml.com/blog/beyond-tokens-per-second-how-to-balance-speed-cost-and-quality-in-llm-inference)]
+- <u>H100 Price Spike</u>: **"H100 Price Spike: Understanding the 10% Surge in GPU Rental Costs"**. *Li.* Silicon Data Blog, January 2026. [[Blog](https://www.silicondata.com/blog/h100-price-spike)]
+- <u>NVIDIA GTC 2026</u>: **"NVIDIA GTC 2026: Live Updates on What's Next in AI"**. *NVIDIA.* NVIDIA Blog, March 2026. [[Blog](https://blogs.nvidia.com/blog/gtc-2026-news/)]
 - <u>Repo2Run</u>†: **"Repo2Run: Automated Building Executable Environment for Code Repository at Scale"**. *Hu et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2502.13681)]
 - <u>Policy-First</u>†: **"Guardrails as Infrastructure: Policy-First Control for Tool-Orchestrated Workflows"**. *Sigdel & Baral.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.18059)]
 
@@ -477,6 +502,9 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 ### Emerging Topics
 
+- <u>Harness Engineering for Language Agents</u>†: **"Harness Engineering for Language Agents: The Harness Layer as Control, Agency, and Runtime"**. *He et al.* Preprints 2026. [[Paper](https://www.preprints.org)]
+- <u>DeepAgent</u>†: **"Deepagent: A general reasoning agent with scalable toolsets"**. *Li et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2510.21618)]
+- <u>Natural-Language Harnesses</u>†: **"Natural-Language Agent Harnesses"**. *Pan et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2603.25723)]
 - <u>Self-Evolving Agents Survey</u>†: **"A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence"**. *Gao et al.* TMLR 2026. [[Paper](https://arxiv.org/abs/2507.21046)]
 - <u>Self-RAG</u>: **"Self-RAG: Learning to Retrieve, Generate, and Critique Through Self-Reflection"**. *Asai et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2310.11511)]
 - <u>Constitutional AI</u>: **"Constitutional AI: Harmlessness from AI Feedback"**. *Bai et al.* arXiv 2022. [[Paper](https://arxiv.org/abs/2212.08073)]
@@ -493,6 +521,14 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 > Production deployment experiences from Stripe, OpenAI, Cursor, METR, and other frontier practitioners.
 
+- <u>Building Effective Agents</u>: **"Building Effective Agents"**. *Anthropic.* Anthropic Engineering Blog, 2026. [[Blog](https://www.anthropic.com/engineering)]
+- <u>Demystifying Evals</u>: **"Demystifying Evals for AI Agents"**. *Anthropic.* Anthropic Engineering Blog, 2026. [[Blog](https://www.anthropic.com/engineering)]
+- <u>Context Engineering</u>: **"Context Engineering Our Way to Long-Horizon Agents"**. *Chase.* Sequoia Capital Podcast, 2026.
+- <u>Agent Frameworks, Runtimes, and Harnesses</u>: **"Agent Frameworks, Runtimes, and Harnesses"**. *LangChain.* LangChain Blog, 2025. [[Blog](https://blog.langchain.com/agent-frameworks-runtimes-and-harnesses-oh-my/)]
+- <u>We Removed 80% of Our Agent's Tools</u>: **"We Removed 80% of Our Agent's Tools"**. *Qu.* Vercel Engineering Blog, 2025. [[Blog](https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools)]
+- <u>Harness Problem</u>: **"I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed."**. *Can.* Personal blog (blog.can.ac), February 2026. [[Blog](https://blog.can.ac/2026/02/12/the-harness-problem/)]
+- <u>AI Adoption Journey</u>: **"My AI Adoption Journey"**. *Hashimoto.* Personal blog, February 2026. [[Blog](https://mitchellh.com/writing/my-ai-adoption-journey)]
+- <u>The Harness Gap</u>: **"The Harness Gap: AI Coding Output Rose 59% in 2025 While Teams Shipped 7% Less"**. *Zoom In AI.* Medium (Write A Catalyst), March 2026. [[Blog](https://medium.com/write-a-catalyst/the-harness-gap-ai-coding-output-rose-59-in-2025-while-teams-shipped-7-less-082d3d07cff8)]
 - <u>Stripe Minions</u>: **"Minions: Stripe's one-shot, end-to-end coding agents"**. *Gray.* Stripe Dev Blog, Feb 2026. [[Blog](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents)]
 - <u>Harness Engineering (OpenAI)</u>: **"Harness engineering: leveraging Codex in an agent-first world"**. *Lopopolo.* OpenAI Blog, Feb 2026. [[Blog](https://openai.com/index/harness-engineering/)]
 - <u>Self-Driving Codebases</u>: **"Towards self-driving codebases"**. *Lin.* Cursor Blog, Feb 2026. [[Blog](https://cursor.com/blog/self-driving-codebases)]
@@ -528,6 +564,7 @@ See BibTeX at the top of this README.
 |  v1 | 2026-04-03 | Initial release |
 |  v2 | 2026-04-07 | Repo updated |
 |  v3 | 2026-04-09 | Preprint added |
+|  v4 | 2026-04-14 | Citation Updated |
 ---
 
 <p align="center">
