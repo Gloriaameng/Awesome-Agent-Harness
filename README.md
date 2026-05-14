@@ -7,7 +7,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Gloriaameng/LLM-Agent-Harness-Survey?style=social)](https://github.com/Gloriaameng/LLM-Agent-Harness-Survey/stargazers)
 [![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)](LICENSE)
 [![Papers](https://img.shields.io/badge/Papers-150%2B-green)]()
-[![Version](https://img.shields.io/badge/Version-v4-orange)]()
+[![Version](https://img.shields.io/badge/Version-v3-orange)]()
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
 [![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v3-blue)](https://doi.org/10.20944/preprints202604.0428.v3)
 
@@ -23,8 +23,8 @@
 
 > **The agent execution harness — not the model — is the primary determinant of agent reliability at scale.**  
 > This survey formalizes the harness as a first-class architectural object **H = (E, T, C, S, L, V)**, surveys 110+ papers, blogs and reports across 23 systems, and maps 9 open technical challenges.  
-> 📄 **[Read the Paper](./Agent_Harness_for_LLM_Agents__A_Survey_v3.pdf)** (Latest version, under review)  
-> 🌐 **[Preprints Version (v2)](https://www.preprints.org/manuscript/202604.0428/v2)**  
+> 📄 **[Read the Paper](./Agent_Harness_for_LLM_Agents__A_Survey_v3.pdf)**  
+> 🌐 **[Preprints Version (v3)](https://www.preprints.org/manuscript/202604.0428/v3)**  
 > ✉️ Corrections & suggestions: gloriamenng@gmail.com (Qianyu Meng); wangyanan@mail.dlut.edu.cn (Yanan Wang); chenliyi@xiaohongshu.com (Liyi Chen)
 
 If you find this survey useful, please cite:
@@ -36,7 +36,7 @@ If you find this survey useful, please cite:
                Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and  
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},  
   year      = {2026},  
-  doi       = {10.20944/preprints202604.0428.v2},  
+  doi       = {10.20944/preprints202604.0428.v3},  
   url       = {https://www.preprints.org/manuscript/202604.0428/v3},  
   publisher = {Preprints},  
 }  
