@@ -9,7 +9,7 @@
 [![Papers](https://img.shields.io/badge/Papers-150%2B-green)]()
 [![Version](https://img.shields.io/badge/Version-v4-orange)]()
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
-[![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v2-blue)](https://www.preprints.org/manuscript/202604.0428/v2)
+[![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v3-blue)]( https://doi.org/10.20944/preprints202604.0428.v3)
 
 </div>
 
@@ -23,8 +23,8 @@
 
 > **Agent Harness——而非模型本身——是智能体大规模部署可靠性的首要决定因素。**  
 > 本综述将Agent Harness形式化为一级架构对象 **H = (E, T, C, S, L, V)**，系统调研了涵盖23个系统的110余篇论文、博客和报告，并总结了9项开放性技术挑战。  
-> 📄 **[阅读最新版论文 (PDF)](./Agent_Harness_for_LLM_Agents__A_Survey_v3.pdf)** （最新版本，目前在审）  
-> 🌐 **[阅读 Preprints 版本 (v2)](https://www.preprints.org/manuscript/202604.0428/v2)**  
+> 📄 **[阅读最新版论文 (PDF)](./Agent_Harness_for_LLM_Agents__A_Survey_v3.pdf)**   
+> 🌐 **[阅读 Preprints 版本](https://www.preprints.org/manuscript/202604.0428/v3)**  
 > ✉️ 勘误与建议：gloriamenng@gmail.com; wangyanan@mail.dlut.edu.cn; chenliyi@xiaohongshu.com 
 
 如果本综述对您有所帮助，请引用：
@@ -36,7 +36,7 @@
                Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and  
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},  
   year      = {2026},  
-  doi       = {10.20944/preprints202604.0428.v2},  
+  doi       = {10.20944/preprints202604.0428.v3},  
   url       = {https://www.preprints.org/manuscript/202604.0428/v2},  
   publisher = {Preprints},  
 }  

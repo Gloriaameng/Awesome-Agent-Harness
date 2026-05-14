@@ -9,7 +9,7 @@
 [![Papers](https://img.shields.io/badge/Papers-150%2B-green)]()
 [![Version](https://img.shields.io/badge/Version-v4-orange)]()
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/datasets/GloriaaaM/LLM-Agent-Harness-Survey)
-[![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v2-blue)](https://www.preprints.org/manuscript/202604.0428/v2)
+[![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202604.0428.v3-blue)](https://doi.org/10.20944/preprints202604.0428.v3)
 
 </div>
 
@@ -37,7 +37,7 @@ If you find this survey useful, please cite:
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},  
   year      = {2026},  
   doi       = {10.20944/preprints202604.0428.v2},  
-  url       = {https://www.preprints.org/manuscript/202604.0428/v2},  
+  url       = {https://www.preprints.org/manuscript/202604.0428/v3},  
   publisher = {Preprints},  
 }  
 ```
