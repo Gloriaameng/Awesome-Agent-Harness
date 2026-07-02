@@ -219,9 +219,13 @@
       <td>≈</td><td>✓</td><td>✓</td><td>≈</td><td>✗</td><td>✗</td>
     </tr>
     <tr>
-      <td rowspan="1"><strong>专用<br>约束工程</strong></td>
+      <td rowspan="2"><strong>专用<br>约束工程</strong></td>
       <td>SWE-agent</td>
       <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✓</td>
+    </tr>
+    <tr>
+      <td>agent-qa</td>
+      <td>✓</td><td>✓</td><td>≈</td><td>✓</td><td>✓</td><td>✓</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>能力<br>模块</strong></td>
@@ -333,6 +337,7 @@
 #### 评估基础设施
 
 - <u>lm-evaluation-harness</u>: **"lm-evaluation-harness"**. *Gao et al.* GitHub 2021. [[代码](https://github.com/EleutherAI/lm-evaluation-harness)]
+- <u>agent-qa</u>: **"agent-qa: Self-Improving QA Harness with Memory"**. *Vostride.* GitHub 2026. [[代码](https://github.com/vostride/agent-qa)]
 - <u>API-Bank</u>: **"Api-bank: A comprehensive benchmark for tool-augmented llms"**. *Li et al.* EMNLP 2023. [[论文](https://aclanthology.org/2023.emnlp-main.187/)]
 - <u>AgentBench</u>: **"AgentBench: Evaluating LLMs as Agents"**. *Liu et al.* ICLR 2024. [[论文](https://arxiv.org/abs/2308.03688)] [[代码](https://github.com/THUDM/AgentBench)]
 - <u>SWE-bench</u>: **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"**. *Jimenez et al.* ICLR 2024. [[论文](https://arxiv.org/abs/2310.06770)] [[代码](https://github.com/swebench/SWE-bench)]

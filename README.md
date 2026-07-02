@@ -220,9 +220,13 @@ We introduce a formal definition of the **agent execution harness** as a six-com
       <td>≈</td><td>✓</td><td>✓</td><td>≈</td><td>✗</td><td>✗</td>
     </tr>
     <tr>
-      <td rowspan="1"><strong>Specialized<br>Harnesses</strong></td>
+      <td rowspan="2"><strong>Specialized<br>Harnesses</strong></td>
       <td>SWE-agent</td>
       <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✓</td>
+    </tr>
+    <tr>
+      <td>agent-qa</td>
+      <td>✓</td><td>✓</td><td>≈</td><td>✓</td><td>✓</td><td>✓</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>Capability<br>Modules</strong></td>
@@ -334,6 +338,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 #### Evaluation Infrastructure
 
 - <u>lm-evaluation-harness</u>: **"lm-evaluation-harness"**. *Gao et al.* GitHub 2021. [[Code](https://github.com/EleutherAI/lm-evaluation-harness)]
+- <u>agent-qa</u>: **"agent-qa: Self-Improving QA Harness with Memory"**. *Vostride.* GitHub 2026. [[Code](https://github.com/vostride/agent-qa)]
 - <u>API-Bank</u>: **"Api-bank: A comprehensive benchmark for tool-augmented llms"**. *Li et al.* EMNLP 2023. [[Paper](https://aclanthology.org/2023.emnlp-main.187/)]
 - <u>AgentBench</u>: **"AgentBench: Evaluating LLMs as Agents"**. *Liu et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2308.03688)] [[Code](https://github.com/THUDM/AgentBench)]
 - <u>SWE-bench</u>: **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"**. *Jimenez et al.* ICLR 2024. [[Paper](https://arxiv.org/abs/2310.06770)] [[Code](https://github.com/swebench/SWE-bench)]
