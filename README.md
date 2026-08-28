@@ -532,6 +532,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 
 > Production deployment experiences from Stripe, OpenAI, Cursor, METR, and other frontier practitioners.
 
+- <u>DeepSeek Harness Handbook</u>: **"DeepSeek Harness Handbook"**. *SandBase community.* Independent source-backed operator guide to the DeepSeek Harness Agent runtime, with architecture, plugins, tools, MCP, sandboxing, Sessions, evaluation, and multilingual navigation. [[Guide](https://github.com/sandbaseai/deepseek-harness-handbook)] [[Site](https://sandbaseai.github.io/deepseek-harness-handbook/)]
 - <u>Building Effective Agents</u>: **"Building Effective Agents"**. *Anthropic.* Anthropic Engineering Blog, 2026. [[Blog](https://www.anthropic.com/engineering)]
 - <u>Demystifying Evals</u>: **"Demystifying Evals for AI Agents"**. *Anthropic.* Anthropic Engineering Blog, 2026. [[Blog](https://www.anthropic.com/engineering)]
 - <u>Context Engineering</u>: **"Context Engineering Our Way to Long-Horizon Agents"**. *Chase.* Sequoia Capital Podcast, 2026.
