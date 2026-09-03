@@ -220,13 +220,17 @@ We introduce a formal definition of the **agent execution harness** as a six-com
       <td>≈</td><td>✓</td><td>✓</td><td>≈</td><td>✗</td><td>✗</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>Specialized<br>Harnesses</strong></td>
+      <td rowspan="3"><strong>Specialized<br>Harnesses</strong></td>
       <td>SWE-agent</td>
       <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✓</td>
     </tr>
     <tr>
       <td>agent-qa</td>
       <td>✓</td><td>✓</td><td>≈</td><td>✓</td><td>✓</td><td>✓</td>
+    </tr>
+    <tr>
+      <td>YYLO</td>
+      <td>✓</td><td>≈</td><td>≈</td><td>✓</td><td>✓</td><td>≈</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>Capability<br>Modules</strong></td>
@@ -335,6 +339,7 @@ We introduce a formal definition of the **agent execution harness** as a six-com
 - <u>LlamaIndex</u>: **"LlamaIndex: A Data Framework for LLM Applications"**. *Liu et al.* GitHub 2022. [[Code](https://github.com/run-llama/llama_index)]
 - <u>DeerFlow</u>: **"DeerFlow: Distributed Workflow Engine for LLM Agents"**. *GitHub 2024.* [[Code](https://github.com/modelscope/DeerFlow)]
 - <u>DeepAgents</u>: **"DeepAgents: Multi-Agent Framework for Deep Learning"**. *GitHub 2024.* [[Code](https://github.com/deepagents/deepagents)]
+- <u>YYLO</u>: **"YYLO: AI Coding-Agent Orchestration CLI"**. *yylo-dev.* GitHub 2026. [[Code](https://github.com/yylo-dev/yylo)]
 
 #### Evaluation Infrastructure
 
