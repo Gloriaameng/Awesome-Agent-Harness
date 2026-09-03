@@ -249,7 +249,7 @@
       <td>✓</td><td>✗</td><td>≈</td><td>✓</td><td>✗</td><td>≈</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>评估<br>基础设施</strong></td>
+      <td rowspan="5"><strong>评估<br>基础设施</strong></td>
       <td>HAL</td>
       <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>≈</td><td>✓</td>
     </tr>
@@ -264,6 +264,10 @@
     <tr>
       <td>BrowserGym</td>
       <td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✗</td><td>✓</td>
+    </tr>
+    <tr>
+      <td>YYLO Benchmark</td>
+      <td>≈</td><td>✗</td><td>≈</td><td>✓</td><td>≈</td><td>✓</td>
     </tr>
   </tbody>
 </table>
@@ -338,6 +342,7 @@
 
 - <u>lm-evaluation-harness</u>: **"lm-evaluation-harness"**. *Gao et al.* GitHub 2021. [[代码](https://github.com/EleutherAI/lm-evaluation-harness)]
 - <u>agent-qa</u>: **"agent-qa: Self-Improving QA Harness with Memory"**. *Vostride.* GitHub 2026. [[代码](https://github.com/vostride/agent-qa)]
+- <u>YYLO Benchmark</u>: **"YYLO Benchmark: Longitudinal Evaluation and Immutable Evidence for Agent Runs"**. *yylo-dev.* GitHub 2026. [[代码](https://github.com/yylo-dev/yylo-benchmark)]
 - <u>API-Bank</u>: **"Api-bank: A comprehensive benchmark for tool-augmented llms"**. *Li et al.* EMNLP 2023. [[论文](https://aclanthology.org/2023.emnlp-main.187/)]
 - <u>AgentBench</u>: **"AgentBench: Evaluating LLMs as Agents"**. *Liu et al.* ICLR 2024. [[论文](https://arxiv.org/abs/2308.03688)] [[代码](https://github.com/THUDM/AgentBench)]
 - <u>SWE-bench</u>: **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"**. *Jimenez et al.* ICLR 2024. [[论文](https://arxiv.org/abs/2310.06770)] [[代码](https://github.com/swebench/SWE-bench)]
