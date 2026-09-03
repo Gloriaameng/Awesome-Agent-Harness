@@ -219,13 +219,17 @@
       <td>≈</td><td>✓</td><td>✓</td><td>≈</td><td>✗</td><td>✗</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>专用<br>约束工程</strong></td>
+      <td rowspan="3"><strong>专用<br>约束工程</strong></td>
       <td>SWE-agent</td>
       <td>✓</td><td>✓</td><td>✓</td><td>≈</td><td>≈</td><td>✓</td>
     </tr>
     <tr>
       <td>agent-qa</td>
       <td>✓</td><td>✓</td><td>≈</td><td>✓</td><td>✓</td><td>✓</td>
+    </tr>
+    <tr>
+      <td>YYLO</td>
+      <td>✓</td><td>≈</td><td>≈</td><td>✓</td><td>✓</td><td>≈</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>能力<br>模块</strong></td>
@@ -333,6 +337,7 @@
 - <u>LlamaIndex</u>: **"LlamaIndex: A Data Framework for LLM Applications"**. *Liu et al.* GitHub 2022. [[代码](https://github.com/run-llama/llama_index)]
 - <u>DeerFlow</u>: **"DeerFlow: Distributed Workflow Engine for LLM Agents"**. *GitHub 2024.* [[代码](https://github.com/modelscope/DeerFlow)]
 - <u>DeepAgents</u>: **"DeepAgents: Multi-Agent Framework for Deep Learning"**. *GitHub 2024.* [[代码](https://github.com/deepagents/deepagents)]
+- <u>YYLO</u>: **"YYLO: AI Coding-Agent Orchestration CLI"**. *yylo-dev.* GitHub 2026. [[代码](https://github.com/yylo-dev/yylo)]
 
 #### 评估基础设施
 
