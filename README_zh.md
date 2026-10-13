@@ -345,6 +345,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 
 这些 benchmark 主要回答 **Agent 能完成什么任务**。Harness 研究把它们作为 task substrate，并增加控制变量以隔离 runtime 的影响。
 
+- **[RoboQuest](https://github.com/declare-lab/RoboQuest)** — 面向通过工具调用控制机器人的多模态 Agent 的仿真移动操作任务；隐藏信息须通过搜索、检查或测试获得。[论文](https://arxiv.org/abs/2610.10388)
 - **[AgencyBench](https://arxiv.org/abs/2601.11044)** — 面向自主 Agent 的长上下文、高后果任务；整体结果与原生生态观察应分别报告。
 - **[ClawBench](https://github.com/TIGER-AI-Lab/ClawBench)** — 面向个人与 computer-use agent 的日常在线任务。[论文](https://arxiv.org/abs/2604.08523)
 - **[OSWorld](https://github.com/xlang-ai/OSWorld)** — 真实操作系统环境中的开放式 computer task。

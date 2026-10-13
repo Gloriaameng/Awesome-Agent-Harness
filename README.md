@@ -345,6 +345,7 @@ A benchmark belongs here when it reveals something about the **runtime around th
 
 These benchmarks ask **what tasks an agent can complete**. Harness studies use them as task substrates and add controls that isolate the runtime as an experimental variable.
 
+- **[RoboQuest](https://github.com/declare-lab/RoboQuest)** — Simulated mobile-manipulation tasks for multimodal agents acting through tool calls; hidden information must be found by searching, inspecting, or testing. [Paper](https://arxiv.org/abs/2610.10388)
 - **[AgencyBench](https://arxiv.org/abs/2601.11044)** — Long-context, consequential tasks for autonomous agents; report its aggregate and ecosystem-specific findings separately.
 - **[ClawBench](https://github.com/TIGER-AI-Lab/ClawBench)** — Everyday online tasks for personal and computer-use agents. [Paper](https://arxiv.org/abs/2604.08523)
 - **[OSWorld](https://github.com/xlang-ai/OSWorld)** — Open-ended computer tasks in real operating-system environments.
