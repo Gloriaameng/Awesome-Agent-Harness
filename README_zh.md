@@ -255,6 +255,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 
 #### 长时与领域型 Harness
 
+- **[RobotUse](https://github.com/robotuse-team/RobotUse)** — 面向机器人的 Agent harness，结合视觉目标与位姿选择、子 Agent 的局部交互历史，以及用于从执行经验中学习的持久化 playbook；几何计算、运动规划与控制由后端负责。[论文](https://arxiv.org/abs/2610.04929) · [项目主页](https://robotuse-team.github.io/)
 - **[CheetahClaws](https://github.com/SAIL-Research-Lab/cheetahclaws)** — 面向固定模型做系统级 scaling 的研究 harness，涵盖 orchestration、tool、context 与并行工作。[论文](https://arxiv.org/abs/2605.26112)
 - **[DataFlow-Harness](https://github.com/OpenDCAI/DataFlow-WebUI)** — 用于组合、运行和评测 Agent 数据 workflow 的 data-centric harness。[论文](https://arxiv.org/abs/2607.16617)
 

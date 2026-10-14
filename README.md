@@ -255,6 +255,7 @@ These systems remain in the index while their public architecture, maturity, or 
 
 #### Long-horizon and domain-specific harnesses
 
+- **[RobotUse](https://github.com/robotuse-team/RobotUse)** — A robot agent harness combining visual target and pose selection, subagent-local interaction histories, and persistent playbooks for learning from execution, with geometry, motion planning, and control handled by the backend. [Paper](https://arxiv.org/abs/2610.04929) · [Project](https://robotuse-team.github.io/)
 - **[CheetahClaws](https://github.com/SAIL-Research-Lab/cheetahclaws)** — A research harness for system-level scaling around fixed models, including orchestration, tools, context, and parallel work. [Paper](https://arxiv.org/abs/2605.26112)
 - **[DataFlow-Harness](https://github.com/OpenDCAI/DataFlow-WebUI)** — A data-centric harness for composing, running, and evaluating agentic data workflows. [Paper](https://arxiv.org/abs/2607.16617)
 
