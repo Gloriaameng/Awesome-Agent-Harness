@@ -257,6 +257,7 @@ These systems remain in the index while their public architecture, maturity, or 
 - **[Eve](https://github.com/vercel/eve)** — Vercel's open agent project for iterative software work and execution-driven feedback.
 - **[Shepherd](https://github.com/shepherd-agents/shepherd)** — An agent orchestration project for coordinating development tasks and specialized workers.
 - **[YYLO](https://github.com/yylo-dev/yylo)** — A CLI for orchestrating coding agents with plugins, evidence capture, and longitudinal workflows.
+- **[Orbi](https://github.com/orbi-build/orbi)** — An issue-to-merge delivery harness for GitHub ([site](https://orbi.build/?ref=dir-gloriaameng)): an `ai-ready` Issue is implemented in an isolated worktree, opened as a PR, independently reviewed by a separate AI session, fixed, and merged only after review and CI pass; GitHub Issues are the only state store.
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's earlier open-source terminal agent. Its consumer service migrated to Antigravity CLI in June 2026; the repository remains useful as an architectural lineage. [Migration notice](https://github.com/google-gemini/gemini-cli/discussions/27274)
 
 #### Long-horizon and domain-specific harnesses

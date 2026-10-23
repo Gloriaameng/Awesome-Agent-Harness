@@ -257,6 +257,7 @@ L展示代表性生命周期介入点；V导出事件与轨迹，不承担结果
 - **[Eve](https://github.com/vercel/eve)** — Vercel 面向迭代软件工作和执行反馈的开源智能体项目。
 - **[Shepherd](https://github.com/shepherd-agents/shepherd)** — 用于协调开发任务与专业工作智能体的编排项目。
 - **[YYLO](https://github.com/yylo-dev/yylo)** — 通过插件、证据记录与纵向工作流编排编程智能体的 CLI。
+- **[Orbi](https://github.com/orbi-build/orbi)** — 面向 GitHub 的 Issue 到合并交付 harness（[官网](https://orbi.build/zh/?ref=dir-gloriaameng)）：打上 `ai-ready` 的 Issue 在隔离 worktree 中实现并开 PR，由另一个 AI 会话独立评审、修复，评审与 CI 通过后才合并；GitHub Issues 是唯一状态存储。
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google 较早开源的终端智能体。其面向普通用户的服务已于 2026 年 6 月迁移到 Antigravity CLI，原仓库仍可作为架构历史资料。[迁移公告](https://github.com/google-gemini/gemini-cli/discussions/27274)
 
 #### 长时运行与领域型 Harness
