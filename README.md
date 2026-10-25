@@ -384,6 +384,7 @@ These benchmarks ask **what tasks an agent can complete**. Harness studies use t
 - **[GAIA](https://arxiv.org/abs/2311.12983)** — General-assistant questions that require reasoning, tools, and multiple modalities.
 - **[SWE-bench](https://github.com/swe-bench/SWE-bench)** — Real GitHub issues resolved against executable repositories.
 - **[EC2-Bench](https://github.com/OpenBMB/EC2-Bench)** — OpenClaw workspace tasks run by an edge model that can call a cloud model; compares who controls cloud invocation (external router vs. edge agent) on completion, cost, and privacy exposure. [Paper](https://arxiv.org/abs/2610.17816)
+- **[DoomPay](https://github.com/doomsday-network/doom-pay)** - 2-line Stripe-style non-custodial Web3 checkout widget (`pay.js`), HTTP 402 payment wall, and MCP tool server for verifying Layer-1 `DOOM` and Base Mainnet `wDOOM` payments.
 
 ---
 
