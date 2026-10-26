@@ -516,6 +516,7 @@ Tool governance spans registration, selection, dispatch, execution, result handl
 - <u>GoEX</u>†: **"GoEX: Perspectives and Designs Towards a Runtime for Autonomous LLM Applications"**. *Patil et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2404.06921)]
 - <u>AgentTuning</u>: **"AgentTuning: Enabling Generalized Agent Abilities for LLMs"**. *Zeng et al.* ACL 2024. [[Paper](https://arxiv.org/abs/2310.12823)]
 - <u>HEART</u>†: **"Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives"**. *Jin et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2609.01736)]
+- <u>TabAgent</u>†: **"TabAgent: Distilling LLM Agent Components into Cheap Classifiers"**. *Levy et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.16429)] [[Code](https://github.com/dolev31/TabAgent)]
 
 #### Memory Architecture
 
