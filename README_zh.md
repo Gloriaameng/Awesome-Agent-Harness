@@ -475,6 +475,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>HarnessAudit-Bench</u>†: **"Auditing Agent Harness Safety"**. *Liu et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2605.14271)]
 - <u>AgentSWE</u>†: **"AgentSWE: Can Coding Agents Build the Agent You Actually Want?"**. *Wang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.13361)]
 - <u>EC2-Bench</u>†: **"Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution"**. *Huang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.17816)] [[代码](https://github.com/OpenBMB/EC2-Bench)] [[项目](https://passionate11.github.io/ec2-bench-project-page/)]
+- <u>SciΠvot</u>†: **"SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents"**. *Sun et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.21082)] [[代码](https://github.com/AutoResearch-Factory/SciPIvot)] [[项目](https://autoresearch-factory.github.io/SciPIvot/)]
 
 #### 协议标准化
 
