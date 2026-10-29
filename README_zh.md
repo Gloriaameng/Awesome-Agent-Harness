@@ -22,7 +22,7 @@ Harness统筹重复行动、上下文、状态与证据。L展示代表性生命
 
 这是综述论文 **《Agent Harness for Large Language Model Agents: A Survey》** 的官方仓库。论文是整个项目的中心：它界定研究对象，提出 ETCSLV 分析框架，梳理历史来源，比较代表系统，并组织评测版图与研究议程。下面的资源索引用于在论文版本之间持续维护这套证据基础。
 
-📄 **[论文 v4](./Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf)** · 🌐 **[已归档预印本 v3](https://www.preprints.org/manuscript/202604.0428/v3)** · 🗂️ **资源索引 2026.10**（证据截至 2026-10-13）· **论文 v5 正在修订**
+📄 **[论文 v4](./Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf)** · 🌐 **[已归档预印本 v3](https://www.preprints.org/manuscript/202604.0428/v3)** · 🗂️ **资源索引 2026.10**（矩阵与论文正文审查索引截至 2026-10-13）· **论文 v5 正在修订**
 
 [综述贡献](#这篇综述做了什么) · [概念框架](#1-概念框架) · [系统版图](#3-系统版图) · [评测版图](#4-评测版图) · [研究资料库](#5-研究资料库)
 
@@ -275,7 +275,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Eve](https://github.com/vercel/eve)** — Vercel 面向迭代软件工作和执行反馈的开源智能体项目。
 - **[Shepherd](https://github.com/shepherd-agents/shepherd)** — 用于协调开发任务与专业工作智能体的编排项目。
 - **[YYLO](https://github.com/yylo-dev/yylo)** — 通过插件、证据记录与纵向工作流编排编程智能体的 CLI。
-- **[Orbi](https://github.com/orbi-build/orbi)** — 面向 GitHub 的 Issue 到合并交付 harness（[官网](https://orbi.build/zh/?ref=dir-gloriaameng)）：打上 `ai-ready` 的 Issue 在隔离 worktree 中实现并开 PR，由另一个 AI 会话独立评审、修复，评审与 CI 通过后才合并；GitHub Issues 是唯一状态存储。
+- **[Orbi](https://github.com/orbi-build/orbi)** — 面向 GitHub 的 Issue 到 PR 交付 harness（[官网](https://orbi.build/zh/)）：以 GitHub Issues 管理任务，在隔离 worktree 中实现，由独立 AI 会话评审并修复，经合并门禁处理交付。
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google 较早开源的终端智能体。其面向普通用户的服务已于 2026 年 6 月迁移到 Antigravity CLI，原仓库仍可作为架构历史资料。[迁移公告](https://github.com/google-gemini/gemini-cli/discussions/27274)
 
 #### 长时运行与领域型 Harness
@@ -476,7 +476,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>HarnessAudit-Bench</u>†: **"Auditing Agent Harness Safety"**. *Liu et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2605.14271)]
 - <u>AgentSWE</u>†: **"AgentSWE: Can Coding Agents Build the Agent You Actually Want?"**. *Wang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.13361)]
 - <u>EC2-Bench</u>†: **"Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution"**. *Huang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.17816)] [[代码](https://github.com/OpenBMB/EC2-Bench)] [[项目](https://passionate11.github.io/ec2-bench-project-page/)]
-- <u>SciΠvot</u>†: **"SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents"**. *Sun et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.21082)] [[代码](https://github.com/AutoResearch-Factory/SciPIvot)] [[项目](https://autoresearch-factory.github.io/SciPIvot/)]
+- <u>SciΠvot</u>†: **"SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents"**. *Sun et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2610.21082)] [[代码](https://github.com/AutoResearch-Factory/SciPIvot)] [[项目](https://autoresearch-factory.github.io/SciPIvot/)] — 在冻结项目记录上比较原始与人工修正的研究计划，评测关键节点的科研判断；完整项目记录需在 Hugging Face 接受访问条款后获取。
 
 #### 协议标准化
 
@@ -519,7 +519,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>GoEX</u>†: **"GoEX: Perspectives and Designs Towards a Runtime for Autonomous LLM Applications"**. *Patil et al.* arXiv 2024. [[论文](https://arxiv.org/abs/2404.06921)]
 - <u>AgentTuning</u>: **"AgentTuning: Enabling Generalized Agent Abilities for LLMs"**. *Zeng et al.* ACL 2024. [[论文](https://arxiv.org/abs/2310.12823)]
 - <u>HEART</u>†: **"Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives"**. *Jin et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2609.01736)]
-- <u>TabAgent</u>†: **"TabAgent: Distilling LLM Agent Components into Cheap Classifiers"**. *Levy et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2602.16429)] [[Code](https://github.com/dolev31/TabAgent)]
+- <u>TabAgent</u>†: **"TabAgent: Distilling LLM Agent Components into Cheap Classifiers"**. *Levy et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2602.16429)] [[代码](https://github.com/dolev31/TabAgent)]
 
 #### 记忆架构
 
@@ -693,7 +693,7 @@ Meta-Harness通过候选harness代码、任务评测、执行轨迹与累积历�
 - **区分实验单元：**分别说明模型、harness、环境、任务、预算与评测器。
 - **区分不同层级：**将完整 harness、能力模块、安全层、任务环境与评测运行器分区收录。
 - **保留不确定性：**“尚未核实（Unverified）”表示公开材料不足；“明确缺失（Absent）”必须有第一方材料作为依据。
-- **记录截止时间：**评分反映截至 **2026-10-13** 的公开证据；系统更新后可能变化。
+- **记录截止时间：**比较矩阵与论文正文审查索引的证据截止日期为 **2026-10-13**。此后新增的目录与文献条目单独进行增量审查；收录不代表更新矩阵评分，也不代表已纳入公开论文正文。
 
 ---
 
@@ -701,7 +701,7 @@ Meta-Harness通过候选harness代码、任务评测、执行轨迹与累积历�
 
 | 产物 | 当前版本 | 日期 / 截止时间 | 状态 |
 |---|---|---|---|
-| 资源索引 | **2026.10** | 证据核验截至 **2026-10-13** | 当前 README；最后更新于 **2026-10-14** |
+| 资源索引 | **2026.10** | 矩阵与论文正文审查索引截至 **2026-10-13** | 持续更新的目录；增量条目审查至 **2026-10-29** |
 | 仓库论文 | **v4** | 2026-04-14 | [公开 PDF](./Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf) |
 | 已归档预印本 | **v3** | 2026-04-09 | [DOI 记录](https://doi.org/10.20944/preprints202604.0428.v3) |
 | 论文 v5 | 修订中 | — | 正文、图片与参考文献正在审查 |
@@ -726,6 +726,7 @@ Meta-Harness通过候选harness代码、任务评测、执行轨迹与累积历�
 
 | 更新轨道 | 版本 | 日期 | 变更 |
 |---|---|---|---|
+| 资源索引 | **2026.10** | 2026-10-29 | 增量审查并收录 Orbi、SciΠvot、booking-truth 与 TabAgent；同步中英文条目，明确矩阵与论文正文审查索引的证据截止日期 |
 | 资源索引 | **2026.10** | 2026-10-14 | 恢复论文标题、引用与综述叙事；页首仅保留星标数、参考资料总数与许可证；开放证据矩阵由 20 项扩为 34 项，并补入八条办公与个人智能体路线；新增 4—10 月出现的系统、基准、架构报告与完整分类目录；使用通行术语和自然、严谨的书面表达重写中文版 README |
 | 论文 | **v4** | 2026-04-14 | 当前仓库 PDF；早于 2026.10 资源索引 |
 | 已归档预印本 | **v3** | 2026-04-09 | DOI 对应的公开预印本 |

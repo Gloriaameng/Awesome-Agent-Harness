@@ -22,7 +22,7 @@ The harness governs repeated action, context, state and evidence. Lifecycle hook
 
 This is the official repository for **_Agent Harness for Large Language Model Agents: A Survey_**. The paper is the center of the project: it defines the object of study, introduces the ETCSLV analytical framework, reconstructs the field's historical lineages, compares representative systems, and sets an evaluation and research agenda. The resource index below keeps the survey's evidence base current between paper releases.
 
-📄 **[Paper v4](./Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf)** · 🌐 **[Archived preprint v3](https://www.preprints.org/manuscript/202604.0428/v3)** · 🗂️ **Resource Index 2026.10** (evidence through 2026-10-13) · **Paper v5 is in revision**
+📄 **[Paper v4](./Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf)** · 🌐 **[Archived preprint v3](https://www.preprints.org/manuscript/202604.0428/v3)** · 🗂️ **Resource Index 2026.10** (matrix and manuscript-review evidence index cutoff: 2026-10-13) · **Paper v5 is in revision**
 
 [Survey contributions](#what-this-survey-contributes) · [Framework](#1-conceptual-framework) · [Systems](#3-system-landscape) · [Benchmarks](#4-evaluation-landscape) · [Research library](#5-research-library)
 
@@ -275,7 +275,7 @@ These systems remain in the index while their public architecture, maturity, or 
 - **[Eve](https://github.com/vercel/eve)** — Vercel's open agent project for iterative software work and execution-driven feedback.
 - **[Shepherd](https://github.com/shepherd-agents/shepherd)** — An agent orchestration project for coordinating development tasks and specialized workers.
 - **[YYLO](https://github.com/yylo-dev/yylo)** — A CLI for orchestrating coding agents with plugins, evidence capture, and longitudinal workflows.
-- **[Orbi](https://github.com/orbi-build/orbi)** — An issue-to-merge delivery harness for GitHub ([site](https://orbi.build/?ref=dir-gloriaameng)): an `ai-ready` Issue is implemented in an isolated worktree, opened as a PR, independently reviewed by a separate AI session, fixed, and merged only after review and CI pass; GitHub Issues are the only state store.
+- **[Orbi](https://github.com/orbi-build/orbi)** — An issue-to-PR delivery harness for GitHub ([site](https://orbi.build/)): manages tasks through GitHub Issues, implements changes in isolated worktrees, and uses a separate AI session for review and fixes before applying merge gates.
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's earlier open-source terminal agent. Its consumer service migrated to Antigravity CLI in June 2026; the repository remains useful as an architectural lineage. [Migration notice](https://github.com/google-gemini/gemini-cli/discussions/27274)
 
 #### Long-horizon and domain-specific harnesses
@@ -476,7 +476,7 @@ The hardest harness problems appear where execution, context, state, permissions
 - <u>HarnessAudit-Bench</u>†: **"Auditing Agent Harness Safety"**. *Liu et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2605.14271)]
 - <u>AgentSWE</u>†: **"AgentSWE: Can Coding Agents Build the Agent You Actually Want?"**. *Wang et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2610.13361)]
 - <u>EC2-Bench</u>†: **"Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution"**. *Huang et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2610.17816)] [[Code](https://github.com/OpenBMB/EC2-Bench)] [[Project](https://passionate11.github.io/ec2-bench-project-page/)]
-- <u>SciΠvot</u>†: **"SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents"**. *Sun et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2610.21082)] [[Code](https://github.com/AutoResearch-Factory/SciPIvot)] [[Project](https://autoresearch-factory.github.io/SciPIvot/)]
+- <u>SciΠvot</u>†: **"SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents"**. *Sun et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2610.21082)] [[Code](https://github.com/AutoResearch-Factory/SciPIvot)] [[Project](https://autoresearch-factory.github.io/SciPIvot/)] — Evaluates scientific judgment by choosing between original and human-corrected research plans against frozen project records; full records require acceptance of the Hugging Face access terms.
 
 #### Protocol Standardization
 
@@ -695,7 +695,7 @@ This is an **opinionated research index**. An entry belongs when it contributes 
 - **Keep experimental units separate:** model, harness, environment, task, budget, and evaluator should be named independently.
 - **Keep layers separate:** full harnesses, capability modules, security layers, task environments, and evaluation runners are cataloged in their own categories.
 - **Track uncertainty:** `Unverified` records insufficient public evidence; an `Absent` rating requires explicit first-party evidence.
-- **Record the cutoff:** ratings reflect public evidence available through **2026-10-13** and may change as systems evolve.
+- **Record the cutoff:** the comparison matrix and manuscript-review evidence index are frozen at **2026-10-13**. Later directory and bibliography additions are reviewed incrementally; inclusion does not update matrix ratings or imply incorporation into the published paper.
 
 ---
 
@@ -703,7 +703,7 @@ This is an **opinionated research index**. An entry belongs when it contributes 
 
 | Artifact | Current version | Date / cutoff | Status |
 |---|---|---|---|
-| Resource index | **2026.10** | Evidence reviewed through **2026-10-13** | This README; last updated **2026-10-14** |
+| Resource index | **2026.10** | Matrix and manuscript-review evidence index cutoff: **2026-10-13** | Living directory; incremental entries reviewed through **2026-10-29** |
 | Repository paper | **v4** | 2026-04-14 | [Public PDF](./Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf) |
 | Archived preprint | **v3** | 2026-04-09 | [DOI record](https://doi.org/10.20944/preprints202604.0428.v3) |
 | Paper v5 | In revision | — | The manuscript, figures, and references are under review |
@@ -728,6 +728,7 @@ Corrections and suggestions: gloriamenng@gmail.com · wangyanan@mail.dlut.edu.cn
 
 | Track | Version | Date | Changes |
 |---|---|---|---|
+| Resource index | **2026.10** | 2026-10-29 | Incrementally reviewed and added Orbi, SciΠvot, booking-truth, and TabAgent; synchronized both READMEs and clarified the matrix and manuscript-review evidence cutoff |
 | Resource index | **2026.10** | 2026-10-14 | Restored the paper title, citation, and survey narrative; reduced the header to stars, total references, and license; expanded the open evidence matrix from 20 to 34 systems, including eight workplace and personal-agent routes; added April–October systems, benchmarks, architecture reports, and a categorized full directory; rewrote the Chinese README with standard terminology and natural formal prose |
 | Paper | **v4** | 2026-04-14 | Current repository PDF; predates the 2026.10 resource index |
 | Archived preprint | **v3** | 2026-04-09 | DOI-linked public preprint |
