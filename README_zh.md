@@ -372,6 +372,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[AgentCompass](https://arxiv.org/abs/2607.13705)** — 将基准、harness 与环境明确为不同的实验单元。
 - **[Harbor](https://github.com/harbor-framework/harbor)** — 在容器化数据集中运行可替换的智能体与模型，并记录轨迹和并行试验。
 - **[HAL](https://arxiv.org/abs/2510.11977)** — 为智能体评测提供统一的执行与排行榜基础设施。
+- **[booking-truth](https://github.com/B0yko/booking-truth)** — 根据沙箱日历与 CRM 的状态评测预约智能体，分别注入写入已提交和未提交时的超时故障，以检验重试保护机制；真实服务适配器尚未经在线验证。
 
 ### 任务环境
 

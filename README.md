@@ -372,6 +372,7 @@ Environment drift, task ambiguity and harness coupling can complicate attributio
 - **[AgentCompass](https://arxiv.org/abs/2607.13705)** — Makes benchmark, harness, and environment explicit experimental units.
 - **[Harbor](https://github.com/harbor-framework/harbor)** — Runs interchangeable agents and models in containerized datasets with traces and parallel rollouts.
 - **[HAL](https://arxiv.org/abs/2510.11977)** — Supplies unified execution and leaderboard infrastructure for agent evaluation.
+- **[booking-truth](https://github.com/B0yko/booking-truth)** — Tests appointment agents against sandbox calendar and CRM state, with separate post-commit and non-committed timeout faults for evaluating retry guards; live-service adapters remain unverified.
 
 ### Task environments
 
