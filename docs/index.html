@@ -13,7 +13,7 @@
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Agent Harness survey home" data-i18n-aria="home">AH<span>/</span>S</a>
+    <a class="wordmark" href="#top" aria-label="Agent Harness survey home" data-i18n-aria="home">Agent Harness Survey</a>
     <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="primaryNav">
       <a href="#argument" data-i18n="navArgument">Argument</a>
       <a href="#framework" data-i18n="navFramework">Framework</a>
@@ -41,7 +41,7 @@
           <span class="revision-status" data-i18n="v5Status">Paper v5 in revision</span>
         </div>
       </div>
-      <figure class="hero-figure p2-figure"><a href="./assets/architecture_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/architecture_p2.png" loading="lazy" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence" data-i18n-alt="p2_0Alt"></a><figcaption data-i18n="p2_0Caption">The harness governs repeated action, context, state and evidence. Lifecycle hooks are representative; V exports events and trajectories rather than assigning scores. The robot illustrates execution.</figcaption></figure>
+      <figure class="hero-figure p2-figure"><a href="./assets/architecture_p2_clean.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/architecture_p2_clean.png" loading="lazy" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence" data-i18n-alt="p2_0Alt"></a><figcaption data-i18n="p2_0Caption">The harness governs repeated action, context, state and evidence. Lifecycle hooks are representative; V exports events and trajectories rather than assigning scores. The robot illustrates execution.</figcaption></figure>
     </section>
 
     <section class="paper-section page-wrap" id="argument" aria-labelledby="argument-title">
@@ -84,7 +84,7 @@
         <p class="section-intro" data-i18n="systemsIntro">Thirty-four systems assessed against the same six functions. The matrix cutoff is 2026-10-12; per-source access dates are shown in the evidence details. Ratings do not measure quality, adoption, or production maturity.</p>
       </div>
       <figure class="wide-figure taxonomy-figure p2-figure"><a href="./assets/landscape_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/landscape_p2.png" loading="lazy" alt="Five runtime comparison groups and four adjacent analysis units" data-i18n-alt="p2_3Alt"></a><figcaption data-i18n="p2_3Caption">The 34-system comparison set uses five reporting groups (4/10/5/7/8); names shown are selective examples except for the four anchors. The four adjacent analysis units are outside this runtime matrix. Membership does not establish performance or safety.</figcaption></figure>
-<figure class="wide-figure coverage-figure p2-figure"><a href="./assets/component_matrix_p2.svg" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/component_matrix_p2.svg" loading="lazy" alt="Documentation-backed component coverage for 34 systems" data-i18n-alt="p2_4Alt"></a><figcaption data-i18n="p2_4Caption">Documentation-backed ETCSLV coverage for the same 34 systems as the table below. Figure cell labels F/P/A/? correspond to Full/Partial/Absent/Unverified; group codes are separate. Coverage is not a performance, quality or safety ranking. Open the full-resolution image for individual cells.</figcaption></figure>
+<details class="figure-overview"><summary data-i18n="coverageOverview">View the full component-coverage figure</summary><figure class="wide-figure coverage-figure p2-figure"><a href="./assets/component_matrix_p2.svg" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/component_matrix_p2.svg" loading="lazy" alt="Documentation-backed component coverage for 34 systems" data-i18n-alt="p2_4Alt"></a><figcaption data-i18n="p2_4Caption">Documentation-backed ETCSLV coverage for the same 34 systems as the table below. Figure cell labels F/P/A/? correspond to Full/Partial/Absent/Unverified; group codes are separate. Coverage is not a performance, quality or safety ranking. Open the full-resolution image for individual cells.</figcaption></figure></details>
       <div class="matrix-controls" aria-label="Filter system matrix" data-i18n-aria="matrixControls">
         <label class="search-label" for="system-search" data-i18n="searchLabel">Find a system</label>
         <input id="system-search" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Search by name">
@@ -113,10 +113,11 @@
         <span><b class="rating-dot absent">A</b><span data-i18n="legendAbsent">Absent · explicitly not provided</span></span>
         <span><b class="rating-dot unverified">U</b><span data-i18n="legendUnverified">Unverified · public evidence insufficient</span></span>
       </div>
+<div class="group-actions"><button type="button" id="expand-groups" data-i18n="expandGroups">Expand all groups</button><button type="button" id="collapse-groups" data-i18n="collapseGroups">Collapse all groups</button></div>
       <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable system evidence matrix" data-i18n-aria="matrixRegion">
         <table class="system-table">
           <thead><tr>
-            <th scope="col" data-i18n="thSystem">System</th><th scope="col" data-i18n="thGroup">Group</th>
+            <th scope="col" data-i18n="thSystem">System</th>
             <th scope="col" title="Execution" data-i18n-title="titleE">E</th><th scope="col" title="Tools" data-i18n-title="titleT">T</th><th scope="col" title="Context" data-i18n-title="titleC">C</th><th scope="col" title="State" data-i18n-title="titleS">S</th><th scope="col" title="Lifecycle" data-i18n-title="titleL">L</th><th scope="col" title="Evaluation interface" data-i18n-title="titleV">V</th>
             <th scope="col" data-i18n="thEvidence">Evidence</th>
           </tr></thead>

@@ -101,7 +101,7 @@ h2 { margin: 0; font: 500 clamp(2rem, 3.7vw, 3.3rem)/1.12 var(--serif); letter-s
 .table-scroll { overflow-x: auto; overscroll-behavior-inline: contain; border: 1px solid var(--line); }
 .system-table { width: 100%; min-width: 860px; border-collapse: collapse; font-size: .82rem; }
 .system-table th { padding: .7rem .65rem; background: #f5f7fa; color: var(--ink); text-align: left; font-size: .75rem; font-weight: 650; white-space: nowrap; }
-.system-table th:nth-child(n+3):nth-child(-n+8), .system-table td.rating-cell { width: 3.5rem; text-align: center; }
+.system-table thead th:nth-child(n+2):nth-child(-n+7), .system-table td.rating-cell { width: 3.5rem; text-align: center; }
 .system-table td { padding: .6rem .65rem; border-top: 1px solid #e6ebf0; vertical-align: middle; }
 .system-table tbody tr.data-row:hover { background: #f8fafc; }
 .system-name { color: var(--ink); font-weight: 600; }
@@ -222,3 +222,60 @@ h2 { margin: 0; font: 500 clamp(2rem, 3.7vw, 3.3rem)/1.12 var(--serif); letter-s
 .coverage-figure { max-width: 960px; }
 .agenda-grid { grid-template-columns: 1fr; }
 #engineering h3 { margin-top: 2.5rem; }
+
+/* Compact reading layout: preserve 16px body text and reduce oversized display spacing. */
+body { line-height: 1.5; }
+.hero { padding-top: clamp(1.75rem, 3vw, 2.5rem); }
+h1 { max-width: 30ch; font-size: clamp(2rem, 3.3vw, 3.25rem); line-height: 1.12; letter-spacing: -.025em; }
+h2 { font-size: clamp(1.65rem, 2.4vw, 2.25rem); line-height: 1.18; }
+.authors { margin-top: 1rem; line-height: 1.45; }
+.affiliations { margin-bottom: 1rem; line-height: 1.45; }
+.thesis { font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.45; max-width: 76ch; }
+.paper-status { margin-top: 1rem; }
+.paper-section, .evaluation-section, .latest-section, .agenda-section { padding-block: clamp(1.75rem, 3vw, 2.75rem); }
+.framework-wrap { padding-block: clamp(1.75rem, 3vw, 2.75rem); }
+.section-heading { margin-bottom: 1.2rem; }
+.project-line, .section-kicker { margin-bottom: .5rem; }
+.section-intro { margin-top: .65rem; }
+.argument-lead { font-size: 1.05rem; line-height: 1.5; }
+.argument-grid { gap: 2rem; }
+.p2-figure { max-width: 960px; margin: 1.25rem auto 1.5rem; }
+.hero-figure { max-width: 920px; padding-block: .75rem; }
+.p2-figure figcaption { margin-top: .5rem; line-height: 1.45; font-size: .8125rem; }
+.coverage-figure { max-width: 820px; }
+#engineering h3 { margin-top: 1.5rem; }
+.citation-band { padding-block: 2.5rem; }
+.figure-overview { margin: 1rem 0; border-block: 1px solid var(--line); padding-block: .65rem; }
+.figure-overview summary { cursor: pointer; color: var(--blue); font-weight: 600; padding: .4rem 0; }
+@media (max-width: 650px) {
+ body { font-size: 16px; }
+ h1 { font-size: clamp(1.9rem, 6vw, 2.35rem); }
+ .hero { padding-top: 1.5rem; }
+ .paper-section, .evaluation-section, .latest-section, .agenda-section, .framework-wrap { padding-block: 1.5rem; }
+ .p2-figure { margin-block: 1rem 1.25rem; }
+ .primary-nav { overflow-x: auto; justify-content: flex-start; min-width: 0; }
+ .primary-nav a { white-space: nowrap; min-height: 24px; display: inline-flex; align-items: center; }
+}
+
+.group-actions { display:flex; gap:1rem; margin:.65rem 0; }
+.group-actions button { background:transparent; border:0; padding:.3rem 0; color:var(--blue); font-size:.8125rem; cursor:pointer; text-decoration:underline; text-underline-offset:.2em; }
+.system-group-row th { padding:0!important; background:#edf2f6!important; }
+.system-group-toggle { display:flex; align-items:center; gap:.55rem; width:100%; border:0; padding:.6rem .8rem; background:transparent; color:var(--ink); text-align:left; font-weight:600; cursor:pointer; }
+.system-group-toggle small { border-radius:1rem; background:#dfe7ee; padding:.05rem .5rem; font-weight:400; }
+.system-group-toggle:disabled { cursor:default; opacity:1; }
+.system-table td, .system-table tbody th { padding:.48rem .65rem; }
+.system-table .system-name { background:#fff; }
+
+.framework-section { padding-block: clamp(1.75rem, 3vw, 2.75rem); }
+.framework-wrap { padding-block: 0; }
+.framework-wrap .section-heading { margin-bottom: 1.2rem; }
+.group-actions button:disabled { color: var(--muted); cursor: default; text-decoration: none; }
+@media (max-width:650px) { .framework-section { padding-block:1.5rem; } .framework-wrap { padding-block:0; } }
+
+.system-table { min-width: 590px; }
+.system-table .system-name { width: 30%; }
+.citation-grid > *, .argument-grid > *, .split-heading > * { min-width: 0; }
+.bibtex-block pre { max-width: 100%; }
+
+.wordmark { font: 600 .9rem/1.2 var(--sans); letter-spacing: 0; }
+@media (max-width:650px) { .wordmark { max-width:7rem; white-space:normal; font-size:.8rem; } }

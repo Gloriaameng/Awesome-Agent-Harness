@@ -221,6 +221,7 @@ function rowDetails(system) {
   const dict=copy[language];
   return system.components.map(c=>`<div class="evidence-item"><strong>${c.id} · ${escapeHtml(dict.componentNames[c.id])}</strong><span>${escapeHtml(dict.ratings[c.rating])}</span><span class="confidence">${escapeHtml(confidenceText(c.confidence))} · ${escapeHtml(evidenceText(c.evidenceType))}<br>${escapeHtml(dict.versionLabel)}: ${escapeHtml(c.version)} · ${escapeHtml(dict.accessedLabel)} ${escapeHtml(system.accessDate)}</span><a href="${escapeHtml(c.source)}" target="_blank" rel="noopener noreferrer">${language === "en" ? "Source" : "来源"}</a></div>`).join("");
 }
+let openSystemGroups = new Set(["anchor"]);
 function renderSystems() {
   const dict=copy[language];
   const query=document.getElementById("system-search").value.trim().toLocaleLowerCase();
@@ -228,17 +229,35 @@ function renderSystems() {
   const rating=document.getElementById("rating-filter").value;
   const filtered=systems.filter(s=>s.name.toLocaleLowerCase().includes(query) && (category==="all"||s.category===category) && (rating==="all"||s.components.some(c=>c.rating===rating)));
   const body=document.getElementById("system-rows");
-  body.innerHTML=filtered.map((s,index)=>{
-    const safeId=`evidence-${index}`;
+  const groupOrder=["anchor","coding","runtime","persistent","workplace"];
+  const filtering=query!=="" || category!=="all" || rating!=="all";
+  body.innerHTML=groupOrder.map(group=>{
+    const members=filtered.filter(s=>s.category===group);
+    if(!members.length) return "";
+    const expanded=filtering || openSystemGroups.has(group);
+    const groupHeading=`<tr class="system-group-row"><th colspan="8"><button type="button" class="system-group-toggle" data-group="${group}" aria-expanded="${expanded}" ${filtering?'disabled':''}><span aria-hidden="true">${expanded?'−':'+'}</span> ${escapeHtml(dict.categories[group])} <small>${members.length}</small></button></th></tr>`;
+    if(!expanded) return groupHeading;
+    return groupHeading+members.map((s,index)=>{
+    const safeId=`evidence-${group}-${index}`;
     const ratings=s.components.map(c=>`<td class="rating-cell"><span class="rating-dot ${ratingClass(c.rating)}" aria-label="${escapeHtml(dict.ratings[c.rating])}" title="${escapeHtml(dict.ratings[c.rating])}">${ratingLetter(c.rating)}</span></td>`).join("");
-    return `<tr class="data-row"><th scope="row" class="system-name">${escapeHtml(s.name)}</th><td class="group-label">${escapeHtml(dict.categories[s.category]||s.category)}</td>${ratings}<td><button class="evidence-toggle" type="button" aria-expanded="false" aria-controls="${safeId}" data-show="${escapeHtml(dict.showEvidence)}" data-hide="${escapeHtml(dict.hideEvidence)}">${escapeHtml(dict.showEvidence)}</button></td></tr><tr class="evidence-row" id="${safeId}" hidden><td colspan="9"><div class="evidence-list">${rowDetails(s)}</div></td></tr>`;
+    return `<tr class="data-row"><th scope="row" class="system-name">${escapeHtml(s.name)}</th>${ratings}<td><button class="evidence-toggle" type="button" aria-expanded="false" aria-controls="${safeId}" data-show="${escapeHtml(dict.showEvidence)}" data-hide="${escapeHtml(dict.hideEvidence)}">${escapeHtml(dict.showEvidence)}</button></td></tr><tr class="evidence-row" id="${safeId}" hidden><td colspan="8"><div class="evidence-list">${rowDetails(s)}</div></td></tr>`;
+    }).join("");
   }).join("");
+  body.querySelectorAll(".system-group-toggle").forEach(btn=>btn.addEventListener("click",()=>{
+    const group=btn.dataset.group;
+    if(openSystemGroups.has(group)) openSystemGroups.delete(group); else openSystemGroups.add(group);
+    renderSystems();
+    body.querySelector(`[data-group="${group}"]`).focus({preventScroll:true});
+  }));
   body.querySelectorAll(".evidence-toggle").forEach(btn=>btn.addEventListener("click",()=>{
     const row=document.getElementById(btn.getAttribute("aria-controls"));
     const open=btn.getAttribute("aria-expanded")==="true";
     btn.setAttribute("aria-expanded",String(!open)); row.hidden=open; btn.textContent=open?btn.dataset.show:btn.dataset.hide;
   }));
-  document.getElementById("matrix-count").textContent=dict.filterCount(filtered.length);
+  const visibleCount=body.querySelectorAll(".data-row").length;
+  document.getElementById("matrix-count").textContent=language==="zh" ? `匹配 ${filtered.length} / ${systems.length} 个系统 · 已展开 ${visibleCount} 个` : `${filtered.length} / ${systems.length} matched · ${visibleCount} visible`;
+  document.getElementById("expand-groups").disabled=filtering;
+  document.getElementById("collapse-groups").disabled=filtering;
 }
 
 async function copyBibtex() {
@@ -262,10 +281,16 @@ async function init() {
   document.getElementById("system-search").addEventListener("input",renderSystems);
   document.getElementById("category-filter").addEventListener("change",renderSystems);
   document.getElementById("rating-filter").addEventListener("change",renderSystems);
+  document.getElementById("expand-groups").addEventListener("click",()=>{openSystemGroups=new Set(["anchor","coding","runtime","persistent","workplace"]);renderSystems();});
+  document.getElementById("collapse-groups").addEventListener("click",()=>{openSystemGroups=new Set();renderSystems();});
   document.getElementById("copy-citation").addEventListener("click",copyBibtex);
 }
 
 // Captions and figure scope synchronized with README at c77c747.
 Object.assign(copy.en, {"p2_0Caption": "The harness governs repeated action, context, state and evidence. Lifecycle hooks are representative; V exports events and trajectories rather than assigning scores. The robot illustrates execution.", "p2_0Alt": "Agent harness architecture: execution, tools, context, state, lifecycle and evidence", "p2_1Caption": "An illustrative tool-using path: events, guards, authorization before dispatch, result commitment and guarded retry are distinguished. Direct completion, refusal, cancellation and timeout branches are outside this subset; lanes indicate associated responsibilities.", "p2_1Alt": "Illustrative tool-using execution path", "p2_2Caption": "Representative historical contributions, not an exhaustive timeline or priority claim. Columns denote categorical periods, not proportional elapsed time. Paper dates identify cited publications; software/protocol dates identify cited source records rather than first releases. The convergence is analytical, not a claim of direct causal descent.", "p2_2Alt": "Historical evolution of agent harnesses", "p2_3Caption": "The 34-system comparison set uses five reporting groups (4/10/5/7/8); names shown are selective examples except for the four anchors. The four adjacent analysis units are outside this runtime matrix. Membership does not establish performance or safety.", "p2_3Alt": "Five runtime comparison groups and four adjacent analysis units", "p2_4Caption": "Documentation-backed ETCSLV coverage for the same 34 systems as the table below. Figure cell labels F/P/A/? correspond to Full/Partial/Absent/Unverified; group codes are separate. Coverage is not a performance, quality or safety ranking. Open the full-resolution image for individual cells.", "p2_4Alt": "Documentation-backed component coverage for 34 systems", "p2_5Caption": "Environment drift, task ambiguity and harness coupling can complicate attribution. These are conditional explanatory paths; dashed cross-links describe interactions and lower annotations give controls, not measured effect sizes.", "p2_5Alt": "Three sources of evaluation attribution risk", "p2_6Caption": "Tool governance spans registration, selection, dispatch, execution, result handling and recovery. Schema validity does not establish authorization; returned content remains untrusted, sandboxing is conditional, and logs are not independent audit.", "p2_6Alt": "Tool governance across the execution lifecycle", "p2_7Caption": "Illustrative coordination patterns expose different identity, authority, state-consistency and evidence responsibilities. Patterns can be combined; topology alone does not establish permission separation, isolation or safety.", "p2_7Alt": "Multi-agent coordination patterns and runtime responsibilities", "p2_8Caption": "The reported Meta-Harness optimization loop uses candidate harness code, task evaluation, execution traces and accumulated history to inform later proposals. It illustrates harness-level optimization rather than weight updates or unrestricted recursive improvement; no numerical performance claim is made.", "p2_8Alt": "Reported Meta-Harness code-evaluation-history feedback loop", "openFigure": "Open full-resolution figure", "historyKicker": "Historical evolution", "historyTitle": "Where runtime responsibilities come from", "engineeringKicker": "Cross-cutting engineering", "engineeringTitle": "Tools and collaboration carry runtime obligations", "toolsTitle": "Tool governance across the execution loop", "coordinationTitle": "Coordination patterns and responsibility boundaries", "evolutionKicker": "Harness evolution", "evolutionTitle": "A concrete optimization case: Meta-Harness"});
 Object.assign(copy.zh, {"p2_0Caption": "Harness统筹重复行动、上下文、状态与证据。L展示代表性生命周期介入点；V导出事件与轨迹，不承担结果打分。机器人为执行过程的示意符号。", "p2_0Alt": "Harness 的执行、工具、上下文、状态、生命周期与证据架构", "p2_1Caption": "工具调用子路径示例：区分事件、条件、分发前授权、结果提交和有条件重试。不穷举直接完成、拒绝、取消或超时分支；泳道表示关联职责。", "p2_1Alt": "工具调用子路径中的事件、授权、提交与重试", "p2_2Caption": "本图选择性展示历史贡献，不是完整年表或首创断言。各列为类别时期，不代表等比例时间。论文采用所引出版年，软件与协议采用所引来源记录年，不表示首发；汇聚表示分析综合，不证明直接因果继承。", "p2_2Alt": "Agent harness 的代表性历史贡献", "p2_3Caption": "34个比较系统按五个报告组组织（4／10／5／7／8）。除四个重点系统外，图内名称为代表例子。四类相邻分析单元不计入运行系统矩阵；类别归属不代表性能或安全性。", "p2_3Alt": "五组运行系统与四类相邻分析单元", "p2_4Caption": "与下表相同的34个系统及ETCSLV证据覆盖。图中单元格F／P／A／?分别表示完整／部分／明确缺失／尚未核实，组别代码另计。覆盖情况不是性能、质量或安全排名；单格细节可点击查看原图。", "p2_4Alt": "34 个系统的 ETCSLV 文档证据覆盖", "p2_5Caption": "环境漂移、任务歧义和harness耦合可能影响结果归因。图中为条件性的解释路径；跨列虚线表示交互，下方为控制与诊断建议，不表示已测得的效应大小。", "p2_5Alt": "环境漂移、任务歧义和 harness 耦合带来的归因风险", "p2_6Caption": "工具治理覆盖注册、选择、分发、执行、结果处理与恢复。格式有效不等于行动获权；返回内容仍不可信，沙箱取决于配置，日志不等于独立审计。", "p2_6Alt": "从工具注册到恢复的治理职责", "p2_7Caption": "不同协同模式带来不同的身份、权限、状态一致性和证据责任。模式可以组合；仅有拓扑结构不代表权限分离、执行隔离或安全保证。", "p2_7Alt": "多 Agent 协同模式及身份、权限、状态和证据职责", "p2_8Caption": "Meta-Harness通过候选harness代码、任务评测、执行轨迹与累积历史反馈后续提议。图示为harness层优化，不代表模型权重更新或无约束递归改进，也不作数值性能断言。", "p2_8Alt": "Meta-Harness 的代码、评测、轨迹与历史反馈循环", "openFigure": "打开原尺寸图片", "historyKicker": "历史演进", "historyTitle": "运行时职责从何而来", "engineeringKicker": "贯穿系统的工程问题", "engineeringTitle": "工具调用与协作中的运行时职责", "toolsTitle": "贯穿执行循环的工具治理", "coordinationTitle": "协同模式与责任边界", "evolutionKicker": "Harness 演化", "evolutionTitle": "具体优化案例：Meta-Harness"});
+Object.assign(copy.en, {coverageOverview:"View the full component-coverage figure"});
+Object.assign(copy.zh, {coverageOverview:"展开完整组件覆盖图"});
+Object.assign(copy.en,{expandGroups:"Expand all groups",collapseGroups:"Collapse all groups"});
+Object.assign(copy.zh,{expandGroups:"展开全部组别",collapseGroups:"收起全部组别"});
 init();
