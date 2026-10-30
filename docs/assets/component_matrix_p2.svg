@@ -1,0 +1,516 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="890" viewBox="0 0 1100 890"><rect width="100%" height="100%" fill="white"/>
+<text x="14" y="31" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#263b54" font-weight="bold">Documentation-backed component coverage</text>
+<g transform="translate(1034,7)" fill="none" stroke="#576b85" stroke-width="1.8"><path d="M26,10 V3"/><circle cx="26" cy="2" r="2" fill="#c3b3d0"/><rect x="8" y="11" width="36" height="24" rx="9" fill="#edf1f5"/><rect x="14" y="16" width="24" height="13" rx="5" fill="#44596f"/><circle cx="21" cy="22" r="1.4" fill="#d8e6e1"/><circle cx="31" cy="22" r="1.4" fill="#d8e6e1"/></g><g transform="translate(0,55)">
+<text x="14" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">Group / system</text>
+<text x="361" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">E</text>
+<text x="395" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">T</text>
+<text x="429" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">C</text>
+<text x="463" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">S</text>
+<text x="497" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">L</text>
+<text x="531" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">V</text>
+<rect x="10" y="42" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">A</text>
+<text x="43" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">Claude Code</text>
+<rect x="345" y="44" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="44" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="44" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="44" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="463" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="481" y="44" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="44" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="14" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">A</text>
+<text x="43" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">Codex</text>
+<rect x="345" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="82" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="10" y="118" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">A</text>
+<text x="43" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">DeepSeek Harness</text>
+<rect x="345" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="120" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="14" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">A</text>
+<text x="43" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">OpenClaw</text>
+<rect x="345" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="158" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="10" y="194" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Antigravity CLI</text>
+<rect x="345" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="196" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="14" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">OpenCode</text>
+<rect x="345" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="234" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="10" y="270" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Goose</text>
+<rect x="345" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="272" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="429" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="447" y="272" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="463" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="481" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="272" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="14" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Grok Build</text>
+<rect x="345" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="310" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="10" y="346" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Cline</text>
+<rect x="345" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="348" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="429" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="447" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="348" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="14" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">OpenHands</text>
+<rect x="345" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="386" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="10" y="422" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Deep Agents</text>
+<rect x="345" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="531" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="14" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Prime Agent</text>
+<rect x="345" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="462" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="497" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="515" y="462" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="531" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="10" y="498" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">GitHub Copilot / VS Code</text>
+<rect x="345" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="531" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="14" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">C</text>
+<text x="43" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">MiMo-Code</text>
+<rect x="345" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="531" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="10" y="574" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">G</text>
+<text x="43" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">OpenAI Agents SDK</text>
+<rect x="345" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="531" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="14" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">G</text>
+<text x="43" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Google ADK</text>
+<rect x="345" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="531" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="10" y="650" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="14" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">G</text>
+<text x="43" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Microsoft Agent Framework</text>
+<rect x="345" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="361" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="379" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="395" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="413" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="429" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="447" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="463" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="481" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="497" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="515" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="531" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="564" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">Group / system</text>
+<text x="911" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">E</text>
+<text x="945" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">T</text>
+<text x="979" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">C</text>
+<text x="1013" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">S</text>
+<text x="1047" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">L</text>
+<text x="1081" y="28" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="middle">V</text>
+<rect x="560" y="42" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">G</text>
+<text x="593" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">LangGraph</text>
+<rect x="895" y="44" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="44" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="945" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="963" y="44" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="979" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="997" y="44" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="44" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1047" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="1065" y="44" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="564" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">G</text>
+<text x="593" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Mastra</text>
+<rect x="895" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="82" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="106" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="560" y="118" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">DeerFlow</text>
+<rect x="895" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="120" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="120" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="144" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="564" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">AOHP</text>
+<rect x="895" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="158" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="158" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="182" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="560" y="194" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Omnigent</text>
+<rect x="895" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="196" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="979" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="997" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="196" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="196" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="220" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="564" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">TrueForge</text>
+<rect x="895" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="234" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="258" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="560" y="270" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">LongHorizon-Harness</text>
+<rect x="895" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="272" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="945" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="963" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="272" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="296" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="564" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Hermes Agent</text>
+<rect x="895" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="310" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="334" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="560" y="346" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">P</text>
+<text x="593" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">SandBase</text>
+<rect x="895" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="348" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="979" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<rect x="997" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="348" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="372" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="564" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">WorkBuddy</text>
+<rect x="895" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="386" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="410" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="560" y="422" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Muse</text>
+<rect x="895" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="424" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="424" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="448" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="564" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Amazon Quick</text>
+<rect x="895" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="462" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="560" y="498" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">OpenAI Workspace Agents</text>
+<rect x="895" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="500" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="500" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="524" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="564" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">QwenWork</text>
+<rect x="895" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="538" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="538" width="32" height="33" rx="3" fill="#e5e2eb" stroke="none"/>
+<text x="1081" y="562" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#554d6b" font-weight="bold" text-anchor="middle">?</text>
+<rect x="560" y="574" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">OpenAI dots</text>
+<rect x="895" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="576" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="576" width="32" height="33" rx="3" fill="#ede2cb" stroke="none"/>
+<text x="1081" y="600" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#715c35" font-weight="bold" text-anchor="middle">P</text>
+<text x="564" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">Grok Bot</text>
+<rect x="895" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="614" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="614" width="32" height="33" rx="3" fill="#e5e2eb" stroke="none"/>
+<text x="1081" y="638" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#554d6b" font-weight="bold" text-anchor="middle">?</text>
+<rect x="560" y="650" width="538" height="37" rx="3" fill="#f4f7fa" stroke="none"/>
+<text x="564" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#44596f" font-weight="bold" text-anchor="start">W</text>
+<text x="593" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="normal" text-anchor="start">OpenJarvis</text>
+<rect x="895" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="911" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="929" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="945" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="963" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="979" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="997" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1013" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1031" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1047" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<rect x="1065" y="652" width="32" height="33" rx="3" fill="#d8e6e1" stroke="none"/>
+<text x="1081" y="676" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#285951" font-weight="bold" text-anchor="middle">F</text>
+<text x="14" y="716" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#263b54" font-weight="bold" text-anchor="start">F Full    P Partial    A Absent    ? Unverified</text>
+<text x="14" y="749" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#263b54" font-weight="normal" text-anchor="start">A Anchor cases    C Coding    G General    P Persistent / meta / ops    W Workplace / personal</text>
+<text x="14" y="782" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#263b54" font-weight="normal" text-anchor="start">E Execution   T Tools   C Context   S State   L Lifecycle   V Evaluation interface</text>
+<text x="14" y="815" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#44596f" font-weight="normal" text-anchor="start">Frozen evidence: 13 Oct 2026. Documented coverage, not a performance or safety ranking.</text>
+</g></svg>

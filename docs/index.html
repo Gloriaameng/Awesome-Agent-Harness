@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agent Harness for Large Language Model Agents: A Survey — paper, framework, systems, evaluation, and research agenda.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Agent Harness for Large Language Model Agents: A Survey</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./systems-data.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Agent Harness survey home" data-i18n-aria="home">AH<span>/</span>S</a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="primaryNav">
+      <a href="#argument" data-i18n="navArgument">Argument</a>
+      <a href="#framework" data-i18n="navFramework">Framework</a>
+      <a href="#systems" data-i18n="navSystems">Systems</a>
+      <a href="#evaluation" data-i18n="navEvaluation">Evaluation</a>
+      <a href="#latest-research" data-i18n="navResearch">Research</a>
+    </nav>
+    <div class="header-actions">
+      <a class="github-link" href="https://github.com/Gloriaameng/Awesome-Agent-Harness" target="_blank" rel="noopener noreferrer" data-i18n="github">GitHub repository</a>
+      <button class="language-toggle" type="button" id="language-toggle" aria-label="Switch language to Chinese" aria-pressed="false">中文</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-wrap" id="top" aria-labelledby="paper-title">
+      <div class="hero-copy">
+        <p class="project-line" data-i18n="projectLine">A survey of agent runtimes · 2026</p>
+        <h1 id="paper-title" data-i18n="title">Agent Harness for Large Language Model Agents: A Survey</h1>
+        <p class="authors">Qianyu Meng, Yanan Wang, Liyi Chen, Yihang Li, Wei Wu, Wenyuan Jiang, Qimeng Wang, Chengqiang Lu, Yan Gao, Yi Wu, Yao Hu</p>
+        <p class="affiliations" data-i18n="affiliations">Minzu University of China · Dalian University of Technology · Xiaohongshu Inc. · University of Science and Technology of China</p>
+        <p class="thesis" data-i18n="thesis">Agent capability should be analyzed at the model–harness–environment configuration level. The harness is a consequential and frequently under-reported co-determinant of observed behavior.</p>
+        <div class="paper-status" aria-label="Paper and project links" data-i18n-aria="paperLinks">
+          <a class="primary-link" href="https://github.com/Gloriaameng/Awesome-Agent-Harness/blob/main/Agent_Harness_for_LLM_Agents__A_Survey__v4.pdf" target="_blank" rel="noopener noreferrer" data-i18n="paperV4">Read Paper v4</a>
+          <a href="https://doi.org/10.20944/preprints202604.0428.v3" target="_blank" rel="noopener noreferrer" data-i18n="doiV3">DOI · archived v3</a>
+          <span class="revision-status" data-i18n="v5Status">Paper v5 in revision</span>
+        </div>
+      </div>
+      <figure class="hero-figure p2-figure"><a href="./assets/architecture_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/architecture_p2.png" loading="lazy" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence" data-i18n-alt="p2_0Alt"></a><figcaption data-i18n="p2_0Caption">The harness governs repeated action, context, state and evidence. Lifecycle hooks are representative; V exports events and trajectories rather than assigning scores. The robot illustrates execution.</figcaption></figure>
+    </section>
+
+    <section class="paper-section page-wrap" id="argument" aria-labelledby="argument-title">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="argumentKicker">The paper</p>
+        <h2 id="argument-title" data-i18n="argumentTitle">A runtime layer made visible</h2>
+      </div>
+      <div class="argument-grid">
+        <div class="argument-lead">
+          <p data-i18n="argumentLead">Agent scores usually combine a model with its tools, context policy, state, permissions, environment, and evaluator. This survey makes that surrounding runtime a first-class object of analysis.</p>
+          <a class="text-link" href="https://github.com/Gloriaameng/Awesome-Agent-Harness" target="_blank" rel="noopener noreferrer" data-i18n="resourceIndex">Explore the living evidence index</a>
+        </div>
+        <ol class="contribution-list" id="contributions"></ol>
+      </div>
+    </section>
+
+    <section class="framework-section" id="framework" aria-labelledby="framework-title">
+      <div class="page-wrap framework-wrap">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="frameworkKicker">Analytical framework</p>
+          <h2 id="framework-title" data-i18n="frameworkTitle">Six functions. One runtime.</h2>
+          <p class="section-intro" data-i18n="frameworkIntro">ETCSLV is a functional vocabulary for recurring governance responsibilities. It describes coverage and responsibility boundaries, not a maturity score.</p>
+        </div>
+        <div class="function-picker" role="group" aria-label="ETCSLV functions" data-i18n-aria="etcslvLabel" id="function-picker"></div>
+        <div class="function-explanation" id="function-explanation" role="status" aria-live="polite"></div>
+        <figure class="wide-figure lifecycle-figure p2-figure"><a href="./assets/step_state_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/step_state_p2.png" loading="lazy" alt="Illustrative tool-using execution path" data-i18n-alt="p2_1Alt"></a><figcaption data-i18n="p2_1Caption">An illustrative tool-using path: events, guards, authorization before dispatch, result commitment and guarded retry are distinguished. Direct completion, refusal, cancellation and timeout branches are outside this subset; lanes indicate associated responsibilities.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="paper-section page-wrap" id="history" aria-labelledby="history-title">
+<div class="section-heading"><p class="section-kicker" data-i18n="historyKicker">Historical evolution</p><h2 id="history-title" data-i18n="historyTitle">Where runtime responsibilities come from</h2></div>
+<figure class="wide-figure p2-figure"><a href="./assets/timeline_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/timeline_p2.png" loading="lazy" alt="Historical evolution of agent harnesses" data-i18n-alt="p2_2Alt"></a><figcaption data-i18n="p2_2Caption">Representative historical contributions, not an exhaustive timeline or priority claim. Columns denote categorical periods, not proportional elapsed time. Paper dates identify cited publications; software/protocol dates identify cited source records rather than first releases. The convergence is analytical, not a claim of direct causal descent.</figcaption></figure>
+</section>
+    <section class="paper-section page-wrap" id="systems" aria-labelledby="systems-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="section-kicker" data-i18n="systemsKicker">System landscape</p>
+          <h2 id="systems-title" data-i18n="systemsTitle">Evidence-coded system comparison</h2>
+        </div>
+        <p class="section-intro" data-i18n="systemsIntro">Thirty-four systems assessed against the same six functions. The matrix cutoff is 2026-10-12; per-source access dates are shown in the evidence details. Ratings do not measure quality, adoption, or production maturity.</p>
+      </div>
+      <figure class="wide-figure taxonomy-figure p2-figure"><a href="./assets/landscape_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/landscape_p2.png" loading="lazy" alt="Five runtime comparison groups and four adjacent analysis units" data-i18n-alt="p2_3Alt"></a><figcaption data-i18n="p2_3Caption">The 34-system comparison set uses five reporting groups (4/10/5/7/8); names shown are selective examples except for the four anchors. The four adjacent analysis units are outside this runtime matrix. Membership does not establish performance or safety.</figcaption></figure>
+<figure class="wide-figure coverage-figure p2-figure"><a href="./assets/component_matrix_p2.svg" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/component_matrix_p2.svg" loading="lazy" alt="Documentation-backed component coverage for 34 systems" data-i18n-alt="p2_4Alt"></a><figcaption data-i18n="p2_4Caption">Documentation-backed ETCSLV coverage for the same 34 systems as the table below. Figure cell labels F/P/A/? correspond to Full/Partial/Absent/Unverified; group codes are separate. Coverage is not a performance, quality or safety ranking. Open the full-resolution image for individual cells.</figcaption></figure>
+      <div class="matrix-controls" aria-label="Filter system matrix" data-i18n-aria="matrixControls">
+        <label class="search-label" for="system-search" data-i18n="searchLabel">Find a system</label>
+        <input id="system-search" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Search by name">
+        <label class="filter-label" for="category-filter" data-i18n="groupLabel">Group</label>
+        <select id="category-filter">
+          <option value="all" data-i18n="allGroups">All groups</option>
+          <option value="anchor" data-i18n="groupAnchor">Anchor systems</option>
+          <option value="coding" data-i18n="groupCoding">Coding harnesses</option>
+          <option value="runtime" data-i18n="groupRuntime">General runtimes</option>
+          <option value="persistent" data-i18n="groupPersistent">Persistent, meta, and operational</option>
+          <option value="workplace" data-i18n="groupWorkplace">Workplace and personal agents</option>
+        </select>
+        <label class="filter-label" for="rating-filter" data-i18n="ratingLabel">Contains rating</label>
+        <select id="rating-filter">
+          <option value="all" data-i18n="anyRating">Any rating</option>
+          <option value="Full" data-i18n="ratingFull">Full</option>
+          <option value="Partial" data-i18n="ratingPartial">Partial</option>
+          <option value="Absent" data-i18n="ratingAbsent">Absent</option>
+          <option value="Unverified" data-i18n="ratingUnverified">Unverified</option>
+        </select>
+        <p id="matrix-count" class="matrix-count" aria-live="polite"></p>
+      </div>
+      <div class="legend" aria-label="Rating legend" data-i18n-aria="ratingLegend">
+        <span><b class="rating-dot full">F</b><span data-i18n="legendFull">Full · built in and documented</span></span>
+        <span><b class="rating-dot partial">P</b><span data-i18n="legendPartial">Partial · limited, optional, or delegated</span></span>
+        <span><b class="rating-dot absent">A</b><span data-i18n="legendAbsent">Absent · explicitly not provided</span></span>
+        <span><b class="rating-dot unverified">U</b><span data-i18n="legendUnverified">Unverified · public evidence insufficient</span></span>
+      </div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable system evidence matrix" data-i18n-aria="matrixRegion">
+        <table class="system-table">
+          <thead><tr>
+            <th scope="col" data-i18n="thSystem">System</th><th scope="col" data-i18n="thGroup">Group</th>
+            <th scope="col" title="Execution" data-i18n-title="titleE">E</th><th scope="col" title="Tools" data-i18n-title="titleT">T</th><th scope="col" title="Context" data-i18n-title="titleC">C</th><th scope="col" title="State" data-i18n-title="titleS">S</th><th scope="col" title="Lifecycle" data-i18n-title="titleL">L</th><th scope="col" title="Evaluation interface" data-i18n-title="titleV">V</th>
+            <th scope="col" data-i18n="thEvidence">Evidence</th>
+          </tr></thead>
+          <tbody id="system-rows"></tbody>
+        </table>
+      </div>
+      <p class="matrix-note" data-i18n="matrixNote">The comparison set is evidence-driven, not a ranking. Expand a row to inspect first-party sources, version identifiers, confidence, and access date for each component.</p>
+      <p class="data-download"><a href="./systems.json" download="agent-harness-system-evidence.json" data-i18n="downloadMatrix">Download the matrix data (JSON)</a></p>
+    </section>
+
+    <section class="paper-section page-wrap" id="engineering" aria-labelledby="engineering-title">
+<div class="section-heading"><p class="section-kicker" data-i18n="engineeringKicker">Cross-cutting engineering</p><h2 id="engineering-title" data-i18n="engineeringTitle">Tools and collaboration carry runtime obligations</h2></div>
+<h3 data-i18n="toolsTitle">Tool governance across the execution loop</h3>
+<figure class="wide-figure p2-figure"><a href="./assets/tool_governance_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/tool_governance_p2.png" loading="lazy" alt="Tool governance across the execution lifecycle" data-i18n-alt="p2_6Alt"></a><figcaption data-i18n="p2_6Caption">Tool governance spans registration, selection, dispatch, execution, result handling and recovery. Schema validity does not establish authorization; returned content remains untrusted, sandboxing is conditional, and logs are not independent audit.</figcaption></figure><h3 data-i18n="coordinationTitle">Coordination patterns and responsibility boundaries</h3><figure class="wide-figure p2-figure"><a href="./assets/multi_agent_topology_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/multi_agent_topology_p2.png" loading="lazy" alt="Multi-agent coordination patterns and runtime responsibilities" data-i18n-alt="p2_7Alt"></a><figcaption data-i18n="p2_7Caption">Illustrative coordination patterns expose different identity, authority, state-consistency and evidence responsibilities. Patterns can be combined; topology alone does not establish permission separation, isolation or safety.</figcaption></figure>
+</section>
+    <section class="evaluation-section" id="evaluation" aria-labelledby="evaluation-title">
+      <div class="page-wrap">
+        <div class="section-heading split-heading">
+          <div><p class="section-kicker" data-i18n="evaluationKicker">Evaluation landscape</p><h2 id="evaluation-title" data-i18n="evaluationTitle">Six areas of harness evaluation</h2></div>
+          <p class="section-intro" data-i18n="evaluationIntro">The categories include benchmark suites, evaluation methods, and infrastructure. They ask different questions and should not be read as six equivalent benchmark types.</p>
+        </div>
+        <figure class="wide-figure evaluation-figure p2-figure"><a href="./assets/evaluation_attribution_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/evaluation_attribution_p2.png" loading="lazy" alt="Three sources of evaluation attribution risk" data-i18n-alt="p2_5Alt"></a><figcaption data-i18n="p2_5Caption">Environment drift, task ambiguity and harness coupling can complicate attribution. These are conditional explanatory paths; dashed cross-links describe interactions and lower annotations give controls, not measured effect sizes.</figcaption></figure>
+        <div class="evaluation-list" id="evaluation-list"></div>
+        <p class="task-environment-note" data-i18n="taskEnvironmentNote">Task environments such as OSWorld, WebArena, GAIA, and SWE-bench remain essential. They measure configured-system task performance; a harness-effect study adds controls that isolate runtime changes.</p>
+      </div>
+    </section>
+
+    <section class="latest-section" id="latest-research" aria-labelledby="latest-title">
+      <div class="page-wrap">
+        <div class="section-heading split-heading">
+          <div><p class="section-kicker" data-i18n="latestKicker">Literature update</p><h2 id="latest-title" data-i18n="latestTitle">Latest research</h2></div>
+          <p class="section-intro" data-i18n="latestIntro">A targeted literature check on 18 October 2026 adds seven works across benchmarks, methods, implementation testing, and security. This supplement is not a complete benchmark census. The 34-system matrix remains a 12 October snapshot.</p>
+        </div>
+        <div class="latest-list" id="latest-list"></div>
+      </div>
+    </section>
+
+    <section class="paper-section page-wrap" id="evolution" aria-labelledby="evolution-title">
+<div class="section-heading"><p class="section-kicker" data-i18n="evolutionKicker">Harness evolution</p><h2 id="evolution-title" data-i18n="evolutionTitle">A concrete optimization case: Meta-Harness</h2></div>
+<figure class="wide-figure p2-figure"><a href="./assets/meta_harness_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/meta_harness_p2.png" loading="lazy" alt="Reported Meta-Harness code-evaluation-history feedback loop" data-i18n-alt="p2_8Alt"></a><figcaption data-i18n="p2_8Caption">The reported Meta-Harness optimization loop uses candidate harness code, task evaluation, execution traces and accumulated history to inform later proposals. It illustrates harness-level optimization rather than weight updates or unrestricted recursive improvement; no numerical performance claim is made.</figcaption></figure>
+</section>
+    <section class="paper-section page-wrap agenda-section" id="agenda" aria-labelledby="agenda-title">
+      <div class="agenda-grid">
+        <div>
+          <p class="section-kicker" data-i18n="agendaKicker">Research agenda</p>
+          <h2 id="agenda-title" data-i18n="agendaTitle">From component coverage to testable effects</h2>
+          <p class="section-intro" data-i18n="agendaIntro">The next step is controlled evidence about interactions, persistence, authority, and change—not a larger feature checklist.</p>
+          <ul class="agenda-list" id="agenda-list"></ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="citation-band" id="cite" aria-labelledby="cite-title">
+      <div class="page-wrap citation-grid">
+        <div>
+          <p class="section-kicker" data-i18n="citationKicker">Citation</p>
+          <h2 id="cite-title" data-i18n="citationTitle">Cite the archived preprint</h2>
+          <p class="citation-note" data-i18n="citationNote">The repository PDF is v4. DOI 10.20944/preprints202604.0428.v3 resolves to the archived v3 preprint. Paper v5 is under revision and is not linked here.</p>
+          <a class="text-link" href="https://doi.org/10.20944/preprints202604.0428.v3" target="_blank" rel="noopener noreferrer" data-i18n="doiLink">Open DOI record</a>
+        </div>
+        <div class="bibtex-block">
+          <div class="bibtex-heading"><span>BibTeX</span><button type="button" id="copy-citation" data-i18n="copyCitation">Copy citation</button></div>
+          <pre><code id="bibtex">@article{meng2026agentharness,
+  title     = {Agent Harness for Large Language Model Agents: A Survey},
+  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wu, Wei and
+               Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and
+               Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},
+  year      = {2026},
+  doi       = {10.20944/preprints202604.0428.v3},
+  url       = {https://www.preprints.org/manuscript/202604.0428/v3},
+  publisher = {Preprints}
+}</code></pre>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-wrap">
+    <span data-i18n="footerProject">Official survey repository and living evidence index</span>
+    <a href="https://github.com/Gloriaameng/Awesome-Agent-Harness" target="_blank" rel="noopener noreferrer">Gloriaameng/Awesome-Agent-Harness</a>
+    <span data-i18n="footerCutoff">System matrix snapshot: 12 October 2026; source access dates are recorded per row.</span>
+  </footer>
+</body>
+</html>

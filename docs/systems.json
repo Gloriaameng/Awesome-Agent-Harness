@@ -1,0 +1,2087 @@
+{
+  "cutoff": "2026-10-12",
+  "componentOrder": [
+    "E",
+    "T",
+    "C",
+    "S",
+    "L",
+    "V"
+  ],
+  "systems": [
+    {
+      "name": "Claude Code",
+      "category": "anchor",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/anthropics/claude-code/blob/3deb873687379f0c199a69fdaccc65f0865f7a29/README.md",
+          "version": "3deb873687379f0c199a69fdaccc65f0865f7a29",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Interactive coding-agent turn loop and delegated agents."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/anthropics/claude-code/blob/3deb873687379f0c199a69fdaccc65f0865f7a29/README.md",
+          "version": "3deb873687379f0c199a69fdaccc65f0865f7a29",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Built-in repository, shell, web, and MCP tools; plugin commands extend the registry."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/anthropics/claude-code/blob/3deb873687379f0c199a69fdaccc65f0865f7a29/README.md",
+          "version": "3deb873687379f0c199a69fdaccc65f0865f7a29",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Project instructions, conversation/tool results, skills, subagents, and compaction shape model input."
+        },
+        {
+          "id": "S",
+          "rating": "Partial",
+          "source": "https://github.com/anthropics/claude-code/blob/3deb873687379f0c199a69fdaccc65f0865f7a29/README.md",
+          "version": "3deb873687379f0c199a69fdaccc65f0865f7a29",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Sessions and checkpoints support continuation, but the public repository does not expose a general state-store contract."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/anthropics/claude-code/blob/3deb873687379f0c199a69fdaccc65f0865f7a29/README.md",
+          "version": "3deb873687379f0c199a69fdaccc65f0865f7a29",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Permission modes, hooks, and sandboxed execution intercept actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/anthropics/claude-code/blob/3deb873687379f0c199a69fdaccc65f0865f7a29/README.md",
+          "version": "3deb873687379f0c199a69fdaccc65f0865f7a29",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Transcripts and observability integrations expose runs; a standalone built-in evaluation interface is limited."
+        }
+      ]
+    },
+    {
+      "name": "Codex",
+      "category": "anchor",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/openai/codex/blob/12cca49c81c8aa6a37a5cc4e39964ee3b70f9458/codex-rs/core/src/codex.rs",
+          "version": "12cca49c81c8aa6a37a5cc4e39964ee3b70f9458",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Core rollout coordinates model responses, tool calls, step completion, retries, and cancellation."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/openai/codex/blob/12cca49c81c8aa6a37a5cc4e39964ee3b70f9458/codex-rs/core/src/tools/registry.rs",
+          "version": "12cca49c81c8aa6a37a5cc4e39964ee3b70f9458",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Typed tool registry dispatches built-ins and MCP tools through common invocation state."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/openai/codex/blob/12cca49c81c8aa6a37a5cc4e39964ee3b70f9458/codex-rs/core/src/compact.rs",
+          "version": "12cca49c81c8aa6a37a5cc4e39964ee3b70f9458",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Context manager and compaction preserve instructions, world state, salient history, and usage metadata."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/openai/codex/blob/12cca49c81c8aa6a37a5cc4e39964ee3b70f9458/codex-rs/core/src/rollout.rs",
+          "version": "12cca49c81c8aa6a37a5cc4e39964ee3b70f9458",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Rollout records and thread storage support resume, archive, fork, and reconstruction."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/openai/codex/blob/12cca49c81c8aa6a37a5cc4e39964ee3b70f9458/codex-rs/core/src/tools/orchestrator.rs",
+          "version": "12cca49c81c8aa6a37a5cc4e39964ee3b70f9458",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Tool orchestration makes approval, sandbox selection, network policy, hooks, and retry explicit."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/openai/codex/blob/12cca49c81c8aa6a37a5cc4e39964ee3b70f9458/codex-rs/app-server/src/request_processors/feedback_rollout_history.rs",
+          "version": "12cca49c81c8aa6a37a5cc4e39964ee3b70f9458",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Structured rollout events and feedback history support inspection; benchmark/evaluator integration remains external."
+        }
+      ]
+    },
+    {
+      "name": "DeepSeek Harness",
+      "category": "anchor",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/deepseek-ai/deepseek-harness/blob/d743267388641bc76f17c45ce8b4c231aed1d32c/docs/architecture.md",
+          "version": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "The agent loop is a replaceable Cordis plugin mounted by a profile."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/deepseek-ai/deepseek-harness/blob/d743267388641bc76f17c45ce8b4c231aed1d32c/packages/core/tools/README.md",
+          "version": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Typed tools use schemas, allow/deny/ask policy, pre/post execution hooks, timeouts, and finalized results."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/deepseek-ai/deepseek-harness/blob/d743267388641bc76f17c45ce8b4c231aed1d32c/docs/subsystems/compaction.md",
+          "version": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Session-derived model surface and optional compaction provide explicit context construction."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/deepseek-ai/deepseek-harness/blob/d743267388641bc76f17c45ce8b4c231aed1d32c/docs/architecture.md",
+          "version": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "The append-only session log and storage services support resume, fork, replay-derived views, and recovery."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/deepseek-ai/deepseek-harness/blob/d743267388641bc76f17c45ce8b4c231aed1d32c/docs/architecture.md",
+          "version": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Cordis effects, credentials, sandbox, approval policy, and ordered patches define reversible lifecycle controls."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/deepseek-ai/deepseek-harness/blob/d743267388641bc76f17c45ce8b4c231aed1d32c/docs/subsystems/session-telemetry.md",
+          "version": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Canonical-event telemetry and reconstructable session records support analysis, while task evaluators are not a complete built-in subsystem."
+        }
+      ]
+    },
+    {
+      "name": "OpenClaw",
+      "category": "anchor",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/openclaw/openclaw/blob/e26de4eeae75da05879deea4f307d4852b2f9439/README.md",
+          "version": "e26de4eeae75da05879deea4f307d4852b2f9439",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Gateway and agent runtime coordinate channel ingress, turns, background work, and scheduled execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/openclaw/openclaw/blob/e26de4eeae75da05879deea4f307d4852b2f9439/README.md",
+          "version": "e26de4eeae75da05879deea4f307d4852b2f9439",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Built-in tools, skills, channel adapters, and extension interfaces form a model-facing capability registry."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/openclaw/openclaw/blob/e26de4eeae75da05879deea4f307d4852b2f9439/README.md",
+          "version": "e26de4eeae75da05879deea4f307d4852b2f9439",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Workspace instructions, memory, conversation state, and tool results are assembled across long-running sessions."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/openclaw/openclaw/blob/e26de4eeae75da05879deea4f307d4852b2f9439/README.md",
+          "version": "e26de4eeae75da05879deea4f307d4852b2f9439",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Gateway sessions, durable workspaces, memory, and scheduled jobs persist beyond one chat turn."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/openclaw/openclaw/blob/e26de4eeae75da05879deea4f307d4852b2f9439/README.md",
+          "version": "e26de4eeae75da05879deea4f307d4852b2f9439",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Channel identity, credentials, tool policy, gateway controls, and sandbox options govern actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/openclaw/openclaw/blob/e26de4eeae75da05879deea4f307d4852b2f9439/README.md",
+          "version": "e26de4eeae75da05879deea4f307d4852b2f9439",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Operational logs and session records support inspection; evaluation is mainly supplied by external tooling."
+        }
+      ]
+    },
+    {
+      "name": "Antigravity CLI",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://antigravity.google/blog/introducing-google-antigravity-2?hl=en",
+          "version": "Antigravity 2 public architecture, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Dynamic subagents, asynchronous tasks, scheduled work, and terminal workflows form the documented loop."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://antigravity.google/blog/introducing-google-antigravity-2?hl=en",
+          "version": "Antigravity 2 public architecture, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Built-in operations, skills, hooks, and project integrations provide the action surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://antigravity.google/blog/introducing-google-antigravity-2?hl=en",
+          "version": "Antigravity 2 public architecture, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Project context, skills, subagent reports, and task state are assembled for model turns."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://antigravity.google/blog/introducing-google-antigravity-2?hl=en",
+          "version": "Antigravity 2 public architecture, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Asynchronous tasks and scheduled work retain task state beyond one interactive turn."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://antigravity.google/blog/introducing-google-antigravity-2?hl=en",
+          "version": "Antigravity 2 public architecture, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Project permissions and hooks mediate actions across terminal and background execution."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://antigravity.google/blog/introducing-google-antigravity-2?hl=en",
+          "version": "Antigravity 2 public architecture, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Task artifacts and operational status are exposed, while a general first-party evaluation interface is not fully documented."
+        }
+      ]
+    },
+    {
+      "name": "OpenCode",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/anomalyco/opencode/blob/df63a72da4b84c9983b6ddca46cd19f10caf4575/README.md",
+          "version": "df63a72da4b84c9983b6ddca46cd19f10caf4575",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Coding-agent runtime drives model turns, edits, commands, and task completion."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/anomalyco/opencode/blob/df63a72da4b84c9983b6ddca46cd19f10caf4575/README.md",
+          "version": "df63a72da4b84c9983b6ddca46cd19f10caf4575",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Provider-agnostic tools and MCP servers are registered for agent use."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/anomalyco/opencode/blob/df63a72da4b84c9983b6ddca46cd19f10caf4575/README.md",
+          "version": "df63a72da4b84c9983b6ddca46cd19f10caf4575",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Project instructions, sessions, tool results, and context compaction shape requests."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/anomalyco/opencode/blob/df63a72da4b84c9983b6ddca46cd19f10caf4575/README.md",
+          "version": "df63a72da4b84c9983b6ddca46cd19f10caf4575",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Persistent sessions and project state allow continuation across invocations."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/anomalyco/opencode/blob/df63a72da4b84c9983b6ddca46cd19f10caf4575/README.md",
+          "version": "df63a72da4b84c9983b6ddca46cd19f10caf4575",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Permission rules gate shell and other actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/anomalyco/opencode/blob/df63a72da4b84c9983b6ddca46cd19f10caf4575/README.md",
+          "version": "df63a72da4b84c9983b6ddca46cd19f10caf4575",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Session logs and share/export surfaces provide run records; evaluators remain external."
+        }
+      ]
+    },
+    {
+      "name": "Goose",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/aaif-goose/goose/blob/69de89c50cc01d4e0187d6645bf3618729873f74/README.md",
+          "version": "69de89c50cc01d4e0187d6645bf3618729873f74",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Desktop, CLI, and API surfaces drive a shared agent execution loop."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/aaif-goose/goose/blob/69de89c50cc01d4e0187d6645bf3618729873f74/README.md",
+          "version": "69de89c50cc01d4e0187d6645bf3618729873f74",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "MCP extensions and built-in capabilities provide the tool layer."
+        },
+        {
+          "id": "C",
+          "rating": "Partial",
+          "source": "https://github.com/aaif-goose/goose/blob/69de89c50cc01d4e0187d6645bf3618729873f74/README.md",
+          "version": "69de89c50cc01d4e0187d6645bf3618729873f74",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Prompt and extension context are supported, but advanced context policy is configuration-dependent."
+        },
+        {
+          "id": "S",
+          "rating": "Partial",
+          "source": "https://github.com/aaif-goose/goose/blob/69de89c50cc01d4e0187d6645bf3618729873f74/README.md",
+          "version": "69de89c50cc01d4e0187d6645bf3618729873f74",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Conversation continuity exists, while general checkpoint/recovery semantics vary by surface and extension."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/aaif-goose/goose/blob/69de89c50cc01d4e0187d6645bf3618729873f74/README.md",
+          "version": "69de89c50cc01d4e0187d6645bf3618729873f74",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Execution approvals and extension controls mediate sensitive actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/aaif-goose/goose/blob/69de89c50cc01d4e0187d6645bf3618729873f74/README.md",
+          "version": "69de89c50cc01d4e0187d6645bf3618729873f74",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Logs and API events support inspection; systematic evaluation is external."
+        }
+      ]
+    },
+    {
+      "name": "Grok Build",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/README.md",
+          "version": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Terminal coding-agent loop coordinates model interaction, edits, commands, and headless runs."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/README.md",
+          "version": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Built-ins, MCP servers, skills, and plugins form the tool surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/README.md",
+          "version": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Repository understanding, skills, prompts, and compaction/context services shape inference."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/README.md",
+          "version": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Workspace, VCS, execution state, and checkpoints provide durable recovery points."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/README.md",
+          "version": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Hooks, sandboxing, and policy/approval paths intercept actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/README.md",
+          "version": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Changelog and run records expose behavior; a general evaluation API is limited."
+        }
+      ]
+    },
+    {
+      "name": "Cline",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/cline/cline/blob/d2cbeea6ff5c627115a8bb3303770e9e538cf607/README.md",
+          "version": "d2cbeea6ff5c627115a8bb3303770e9e538cf607",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "IDE, terminal, desktop, and SDK surfaces execute iterative coding-agent tasks."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/cline/cline/blob/d2cbeea6ff5c627115a8bb3303770e9e538cf607/README.md",
+          "version": "d2cbeea6ff5c627115a8bb3303770e9e538cf607",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "File, terminal, browser, plugin, and MCP capabilities are exposed to the agent."
+        },
+        {
+          "id": "C",
+          "rating": "Partial",
+          "source": "https://github.com/cline/cline/blob/d2cbeea6ff5c627115a8bb3303770e9e538cf607/README.md",
+          "version": "d2cbeea6ff5c627115a8bb3303770e9e538cf607",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Task history and instructions are managed, while deeper compaction/retrieval policy varies across surfaces."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/cline/cline/blob/d2cbeea6ff5c627115a8bb3303770e9e538cf607/README.md",
+          "version": "d2cbeea6ff5c627115a8bb3303770e9e538cf607",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Agent sessions, schedules, and automation state persist across restarts."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/cline/cline/blob/d2cbeea6ff5c627115a8bb3303770e9e538cf607/README.md",
+          "version": "d2cbeea6ff5c627115a8bb3303770e9e538cf607",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Human-in-the-loop approval and host integrations gate tool execution."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/cline/cline/blob/d2cbeea6ff5c627115a8bb3303770e9e538cf607/README.md",
+          "version": "d2cbeea6ff5c627115a8bb3303770e9e538cf607",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "SDK events and task records support inspection; benchmark integration is external."
+        }
+      ]
+    },
+    {
+      "name": "OpenHands",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/OpenHands/OpenHands/blob/d7e14e25bcf14238e566139ec9490e1f05efcd69/README.md",
+          "version": "d7e14e25bcf14238e566139ec9490e1f05efcd69",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Agent server and control center execute coding agents and automations across backends."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/OpenHands/OpenHands/blob/d7e14e25bcf14238e566139ec9490e1f05efcd69/README.md",
+          "version": "d7e14e25bcf14238e566139ec9490e1f05efcd69",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "SDK tools, conversations, events, and ACP-compatible agents form the action layer."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/OpenHands/OpenHands/blob/d7e14e25bcf14238e566139ec9490e1f05efcd69/README.md",
+          "version": "d7e14e25bcf14238e566139ec9490e1f05efcd69",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Agent conversation and workspace state are assembled for model turns."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/OpenHands/OpenHands/blob/d7e14e25bcf14238e566139ec9490e1f05efcd69/README.md",
+          "version": "d7e14e25bcf14238e566139ec9490e1f05efcd69",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Conversations, workspaces, and events persist on local, remote, or cloud backends."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/OpenHands/OpenHands/blob/d7e14e25bcf14238e566139ec9490e1f05efcd69/README.md",
+          "version": "d7e14e25bcf14238e566139ec9490e1f05efcd69",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Docker and remote sandbox backends isolate execution and user controls mediate actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/OpenHands/OpenHands/blob/d7e14e25bcf14238e566139ec9490e1f05efcd69/README.md",
+          "version": "d7e14e25bcf14238e566139ec9490e1f05efcd69",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Event streams and logs support evaluation adapters; the core repository is not itself a benchmark."
+        }
+      ]
+    },
+    {
+      "name": "Deep Agents",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/deepagents/blob/32bed909cc3c340ee2f4351f7cdc639d48c481a3/README.md",
+          "version": "32bed909cc3c340ee2f4351f7cdc639d48c481a3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Batteries-included agent harness built on LangGraph execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/deepagents/blob/32bed909cc3c340ee2f4351f7cdc639d48c481a3/README.md",
+          "version": "32bed909cc3c340ee2f4351f7cdc639d48c481a3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Tool calling, filesystem, shell, skills, and subagents are first-class capabilities."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/deepagents/blob/32bed909cc3c340ee2f4351f7cdc639d48c481a3/README.md",
+          "version": "32bed909cc3c340ee2f4351f7cdc639d48c481a3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Summarization, isolated subagent contexts, and disk offloading manage long threads."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/deepagents/blob/32bed909cc3c340ee2f4351f7cdc639d48c481a3/README.md",
+          "version": "32bed909cc3c340ee2f4351f7cdc639d48c481a3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "LangGraph checkpoints plus pluggable state/store backends support cross-session persistence."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/deepagents/blob/32bed909cc3c340ee2f4351f7cdc639d48c481a3/README.md",
+          "version": "32bed909cc3c340ee2f4351f7cdc639d48c481a3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Sandbox backends and human-in-the-loop controls intercept actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/deepagents/blob/32bed909cc3c340ee2f4351f7cdc639d48c481a3/README.md",
+          "version": "32bed909cc3c340ee2f4351f7cdc639d48c481a3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "LangSmith tracing and evaluation are documented first-class integrations."
+        }
+      ]
+    },
+    {
+      "name": "Prime Agent",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/PrimeIntellect-ai/prime-agent/blob/d592d5e7746408fe9097541af96d3239e263f7a1/README.md",
+          "version": "d592d5e7746408fe9097541af96d3239e263f7a1",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Persistent Python REPL and daemon-backed agent loop support long-running coding and research work."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/PrimeIntellect-ai/prime-agent/blob/d592d5e7746408fe9097541af96d3239e263f7a1/README.md",
+          "version": "d592d5e7746408fe9097541af96d3239e263f7a1",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "The REPL exposes file, shell, tool, subagent, and control operations programmatically."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/PrimeIntellect-ai/prime-agent/blob/d592d5e7746408fe9097541af96d3239e263f7a1/README.md",
+          "version": "d592d5e7746408fe9097541af96d3239e263f7a1",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Automatic compaction, durable prompts, memory, skills, goals, and subagents govern context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/PrimeIntellect-ai/prime-agent/blob/d592d5e7746408fe9097541af96d3239e263f7a1/README.md",
+          "version": "d592d5e7746408fe9097541af96d3239e263f7a1",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Sessions, schedules, REPL state, refinement history, and snapshots persist and can be resumed or rolled back."
+        },
+        {
+          "id": "L",
+          "rating": "Partial",
+          "source": "https://github.com/PrimeIntellect-ai/prime-agent/blob/d592d5e7746408fe9097541af96d3239e263f7a1/README.md",
+          "version": "d592d5e7746408fe9097541af96d3239e263f7a1",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Worker/kernel boundaries aid recovery, but commands inherit user permissions and external sandboxing is recommended."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/PrimeIntellect-ai/prime-agent/blob/d592d5e7746408fe9097541af96d3239e263f7a1/README.md",
+          "version": "d592d5e7746408fe9097541af96d3239e263f7a1",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Trajectory review and refinement history support evaluation, while independent evaluators and acceptance gates remain external."
+        }
+      ]
+    },
+    {
+      "name": "GitHub Copilot in VS Code",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode/",
+          "version": "VS Code agent-harness architecture, 2026-05-15",
+          "evidenceType": "first-party architecture documentation",
+          "confidence": "high",
+          "note": "The editor host documents explicit loop control, continuation, and termination for coding agents."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode/",
+          "version": "VS Code agent-harness architecture, 2026-05-15",
+          "evidenceType": "first-party architecture documentation",
+          "confidence": "high",
+          "note": "Model-specific tool adaptation and editor, terminal, and extension tools form the action registry."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode/",
+          "version": "VS Code agent-harness architecture, 2026-05-15",
+          "evidenceType": "first-party architecture documentation",
+          "confidence": "high",
+          "note": "The harness adapts context and tool presentation to the selected model and repository state."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode/",
+          "version": "VS Code agent-harness architecture, 2026-05-15",
+          "evidenceType": "first-party architecture documentation",
+          "confidence": "high",
+          "note": "Portable sessions retain task and interaction state across editor surfaces."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode/",
+          "version": "VS Code agent-harness architecture, 2026-05-15",
+          "evidenceType": "first-party architecture documentation",
+          "confidence": "high",
+          "note": "Permission hooks and host mediation govern tool execution."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode/",
+          "version": "VS Code agent-harness architecture, 2026-05-15",
+          "evidenceType": "first-party architecture documentation",
+          "confidence": "high",
+          "note": "The architecture account documents an evaluation pipeline for harness and model configurations."
+        }
+      ]
+    },
+    {
+      "name": "MiMo-Code",
+      "category": "coding",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/eab323a9e5e59ca756eb6451c093df31c57202be/README.md",
+          "version": "eab323a9e5e59ca756eb6451c093df31c57202be",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Terminal loop, subagents, research, and experiment modes coordinate iterative work."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/eab323a9e5e59ca756eb6451c093df31c57202be/README.md",
+          "version": "eab323a9e5e59ca756eb6451c093df31c57202be",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Files, commands, MCP, skills, and delegated agents are exposed through the runtime."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/eab323a9e5e59ca756eb6451c093df31c57202be/README.md",
+          "version": "eab323a9e5e59ca756eb6451c093df31c57202be",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Context reconstruction, project memory, skills, and subagent summaries shape model input."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/eab323a9e5e59ca756eb6451c093df31c57202be/README.md",
+          "version": "eab323a9e5e59ca756eb6451c093df31c57202be",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Persistent project memory and checkpoints support recovery and continuation."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/eab323a9e5e59ca756eb6451c093df31c57202be/README.md",
+          "version": "eab323a9e5e59ca756eb6451c093df31c57202be",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Permission rules and checkpointed operations govern consequential actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/eab323a9e5e59ca756eb6451c093df31c57202be/README.md",
+          "version": "eab323a9e5e59ca756eb6451c093df31c57202be",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Judge-driven research and experiment loops provide structured outcome evaluation."
+        }
+      ]
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "category": "runtime",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/openai/openai-agents-python/blob/125efa029b4bfd84238bd2c4fd69c3406f802663/README.md",
+          "version": "125efa029b4bfd84238bd2c4fd69c3406f802663",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Runner implements multi-turn execution, handoffs, and workflow control."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/openai/openai-agents-python/blob/125efa029b4bfd84238bd2c4fd69c3406f802663/README.md",
+          "version": "125efa029b4bfd84238bd2c4fd69c3406f802663",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Function tools, agents-as-tools, hosted tools, and MCP are built in."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/openai/openai-agents-python/blob/125efa029b4bfd84238bd2c4fd69c3406f802663/README.md",
+          "version": "125efa029b4bfd84238bd2c4fd69c3406f802663",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Instructions, run context, model settings, and automatic history management construct requests."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/openai/openai-agents-python/blob/125efa029b4bfd84238bd2c4fd69c3406f802663/README.md",
+          "version": "125efa029b4bfd84238bd2c4fd69c3406f802663",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Sessions provide persistent conversation history and optional durable backends."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/openai/openai-agents-python/blob/125efa029b4bfd84238bd2c4fd69c3406f802663/README.md",
+          "version": "125efa029b4bfd84238bd2c4fd69c3406f802663",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Guardrails, hooks, sandbox agents, and human-in-the-loop paths govern execution."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/openai/openai-agents-python/blob/125efa029b4bfd84238bd2c4fd69c3406f802663/README.md",
+          "version": "125efa029b4bfd84238bd2c4fd69c3406f802663",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Built-in tracing and documented evaluation integrations expose runs and outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Google ADK",
+      "category": "runtime",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/google/adk-python/blob/10c694f5c3f186cc5d335291743352c7869c8f3a/README.md",
+          "version": "10c694f5c3f186cc5d335291743352c7869c8f3a",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Graph runtime supports sequential, parallel, loop, retry, nested, and task-agent workflows."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/google/adk-python/blob/10c694f5c3f186cc5d335291743352c7869c8f3a/README.md",
+          "version": "10c694f5c3f186cc5d335291743352c7869c8f3a",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Built-in, custom, OpenAPI, and MCP tools are supported."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/google/adk-python/blob/10c694f5c3f186cc5d335291743352c7869c8f3a/README.md",
+          "version": "10c694f5c3f186cc5d335291743352c7869c8f3a",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Agent instructions, skills, context, artifacts, and workflow data shape model input."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/google/adk-python/blob/10c694f5c3f186cc5d335291743352c7869c8f3a/README.md",
+          "version": "10c694f5c3f186cc5d335291743352c7869c8f3a",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "State management and durable workflow execution preserve progress."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/google/adk-python/blob/10c694f5c3f186cc5d335291743352c7869c8f3a/README.md",
+          "version": "10c694f5c3f186cc5d335291743352c7869c8f3a",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Human-in-the-loop and workflow controls mediate actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/google/adk-python/blob/10c694f5c3f186cc5d335291743352c7869c8f3a/README.md",
+          "version": "10c694f5c3f186cc5d335291743352c7869c8f3a",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "The framework explicitly supports building, evaluating, and deploying agents with evaluation tooling."
+        }
+      ]
+    },
+    {
+      "name": "Microsoft Agent Framework",
+      "category": "runtime",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/microsoft/agent-framework/blob/b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3/README.md",
+          "version": "b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Agent and graph workflow runtimes support orchestration beyond stateless chat."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/microsoft/agent-framework/blob/b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3/README.md",
+          "version": "b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Tools and providers are exposed through agent concepts and workflow nodes."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/microsoft/agent-framework/blob/b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3/README.md",
+          "version": "b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Instructions, skills, middleware, and state feed requests."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/microsoft/agent-framework/blob/b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3/README.md",
+          "version": "b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Durability and restartability are explicit runtime goals."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/microsoft/agent-framework/blob/b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3/README.md",
+          "version": "b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Middleware, governance, and human-in-the-loop controls intercept execution."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/microsoft/agent-framework/blob/b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3/README.md",
+          "version": "b53d25ed1cd2f54ee5e5e5ed548bb2c5515022f3",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Observability and evaluation hooks are first-class framework concerns."
+        }
+      ]
+    },
+    {
+      "name": "LangGraph",
+      "category": "runtime",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/langgraph/blob/afbe7e48b17f62e139b5c6337ab934549e6dc73b/README.md",
+          "version": "afbe7e48b17f62e139b5c6337ab934549e6dc73b",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Graph runtime provides controllable, cyclic, stateful agent execution."
+        },
+        {
+          "id": "T",
+          "rating": "Partial",
+          "source": "https://github.com/langchain-ai/langgraph/blob/afbe7e48b17f62e139b5c6337ab934549e6dc73b/README.md",
+          "version": "afbe7e48b17f62e139b5c6337ab934549e6dc73b",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Tools are normally supplied through LangChain or user-defined nodes rather than a standalone built-in registry."
+        },
+        {
+          "id": "C",
+          "rating": "Partial",
+          "source": "https://github.com/langchain-ai/langgraph/blob/afbe7e48b17f62e139b5c6337ab934549e6dc73b/README.md",
+          "version": "afbe7e48b17f62e139b5c6337ab934549e6dc73b",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Users construct prompt, retrieval, and compaction policy on top of graph state."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/langchain-ai/langgraph/blob/afbe7e48b17f62e139b5c6337ab934549e6dc73b/README.md",
+          "version": "afbe7e48b17f62e139b5c6337ab934549e6dc73b",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Durable execution, persistence, and checkpoints are core capabilities."
+        },
+        {
+          "id": "L",
+          "rating": "Partial",
+          "source": "https://github.com/langchain-ai/langgraph/blob/afbe7e48b17f62e139b5c6337ab934549e6dc73b/README.md",
+          "version": "afbe7e48b17f62e139b5c6337ab934549e6dc73b",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Interrupts support human-in-the-loop inspection and state modification; broader policy enforcement is compositional."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/langchain-ai/langgraph/blob/afbe7e48b17f62e139b5c6337ab934549e6dc73b/README.md",
+          "version": "afbe7e48b17f62e139b5c6337ab934549e6dc73b",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "LangSmith supplies tracing and evaluation as an official integration rather than an intrinsic graph service."
+        }
+      ]
+    },
+    {
+      "name": "Mastra",
+      "category": "runtime",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/mastra-ai/mastra/blob/aea91e7f3a4fb066bfda96dca670d7d2a766d770/README.md",
+          "version": "aea91e7f3a4fb066bfda96dca670d7d2a766d770",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Agent and graph-workflow runtimes provide iterative and resumable execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/mastra-ai/mastra/blob/aea91e7f3a4fb066bfda96dca670d7d2a766d770/README.md",
+          "version": "aea91e7f3a4fb066bfda96dca670d7d2a766d770",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Typed tools and MCP integrations form a first-class action surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/mastra-ai/mastra/blob/aea91e7f3a4fb066bfda96dca670d7d2a766d770/README.md",
+          "version": "aea91e7f3a4fb066bfda96dca670d7d2a766d770",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Memory, retrieval, workflow state, and model-input processors manage context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/mastra-ai/mastra/blob/aea91e7f3a4fb066bfda96dca670d7d2a766d770/README.md",
+          "version": "aea91e7f3a4fb066bfda96dca670d7d2a766d770",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Stored workflow state supports suspend, resume, and persistent agent memory."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/mastra-ai/mastra/blob/aea91e7f3a4fb066bfda96dca670d7d2a766d770/README.md",
+          "version": "aea91e7f3a4fb066bfda96dca670d7d2a766d770",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Workflow hooks, human steps, and runtime controls mediate lifecycle transitions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/mastra-ai/mastra/blob/aea91e7f3a4fb066bfda96dca670d7d2a766d770/README.md",
+          "version": "aea91e7f3a4fb066bfda96dca670d7d2a766d770",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Built-in observability and evaluation features expose traces and scored outcomes."
+        }
+      ]
+    },
+    {
+      "name": "DeerFlow",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/bytedance/deer-flow/blob/c53621d7692e5fd9dac0699b09425f3f6ba2d1c6/README.md",
+          "version": "c53621d7692e5fd9dac0699b09425f3f6ba2d1c6",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Super-agent harness orchestrates subagents and long-horizon workflows."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/bytedance/deer-flow/blob/c53621d7692e5fd9dac0699b09425f3f6ba2d1c6/README.md",
+          "version": "c53621d7692e5fd9dac0699b09425f3f6ba2d1c6",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Skills, tools, search/crawl capabilities, and integrations are model-facing."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/bytedance/deer-flow/blob/c53621d7692e5fd9dac0699b09425f3f6ba2d1c6/README.md",
+          "version": "c53621d7692e5fd9dac0699b09425f3f6ba2d1c6",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Memory, skills, subagent contexts, and session goals shape context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/bytedance/deer-flow/blob/c53621d7692e5fd9dac0699b09425f3f6ba2d1c6/README.md",
+          "version": "c53621d7692e5fd9dac0699b09425f3f6ba2d1c6",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Memory, files, session goals, and workspace state persist across work."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/bytedance/deer-flow/blob/c53621d7692e5fd9dac0699b09425f3f6ba2d1c6/README.md",
+          "version": "c53621d7692e5fd9dac0699b09425f3f6ba2d1c6",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Sandbox mode and gateway controls constrain execution."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/bytedance/deer-flow/blob/c53621d7692e5fd9dac0699b09425f3f6ba2d1c6/README.md",
+          "version": "c53621d7692e5fd9dac0699b09425f3f6ba2d1c6",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "LLM Space can inspect and replay steps; generalized evaluation remains external."
+        }
+      ]
+    },
+    {
+      "name": "AOHP",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/aohp-os/aohp/blob/b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884/README.md",
+          "version": "b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Agentic OS orchestrates generated apps and their background agent logic."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/aohp-os/aohp/blob/b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884/README.md",
+          "version": "b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "APIs, CLIs, GUIs, skills, and other capabilities are orchestrated as tools."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/aohp-os/aohp/blob/b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884/README.md",
+          "version": "b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Personalization, memory, and skill selection provide task context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/aohp-os/aohp/blob/b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884/README.md",
+          "version": "b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "OS-managed cross-application memory preserves state."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/aohp-os/aohp/blob/b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884/README.md",
+          "version": "b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Fine-grained data-flow tracking, policy cases, and sandboxed sensitive values govern actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/aohp-os/aohp/blob/b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884/README.md",
+          "version": "b8ab9e98a2bd51f7fbd01a95d3b45dca078c5884",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Evaluation results are reported, but a reusable evaluation interface is not fully specified."
+        }
+      ]
+    },
+    {
+      "name": "Omnigent",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/omnigent-ai/omnigent/blob/c60f29baeb4effe75671949a57826cdd60a7ac51/README.md",
+          "version": "c60f29baeb4effe75671949a57826cdd60a7ac51",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Meta-harness starts, routes, combines, and coordinates heterogeneous agent runtimes."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/omnigent-ai/omnigent/blob/c60f29baeb4effe75671949a57826cdd60a7ac51/README.md",
+          "version": "c60f29baeb4effe75671949a57826cdd60a7ac51",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "It mediates the tools exposed through wrapped agents and policy controls."
+        },
+        {
+          "id": "C",
+          "rating": "Partial",
+          "source": "https://github.com/omnigent-ai/omnigent/blob/c60f29baeb4effe75671949a57826cdd60a7ac51/README.md",
+          "version": "c60f29baeb4effe75671949a57826cdd60a7ac51",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Portable instructions are preserved, while underlying agents retain much of their own context policy."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/omnigent-ai/omnigent/blob/c60f29baeb4effe75671949a57826cdd60a7ac51/README.md",
+          "version": "c60f29baeb4effe75671949a57826cdd60a7ac51",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Shared sessions, storage, memory integrations, and remote continuity persist work."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/omnigent-ai/omnigent/blob/c60f29baeb4effe75671949a57826cdd60a7ac51/README.md",
+          "version": "c60f29baeb4effe75671949a57826cdd60a7ac51",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Policies, approvals, sandbox providers, filesystem/network isolation, and egress controls govern agents."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://github.com/omnigent-ai/omnigent/blob/c60f29baeb4effe75671949a57826cdd60a7ac51/README.md",
+          "version": "c60f29baeb4effe75671949a57826cdd60a7ac51",
+          "evidenceType": "first-party source/docs",
+          "confidence": "medium",
+          "note": "Cross-agent review and session records support inspection; benchmark evaluation is external."
+        }
+      ]
+    },
+    {
+      "name": "TrueForge",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/truefoundry/trueforge/blob/8cc845358d9a84df0a1965aaebf308320379993c/README.md",
+          "version": "8cc845358d9a84df0a1965aaebf308320379993c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Self-hosted agent runtime coordinates long-running and deferred execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/truefoundry/trueforge/blob/8cc845358d9a84df0a1965aaebf308320379993c/README.md",
+          "version": "8cc845358d9a84df0a1965aaebf308320379993c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "MCP servers, skills, model calls, and deferred tools share a governed capability surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/truefoundry/trueforge/blob/8cc845358d9a84df0a1965aaebf308320379993c/README.md",
+          "version": "8cc845358d9a84df0a1965aaebf308320379993c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Context compaction and session-aware orchestration are documented runtime services."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/truefoundry/trueforge/blob/8cc845358d9a84df0a1965aaebf308320379993c/README.md",
+          "version": "8cc845358d9a84df0a1965aaebf308320379993c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Persistent sessions and identity-bound work support continuation and inspection."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/truefoundry/trueforge/blob/8cc845358d9a84df0a1965aaebf308320379993c/README.md",
+          "version": "8cc845358d9a84df0a1965aaebf308320379993c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Sandboxing, approvals, identity, and policy controls mediate execution."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/truefoundry/trueforge/blob/8cc845358d9a84df0a1965aaebf308320379993c/README.md",
+          "version": "8cc845358d9a84df0a1965aaebf308320379993c",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Inspection and reproducible experiment support make run comparison first class."
+        }
+      ]
+    },
+    {
+      "name": "LongHorizon-Harness",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/AMAP-ML/LongHorizon-Harness/blob/a1dd930614972b92361c1b9cd6aac441a6db5a65/README.md",
+          "version": "a1dd930614972b92361c1b9cd6aac441a6db5a65",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Plan-act-verify and recovery loops wrap existing coding agents for long-horizon work."
+        },
+        {
+          "id": "T",
+          "rating": "Partial",
+          "source": "https://github.com/AMAP-ML/LongHorizon-Harness/blob/a1dd930614972b92361c1b9cd6aac441a6db5a65/README.md",
+          "version": "a1dd930614972b92361c1b9cd6aac441a6db5a65",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "The meta-harness delegates many concrete tools to the wrapped agent, so the registry is Partial."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/AMAP-ML/LongHorizon-Harness/blob/a1dd930614972b92361c1b9cd6aac441a6db5a65/README.md",
+          "version": "a1dd930614972b92361c1b9cd6aac441a6db5a65",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Role isolation and plan, verification, and task-state projection explicitly manage context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/AMAP-ML/LongHorizon-Harness/blob/a1dd930614972b92361c1b9cd6aac441a6db5a65/README.md",
+          "version": "a1dd930614972b92361c1b9cd6aac441a6db5a65",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Durable state and checkpoints preserve progress across long executions."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/AMAP-ML/LongHorizon-Harness/blob/a1dd930614972b92361c1b9cd6aac441a6db5a65/README.md",
+          "version": "a1dd930614972b92361c1b9cd6aac441a6db5a65",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Recovery, role boundaries, and controlled transitions govern the wrapped runtime."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/AMAP-ML/LongHorizon-Harness/blob/a1dd930614972b92361c1b9cd6aac441a6db5a65/README.md",
+          "version": "a1dd930614972b92361c1b9cd6aac441a6db5a65",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Verification and audit records are explicit parts of the outer loop."
+        }
+      ]
+    },
+    {
+      "name": "Hermes Agent",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/nousresearch/hermes-agent/blob/3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065/README.md",
+          "version": "3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Persistent personal-agent loops, gateways, subagents, and scheduled work drive execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/nousresearch/hermes-agent/blob/3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065/README.md",
+          "version": "3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Tools, MCP, self-created skills, browser, terminal, and channel adapters form the capability surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/nousresearch/hermes-agent/blob/3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065/README.md",
+          "version": "3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Memory, compression, skills, and subagent isolation manage long-running context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/nousresearch/hermes-agent/blob/3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065/README.md",
+          "version": "3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Persistent memory, sessions, checkpoints, and gateways survive individual turns."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/nousresearch/hermes-agent/blob/3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065/README.md",
+          "version": "3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Approvals and several sandbox backends mediate actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/nousresearch/hermes-agent/blob/3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065/README.md",
+          "version": "3b63f7b0a4c7beb9eadbce2f15b9da75d01f5065",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Trajectories and batch evaluation are documented first-class features."
+        }
+      ]
+    },
+    {
+      "name": "SandBase",
+      "category": "persistent",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/sandbaseai/sandbase-harness/blob/427b52a96a5309ca23268407f85c237468ab6a4e/README.md",
+          "version": "427b52a96a5309ca23268407f85c237468ab6a4e",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Resumable sessions and operations workflows provide controlled execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/sandbaseai/sandbase-harness/blob/427b52a96a5309ca23268407f85c237468ab6a4e/README.md",
+          "version": "427b52a96a5309ca23268407f85c237468ab6a4e",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "MCP toolsets and typed SDKs expose governed capabilities."
+        },
+        {
+          "id": "C",
+          "rating": "Partial",
+          "source": "https://github.com/sandbaseai/sandbase-harness/blob/427b52a96a5309ca23268407f85c237468ab6a4e/README.md",
+          "version": "427b52a96a5309ca23268407f85c237468ab6a4e",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Context features are available but are partly delegated to connected model harnesses."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/sandbaseai/sandbase-harness/blob/427b52a96a5309ca23268407f85c237468ab6a4e/README.md",
+          "version": "427b52a96a5309ca23268407f85c237468ab6a4e",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Session persistence, audit, replay, and state recovery are built in."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/sandbaseai/sandbase-harness/blob/427b52a96a5309ca23268407f85c237468ab6a4e/README.md",
+          "version": "427b52a96a5309ca23268407f85c237468ab6a4e",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Credential, approval, and multi-backend sandbox policy mediate actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/sandbaseai/sandbase-harness/blob/427b52a96a5309ca23268407f85c237468ab6a4e/README.md",
+          "version": "427b52a96a5309ca23268407f85c237468ab6a4e",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Audit replay and conformance tests provide structured verification."
+        }
+      ]
+    },
+    {
+      "name": "WorkBuddy",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://open.workbuddy.cn/en/docs/buddy-app",
+          "version": "Buddy App and managed-agent documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Planning, multi-agent orchestration, recovery, and cross-tool execution form the office-work loop."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://open.workbuddy.cn/en/docs/buddy-app",
+          "version": "Buddy App and managed-agent documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Skills, MCP, OAuth, A2A, and workplace connectors expose governed actions."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://open.workbuddy.cn/en/docs/buddy-app",
+          "version": "Buddy App and managed-agent documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Context compression and knowledge, message, document, and meeting context are documented."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://open.workbuddy.cn/en/docs/buddy-app",
+          "version": "Buddy App and managed-agent documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Memory and managed task state persist beyond one turn."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://open.workbuddy.cn/en/docs/buddy-app",
+          "version": "Buddy App and managed-agent documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Isolated execution, authorization, and lifecycle governance constrain actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://open.workbuddy.cn/en/docs/buddy-app",
+          "version": "Buddy App and managed-agent documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Traces and evaluation are documented parts of the managed-agent platform."
+        }
+      ]
+    },
+    {
+      "name": "Muse",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://introducing.muse.ai/",
+          "version": "Muse launch architecture, 2026-09",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Persistent agents execute interactive, scheduled, and event-driven work."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://introducing.muse.ai/",
+          "version": "Muse launch architecture, 2026-09",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Browser, filesystem, terminal, connected apps, and agent-built tools provide actions."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://introducing.muse.ai/",
+          "version": "Muse launch architecture, 2026-09",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Memory, files, connected-app observations, and task history shape model context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://introducing.muse.ai/",
+          "version": "Muse launch architecture, 2026-09",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Each agent runs in a persistent isolated VM with durable memory and artifacts."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://introducing.muse.ai/",
+          "version": "Muse launch architecture, 2026-09",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Credential isolation and action approvals mediate external effects."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://introducing.muse.ai/",
+          "version": "Muse launch architecture, 2026-09",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "A complete activity trail supports audit, while a general product evaluation API remains limited."
+        }
+      ]
+    },
+    {
+      "name": "Amazon Quick",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://docs.aws.amazon.com/quick/latest/userguide/automate-custom-agents.html",
+          "version": "Amazon Quick documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Autonomous background agents and reusable flows coordinate workplace tasks."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://docs.aws.amazon.com/quick/latest/userguide/automate-custom-agents.html",
+          "version": "Amazon Quick documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Enterprise data spaces, actions, and flow steps provide the tool surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://docs.aws.amazon.com/quick/latest/userguide/automate-custom-agents.html",
+          "version": "Amazon Quick documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Agent instructions, data-space context, and flow state are assembled for work."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://docs.aws.amazon.com/quick/latest/userguide/automate-custom-agents.html",
+          "version": "Amazon Quick documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Background agents and reusable flows preserve task state."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://docs.aws.amazon.com/quick/latest/userguide/automate-custom-agents.html",
+          "version": "Amazon Quick documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Identity propagation, granular autonomy, and approvals mediate execution."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://docs.aws.amazon.com/quick/latest/userguide/automate-custom-agents.html",
+          "version": "Amazon Quick documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Test runs, logs, monitoring, and watch variables provide structured evaluation evidence."
+        }
+      ]
+    },
+    {
+      "name": "OpenAI Workspace Agents",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "version": "Workspace Agents announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Cloud execution, schedules, and Slack triggers run organizational agents over time."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "version": "Workspace Agents announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Shared apps, files, skills, and MCP integrations provide the action surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "version": "Workspace Agents announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Workspace skills, files, app data, and organizational instructions shape context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "version": "Workspace Agents announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Cloud tasks, shared resources, and version history preserve state."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "version": "Workspace Agents announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Approval handoffs, role-based publishing, and workspace governance mediate deployment and action."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "version": "Workspace Agents announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Analytics and Compliance API visibility support audit; a general evaluator is not fully documented."
+        }
+      ]
+    },
+    {
+      "name": "QwenWork",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://www.alibabacloud.com/help/en/qwenwork/qwenwork-intro",
+          "version": "QwenWork documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Agent sessions expose plans, intermediate results, scheduled tasks, and computer-use execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://www.alibabacloud.com/help/en/qwenwork/qwenwork-intro",
+          "version": "QwenWork documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Files, skills, connectors, and computer-use capabilities provide the tool surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://www.alibabacloud.com/help/en/qwenwork/qwenwork-intro",
+          "version": "QwenWork documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Workspace files, plans, skills, and connector observations shape context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://www.alibabacloud.com/help/en/qwenwork/qwenwork-intro",
+          "version": "QwenWork documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Agent sessions, workspaces, and scheduled tasks persist across interactions."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://www.alibabacloud.com/help/en/qwenwork/qwenwork-intro",
+          "version": "QwenWork documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Workspace isolation and sensitive-action confirmation govern execution."
+        },
+        {
+          "id": "V",
+          "rating": "Unverified",
+          "source": "https://www.alibabacloud.com/help/en/qwenwork/qwenwork-intro",
+          "version": "QwenWork documentation, accessed 2026-10-13",
+          "evidenceType": "first-party product documentation",
+          "confidence": "low",
+          "note": "Public first-party material does not establish a general trajectory or evaluation interface."
+        }
+      ]
+    },
+    {
+      "name": "OpenAI dots",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-dots/",
+          "version": "OpenAI dots announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Always-on agents perform scheduled, proactive, local, and cloud work."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-dots/",
+          "version": "OpenAI dots announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Dedicated cloud computers, browsers, plugins, and Codex-cloud actions provide capabilities."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-dots/",
+          "version": "OpenAI dots announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Persistent memory, notes, plugins, and task history shape context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-dots/",
+          "version": "OpenAI dots announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Dedicated computers, memory, notes, and scheduled work retain state."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://openai.com/index/introducing-dots/",
+          "version": "OpenAI dots announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Custom rules, auto-review, and approvals govern actions."
+        },
+        {
+          "id": "V",
+          "rating": "Partial",
+          "source": "https://openai.com/index/introducing-dots/",
+          "version": "OpenAI dots announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Review records support inspection, while a general evaluation interface remains limited."
+        }
+      ]
+    },
+    {
+      "name": "Grok Bot",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://x.ai/news/introducing-grok-bot",
+          "version": "Grok Bot announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Persistent cloud-computer bots run parallel and hierarchical tasks."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://x.ai/news/introducing-grok-bot",
+          "version": "Grok Bot announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Browser, terminal, apps, coordination, and demonstration-derived routines provide actions."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://x.ai/news/introducing-grok-bot",
+          "version": "Grok Bot announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Task demonstrations, app observations, bot messages, and persistent work state shape context."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://x.ai/news/introducing-grok-bot",
+          "version": "Grok Bot announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Cloud computers and learned routines persist beyond one interaction."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://x.ai/news/introducing-grok-bot",
+          "version": "Grok Bot announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "medium",
+          "note": "Enterprise isolation, access, and network controls mediate execution."
+        },
+        {
+          "id": "V",
+          "rating": "Unverified",
+          "source": "https://x.ai/news/introducing-grok-bot",
+          "version": "Grok Bot announcement, 2026",
+          "evidenceType": "first-party product documentation",
+          "confidence": "low",
+          "note": "Public first-party material does not establish a general evaluation interface beyond operational audit."
+        }
+      ]
+    },
+    {
+      "name": "OpenJarvis",
+      "category": "workplace",
+      "accessDate": "2026-10-13",
+      "components": [
+        {
+          "id": "E",
+          "rating": "Full",
+          "source": "https://github.com/open-jarvis/OpenJarvis/blob/ccf02ec7bdda2e2b344eeb8dd986d742ff458acc/README.md",
+          "version": "ccf02ec7bdda2e2b344eeb8dd986d742ff458acc",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Typed runtime primitives and several agent loops support local, scheduled, and interactive execution."
+        },
+        {
+          "id": "T",
+          "rating": "Full",
+          "source": "https://github.com/open-jarvis/OpenJarvis/blob/ccf02ec7bdda2e2b344eeb8dd986d742ff458acc/README.md",
+          "version": "ccf02ec7bdda2e2b344eeb8dd986d742ff458acc",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Local tools and MCP expose a typed capability surface."
+        },
+        {
+          "id": "C",
+          "rating": "Full",
+          "source": "https://github.com/open-jarvis/OpenJarvis/blob/ccf02ec7bdda2e2b344eeb8dd986d742ff458acc/README.md",
+          "version": "ccf02ec7bdda2e2b344eeb8dd986d742ff458acc",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Loop-specific context construction, memory, and trace-driven routing manage model input."
+        },
+        {
+          "id": "S",
+          "rating": "Full",
+          "source": "https://github.com/open-jarvis/OpenJarvis/blob/ccf02ec7bdda2e2b344eeb8dd986d742ff458acc/README.md",
+          "version": "ccf02ec7bdda2e2b344eeb8dd986d742ff458acc",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Several memory backends and scheduled operatives preserve state."
+        },
+        {
+          "id": "L",
+          "rating": "Full",
+          "source": "https://github.com/open-jarvis/OpenJarvis/blob/ccf02ec7bdda2e2b344eeb8dd986d742ff458acc/README.md",
+          "version": "ccf02ec7bdda2e2b344eeb8dd986d742ff458acc",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Sandboxing and local-first policy boundaries mediate actions."
+        },
+        {
+          "id": "V",
+          "rating": "Full",
+          "source": "https://github.com/open-jarvis/OpenJarvis/blob/ccf02ec7bdda2e2b344eeb8dd986d742ff458acc/README.md",
+          "version": "ccf02ec7bdda2e2b344eeb8dd986d742ff458acc",
+          "evidenceType": "first-party source/docs",
+          "confidence": "high",
+          "note": "Full traces and joint accuracy, latency, energy, and cost evaluation are built in."
+        }
+      ]
+    }
+  ]
+}
