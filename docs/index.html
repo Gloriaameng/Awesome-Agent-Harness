@@ -3,9 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Agent Harness for Large Language Model Agents: A Survey — paper, framework, systems, evaluation, and research agenda.">
+  <meta name="description" content="Agent Harness for Large Language Model Agents: A Survey (Meng et al., 2026). The H=(E,T,C,S,L,V) agent harness framework, a 34-system evidence matrix, evaluation landscape and research agenda.">
   <meta name="theme-color" content="#ffffff">
   <title>Agent Harness for Large Language Model Agents: A Survey</title>
+  <link rel="canonical" href="https://gloriaameng.github.io/Awesome-Agent-Harness/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Agent Harness Survey">
+  <meta property="og:title" content="Agent Harness for Large Language Model Agents: A Survey">
+  <meta property="og:description" content="The H=(E,T,C,S,L,V) agent harness framework, a 34-system evidence matrix, evaluation landscape and research agenda (Meng et al., 2026).">
+  <meta property="og:url" content="https://gloriaameng.github.io/Awesome-Agent-Harness/">
+  <meta property="og:image" content="https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png">
+  <meta property="og:image:width" content="1774">
+  <meta property="og:image:height" content="887">
+  <meta property="og:image:alt" content="Agent harness architecture: execution, tools, context, state, lifecycle and evaluation interface">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agent Harness for Large Language Model Agents: A Survey">
+  <meta name="twitter:description" content="The H=(E,T,C,S,L,V) agent harness framework, a 34-system evidence matrix, evaluation landscape and research agenda (Meng et al., 2026).">
+  <meta name="twitter:image" content="https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Agent Harness for Large Language Model Agents: A Survey",
+    "name": "Agent Harness for Large Language Model Agents: A Survey",
+    "description": "A survey that defines the agent harness as a six-component tuple H=(E,T,C,S,L,V) (execution loop, tool registry, context manager, state store, lifecycle hooks, evaluation interface), traces its history, compares 34 systems against documented evidence, and sets an evaluation and research agenda.",
+    "author": [
+      {"@type": "Person", "name": "Qianyu Meng"},
+      {"@type": "Person", "name": "Yanan Wang"},
+      {"@type": "Person", "name": "Liyi Chen"},
+      {"@type": "Person", "name": "Wei Wu"},
+      {"@type": "Person", "name": "Yihang Li"},
+      {"@type": "Person", "name": "Wenyuan Jiang"},
+      {"@type": "Person", "name": "Qimeng Wang"},
+      {"@type": "Person", "name": "Chengqiang Lu"},
+      {"@type": "Person", "name": "Yan Gao"},
+      {"@type": "Person", "name": "Yi Wu"},
+      {"@type": "Person", "name": "Yao Hu"}
+    ],
+    "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.20944/preprints202604.0428.v3"},
+    "url": "https://gloriaameng.github.io/Awesome-Agent-Harness/",
+    "sameAs": [
+      "https://doi.org/10.20944/preprints202604.0428.v3",
+      "https://www.preprints.org/manuscript/202604.0428/v3",
+      "https://github.com/Gloriaameng/Awesome-Agent-Harness"
+    ],
+    "image": "https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png",
+    "keywords": ["agent harness", "LLM agents", "large language model agents", "survey", "ETCSLV", "agent runtime", "harness engineering", "agent evaluation"],
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+  </script>
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./systems-data.js"></script>
   <script defer src="./app.js"></script>
@@ -32,7 +80,7 @@
       <div class="hero-copy">
         <p class="project-line" data-i18n="projectLine">A survey of agent runtimes · 2026</p>
         <h1 id="paper-title" data-i18n="title">Agent Harness for Large Language Model Agents: A Survey</h1>
-        <p class="authors">Qianyu Meng, Yanan Wang, Liyi Chen, Yihang Li, Wei Wu, Wenyuan Jiang, Qimeng Wang, Chengqiang Lu, Yan Gao, Yi Wu, Yao Hu</p>
+        <p class="authors">Qianyu Meng, Yanan Wang, Liyi Chen, Wei Wu, Yihang Li, Wenyuan Jiang, Qimeng Wang, Chengqiang Lu, Yan Gao, Yi Wu, Yao Hu</p>
         <p class="affiliations" data-i18n="affiliations">Minzu University of China · Dalian University of Technology · Xiaohongshu Inc. · University of Science and Technology of China</p>
         <p class="thesis" data-i18n="thesis">Agent capability should be analyzed at the model–harness–environment configuration level. The harness is a consequential and frequently under-reported co-determinant of observed behavior.</p>
         <div class="paper-status" aria-label="Paper and project links" data-i18n-aria="paperLinks">
