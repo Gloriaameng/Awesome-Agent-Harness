@@ -307,6 +307,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Concordia](https://github.com/google-deepmind/concordia)** — 用于在物理、社会或数字世界中构建生成式多智能体模拟的程序库。
 - **[SkillOpt](https://github.com/microsoft/SkillOpt)** — 根据带评分的执行轨迹生成有边界的技能优化方案，并通过评测门控决定是否更新。
 - **[Harness²](https://github.com/google-research/harness2)** — 研究如何提出、探测并组合对提示词、防护机制、记忆、工具指导、子智能体、技能、脚本与插件的持久修改；当前作为早期研究代码收录。
+- **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — 对声明的角色权限、任务范围、审查角色分离、交接及失效的任务/动作绑定进行离线预检；PASS 仅表示声明一致，不代表身份或证据真实性验证、运行时权限强制执行或执行授权。[v1.0.0 集成边界](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md)（访问日期：2026-10-31）。
 
 #### 评测基础设施
 
