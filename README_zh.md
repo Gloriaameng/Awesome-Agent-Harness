@@ -555,6 +555,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>ExACT</u>†: **"ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning"**. *Yu et al.* arXiv 2024. [[论文](https://arxiv.org/abs/2410.02052)]
 - <u>Steer, Don't Solve</u>†: **"Steer, Don't Solve: Training Small Critic Models for Large Code Agents"**. *Gandhi et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2606.21811)] [[代码](https://github.com/shubhamrgandhi/critic-training)]
 - <u>LongHorizon-Harness</u>†: **"LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks"**. *Ma et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2608.01964)] [[代码](https://github.com/AMAP-ML/LongHorizon-Harness)]
+- <u>AutoSR</u>†: **"AutoSR: Automatic Symbolic Regression by Searching Research States"**. *Zhang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2608.16876)] [[代码](https://github.com/AutoResearch-Factory/AutoSR)]
 
 
 #### 多智能体协同
@@ -579,6 +580,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>Concordia</u>†: **"Generative Agent-Based Modeling with Actions Grounded in Physical, Social, or Digital Space Using Concordia"**. *Vezhnevets et al.* arXiv 2023. [[论文](https://arxiv.org/abs/2312.03664)]
 - <u>PEvo</u>: **"Implicit Behavioral Alignment of Language Agents in High-Stakes Crowd Simulations"**. *Wang et al.* EMNLP 2025. [[论文](https://arxiv.org/abs/2509.16457)]
 - <u>Agon</u>†: **"Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy"**. *Sun et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2606.24177)] [[代码](https://github.com/AutoResearch-Factory/Agon)]
+- <u>AgonAlpha</u>†: **"AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search"**. *Ye et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2608.11250)] [[代码](https://github.com/AutoResearch-Factory/AgonAlpha)]
 
 #### 计算经济学
 
