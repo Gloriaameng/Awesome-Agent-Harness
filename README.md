@@ -227,6 +227,7 @@ The four featured systems above are joined by ten coding harnesses in the compar
 - **[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)** — Microsoft's runtime for agents, workflows, middleware, memory, tools, observability, and evaluation; its [Build 2026 update](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/) documents the platform's current direction.
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** — A stateful graph runtime for durable execution, checkpoints, interrupts, streaming, and human-in-the-loop agent workflows.
 - **[Mastra](https://github.com/mastra-ai/mastra)** — A TypeScript-native application runtime with autonomous agents, graph workflows, tools and MCP, stored suspend/resume state, memory, observability, and built-in evaluation.
+- **[theloop](https://github.com/paveler/theloop)** — A stateless HTTP agent-loop engine: each run request carries the model, key, history, tools, and limits, while history, approvals, and billing stay in the caller's backend; write tools return deferred intents instead of performing mutations.
 
 #### Persistent, meta, OS, and operational harnesses
 
