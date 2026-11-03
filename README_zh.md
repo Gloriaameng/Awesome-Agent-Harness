@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-  <a href="assets/architecture_p2.png"><img src="assets/architecture_p2.png" width="1100" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence"/></a>
+  <a href="assets/architecture_p2_clean.png"><img src="assets/architecture_p2_clean.png" width="1100" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence"/></a>
 </p>
 
 Harness统筹重复行动、上下文、状态与证据。L展示代表性生命周期介入点；V导出事件与轨迹，不承担结果打分。机器人为执行过程的示意符号。

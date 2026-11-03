@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-  <a href="assets/architecture_p2.png"><img src="assets/architecture_p2.png" width="1100" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence"/></a>
+  <a href="assets/architecture_p2_clean.png"><img src="assets/architecture_p2_clean.png" width="1100" alt="Agent harness architecture: execution, tools, context, state, lifecycle and evidence"/></a>
 </p>
 
 The harness governs repeated action, context, state and evidence. Lifecycle hooks are representative; V exports events and trajectories rather than assigning scores. The robot illustrates execution.
