@@ -366,3 +366,15 @@ h1, h2 { text-wrap: balance; }
 .p2-figure { margin-bottom: 1.25rem; }
 section > .p2-figure:last-child, .page-wrap > .p2-figure:last-child { margin-bottom: 0; }
 .site-header { background: #fff; }
+
+/* Research comparison: compact rows, with optional supporting figure. */
+.evolution-table { width:100%; min-width:560px; border-collapse:collapse; font-size:.86rem; }
+.evolution-table th,.evolution-table td { padding:.65rem .8rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+.evolution-table thead { background:#f5f7fa; }
+.evolution-table tbody th { white-space:nowrap; }
+#evolution .figure-overview figure { max-width:900px; margin-inline:auto; }
+
+.case-synthesis dl { display:grid; grid-template-columns:150px 1fr; gap:.65rem 1rem; font-size:.9rem; }
+.case-synthesis dt { font-weight:650; }
+.case-synthesis dd { margin:0; }
+@media(max-width:600px) { .case-synthesis dl { grid-template-columns:1fr; gap:.35rem; } .case-synthesis dd { margin-bottom:.75rem; } }
