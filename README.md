@@ -44,8 +44,8 @@ This is the official repository for **_Agent Harness for Large Language Model Ag
 ```bibtex
 @article{meng2026agentharness,
   title     = {Agent Harness for Large Language Model Agents: A Survey},
-  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wu, Wei and
-               Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and
+  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Li, Yihang and
+               Wu, Wei and Jiang, Wenyuan and Wang, Qimeng and
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},
   year      = {2026},
   doi       = {10.20944/preprints202604.0428.v3},
