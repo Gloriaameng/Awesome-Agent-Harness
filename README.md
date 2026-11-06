@@ -11,7 +11,9 @@
 [![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)](license)
 [![Project Website](https://img.shields.io/badge/Website-Project%20Page-305b9d)](https://gloriaameng.github.io/Awesome-Agent-Harness/)
 
-**🌐 Project website: [gloriaameng.github.io/Awesome-Agent-Harness](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+**🌐 [Agent Harness Survey — interactive paper overview](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+
+Explore the survey framework, four architecture case studies, the 34-system comparison, and harness evaluation research.
 
 </div>
 

@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Agent Harness for Large Language Model Agents: A Survey (Meng et al., 2026). The H=(E,T,C,S,L,V) agent harness framework, a 34-system evidence matrix, evaluation landscape and research agenda.">
+  <meta name="description" content="Agent harness survey covering LLM runtime architecture, 34 systems, six ETCSLV functions, and evaluation methods. Explore the paper and research index.">
   <meta name="theme-color" content="#ffffff">
-  <title>Agent Harness for Large Language Model Agents: A Survey</title>
+  <title>Agent Harness Survey: LLM Architectures, Systems &amp; Evaluation</title>
   <link rel="canonical" href="https://gloriaameng.github.io/Awesome-Agent-Harness/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Agent Harness Survey">
   <meta property="og:title" content="Agent Harness for Large Language Model Agents: A Survey">
-  <meta property="og:description" content="The H=(E,T,C,S,L,V) agent harness framework, a 34-system evidence matrix, evaluation landscape and research agenda (Meng et al., 2026).">
+  <meta property="og:description" content="Agent harness survey covering LLM runtime architecture, 34 systems, six ETCSLV functions, and evaluation methods. Explore the paper and research index.">
   <meta property="og:url" content="https://gloriaameng.github.io/Awesome-Agent-Harness/">
   <meta property="og:image" content="https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png">
   <meta property="og:image:width" content="1774">
@@ -18,41 +18,91 @@
   <meta property="og:image:alt" content="Agent harness architecture: execution, tools, context, state, lifecycle and evaluation interface">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Agent Harness for Large Language Model Agents: A Survey">
-  <meta name="twitter:description" content="The H=(E,T,C,S,L,V) agent harness framework, a 34-system evidence matrix, evaluation landscape and research agenda (Meng et al., 2026).">
+  <meta name="twitter:description" content="Agent harness survey covering LLM runtime architecture, 34 systems, six ETCSLV functions, and evaluation methods. Explore the paper and research index.">
   <meta name="twitter:image" content="https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "Agent Harness for Large Language Model Agents: A Survey",
-    "name": "Agent Harness for Large Language Model Agents: A Survey",
-    "description": "A survey that defines the agent harness as a six-component tuple H=(E,T,C,S,L,V) (execution loop, tool registry, context manager, state store, lifecycle hooks, evaluation interface), traces its history, compares 34 systems against documented evidence, and sets an evaluation and research agenda.",
-    "author": [
-      {"@type": "Person", "name": "Qianyu Meng"},
-      {"@type": "Person", "name": "Yanan Wang"},
-      {"@type": "Person", "name": "Liyi Chen"},
-      {"@type": "Person", "name": "Wei Wu"},
-      {"@type": "Person", "name": "Yihang Li"},
-      {"@type": "Person", "name": "Wenyuan Jiang"},
-      {"@type": "Person", "name": "Qimeng Wang"},
-      {"@type": "Person", "name": "Chengqiang Lu"},
-      {"@type": "Person", "name": "Yan Gao"},
-      {"@type": "Person", "name": "Yi Wu"},
-      {"@type": "Person", "name": "Yao Hu"}
-    ],
-    "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.20944/preprints202604.0428.v3"},
-    "url": "https://gloriaameng.github.io/Awesome-Agent-Harness/",
-    "sameAs": [
-      "https://doi.org/10.20944/preprints202604.0428.v3",
-      "https://www.preprints.org/manuscript/202604.0428/v3",
-      "https://github.com/Gloriaameng/Awesome-Agent-Harness"
-    ],
-    "image": "https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png",
-    "keywords": ["agent harness", "LLM agents", "large language model agents", "survey", "ETCSLV", "agent runtime", "harness engineering", "agent evaluation"],
-    "inLanguage": "en",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/"
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Agent Harness for Large Language Model Agents: A Survey",
+  "name": "Agent Harness for Large Language Model Agents: A Survey",
+  "description": "A survey of agent harness architecture, engineering problems, representative systems, and evaluation using the ETCSLV analytical framework.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qianyu Meng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liyi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yihang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyuan Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qimeng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengqiang Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yao Hu"
+    }
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.20944/preprints202604.0428.v3"
+  },
+  "url": "https://gloriaameng.github.io/Awesome-Agent-Harness/",
+  "sameAs": [
+    "https://doi.org/10.20944/preprints202604.0428.v3",
+    "https://www.preprints.org/manuscript/202604.0428/v3",
+    "https://github.com/Gloriaameng/Awesome-Agent-Harness"
+  ],
+  "image": "https://gloriaameng.github.io/Awesome-Agent-Harness/assets/architecture_p2_clean.png",
+  "keywords": [
+    "agent harness",
+    "LLM agents",
+    "large language model agents",
+    "survey",
+    "ETCSLV",
+    "agent runtime",
+    "harness engineering",
+    "agent evaluation"
+  ],
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gloriaameng.github.io/Awesome-Agent-Harness/"
   }
+}
   </script>
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./systems-data.js"></script>
@@ -102,7 +152,8 @@
           <p data-i18n="argumentLead">The survey brings together first-party system evidence, controlled harness evaluations, and lifecycle studies to examine how the model, harness, and environment shape observed capability.</p>
           <a class="text-link" href="https://github.com/Gloriaameng/Awesome-Agent-Harness" target="_blank" rel="noopener noreferrer" data-i18n="resourceIndex">Explore the living evidence index</a>
         </div>
-        <ol class="contribution-list" id="contributions"></ol>
+        <h3 data-i18n="definitionTitle">What is an agent harness?</h3><p data-i18n="definitionText">An agent harness is the runtime software that connects a language model to tools and an environment. It manages the execution loop, assembles context, preserves state, controls actions, and records evidence for evaluation. This survey examines how these architectural choices shape agent behavior alongside the model and task environment.</p>
+<ol class="contribution-list" id="contributions"><li><strong>Joint unit of analysis</strong><span>Treat model behavior as a property of a named model–harness–environment configuration.</span></li><li><strong>Six-function framework</strong><span>Use ETCSLV to locate recurring runtime responsibilities without turning coverage into a score.</span></li><li><strong>Historical account</strong><span>Connect software testing, interactive environments, early agent patterns, and current runtimes.</span></li><li><strong>Evidence-coded landscape</strong><span>Compare 34 systems and examine four anchor cases through the same lens.</span></li><li><strong>Evaluation map</strong><span>Separate direct harness studies, evolving systems, lifecycle tests, protocols, infrastructure, and tasks.</span></li><li><strong>Research agenda</strong><span>Identify testable questions about state, authority, evaluation, and bounded runtime change.</span></li></ol>
       </div>
     </section>
 
@@ -110,11 +161,11 @@
       <div class="page-wrap framework-wrap">
         <div class="section-heading">
           <p class="section-kicker" data-i18n="frameworkKicker">Analytical framework</p>
-          <h2 id="framework-title" data-i18n="frameworkTitle">Six functions. One runtime.</h2>
+          <h2 id="framework-title" data-i18n="frameworkTitle">Agent harness architecture: six runtime functions</h2>
           <p class="section-intro" data-i18n="frameworkIntro">ETCSLV organizes six recurring runtime responsibilities and their interactions: execution, tools, context, state, lifecycle controls, and evaluation.</p>
         </div>
         <div class="function-picker" role="group" aria-label="ETCSLV functions" data-i18n-aria="etcslvLabel" id="function-picker"></div>
-        <div class="function-explanation" id="function-explanation" role="status" aria-live="polite"></div>
+        <div class="function-explanation" id="function-explanation" role="status" aria-live="polite"><strong>E · Execution loop.</strong> Orders model calls and actions, enforces stopping conditions, and handles retry, delegation, and recovery.</div>
         <figure class="wide-figure lifecycle-figure p2-figure"><a href="./assets/step_state_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/step_state_p2.png" loading="lazy" alt="Illustrative tool-using execution path" data-i18n-alt="p2_1Alt"></a><figcaption data-i18n="p2_1Caption">A tool-using execution path connects condition checks, authorization, dispatch, execution, and result commitment, with retry and recovery following failure. The lanes relate these stages to ETCSLV responsibilities, showing how a model decision becomes a traceable and recoverable action.</figcaption></figure>
       </div>
     </section>
@@ -127,7 +178,7 @@
       <div class="section-heading split-heading">
         <div>
           <p class="section-kicker" data-i18n="systemsKicker">System landscape</p>
-          <h2 id="systems-title" data-i18n="systemsTitle">Evidence-coded system comparison</h2>
+          <h2 id="systems-title" data-i18n="systemsTitle">Comparing 34 agent harness systems</h2>
         </div>
         <p class="section-intro" data-i18n="systemsIntro">Thirty-four systems assessed against the same six functions. The matrix cutoff is 2026-10-12; per-source access dates are shown in the evidence details. Ratings do not measure quality, adoption, or production maturity.</p>
       </div>
@@ -184,11 +235,11 @@
     <section class="evaluation-section" id="evaluation" aria-labelledby="evaluation-title">
       <div class="page-wrap">
         <div class="section-heading split-heading">
-          <div><p class="section-kicker" data-i18n="evaluationKicker">Evaluation landscape</p><h2 id="evaluation-title" data-i18n="evaluationTitle">Six areas of harness evaluation</h2></div>
+          <div><p class="section-kicker" data-i18n="evaluationKicker">Evaluation landscape</p><h2 id="evaluation-title" data-i18n="evaluationTitle">Agent harness evaluation: six research areas</h2></div>
           <p class="section-intro" data-i18n="evaluationIntro">Six research questions organize the evaluation literature, connecting benchmark suites, evaluation methods, and the infrastructure needed to run them.</p>
         </div>
         <figure class="wide-figure evaluation-figure p2-figure"><a href="./assets/evaluation_attribution_p2.png" target="_blank" rel="noopener" data-i18n-title="openFigure"><img src="./assets/evaluation_attribution_p2.png" loading="lazy" alt="Three sources of evaluation attribution risk" data-i18n-alt="p2_5Alt"></a><figcaption data-i18n="p2_5Caption">Environment changes, task ambiguity, and harness configuration shape the interpretation of evaluation results. The diagram connects these attribution problems to controls and diagnostic methods, explaining why agent comparisons need to specify model, runtime, and environment conditions together.</figcaption></figure>
-        <div class="evaluation-list" id="evaluation-list"></div>
+        <div class="evaluation-list" id="evaluation-list"><article class="evaluation-area"><h3>Harness effects</h3><p>Compare runtime configurations or isolate components while controlling the model and task conditions.</p><ul class="benchmark-links"><li><a href="https://arxiv.org/abs/2605.27922" target="_blank" rel="noopener noreferrer">Harness-Bench</a></li><li><a href="https://arxiv.org/abs/2609.32459" target="_blank" rel="noopener noreferrer">Beyond the Model</a></li><li><a href="https://arxiv.org/abs/2609.38137" target="_blank" rel="noopener noreferrer">LongHarness Bench</a></li><li><a href="https://arxiv.org/abs/2608.15008" target="_blank" rel="noopener noreferrer">Harness the Memory</a></li><li><a href="https://arxiv.org/abs/2605.10912" target="_blank" rel="noopener noreferrer">WildClawBench</a></li></ul></article><article class="evaluation-area"><h3>Harness evolution and continual evaluation</h3><p>Measure adaptation and retention as tools, skills, sessions, or runtime components change.</p><ul class="benchmark-links"><li><a href="https://arxiv.org/abs/2609.04280" target="_blank" rel="noopener noreferrer">EvoHarnessBench</a></li><li><a href="https://arxiv.org/abs/2605.23904" target="_blank" rel="noopener noreferrer">SkillOpt</a></li><li><a href="https://arxiv.org/abs/2609.32391" target="_blank" rel="noopener noreferrer">SCLATE</a></li><li><a href="https://arxiv.org/abs/2608.15763" target="_blank" rel="noopener noreferrer">TaoLive</a></li><li><a href="https://arxiv.org/abs/2603.28052" target="_blank" rel="noopener noreferrer">Meta-Harness</a></li><li><a href="https://arxiv.org/abs/2603.03329" target="_blank" rel="noopener noreferrer">AutoHarness</a></li><li><a href="https://arxiv.org/abs/2602.22480" target="_blank" rel="noopener noreferrer">VeRO</a></li><li><a href="https://arxiv.org/abs/2610.13361" target="_blank" rel="noopener noreferrer">AgentSWE</a></li></ul></article><article class="evaluation-area"><h3>Lifecycle, security, and audit</h3><p>Probe permissions, attack effects, recovery, and whether records support independent review.</p><ul class="benchmark-links"><li><a href="https://arxiv.org/abs/2608.17597" target="_blank" rel="noopener noreferrer">HarnessRisk</a></li><li><a href="https://arxiv.org/abs/2610.07639" target="_blank" rel="noopener noreferrer">HarnessSecurity-Bench</a></li><li><a href="https://arxiv.org/abs/2609.32495" target="_blank" rel="noopener noreferrer">Hearsay</a></li><li><a href="https://arxiv.org/abs/2603.02277" target="_blank" rel="noopener noreferrer">SandboxEscapeBench</a></li><li><a href="https://arxiv.org/abs/2605.14271" target="_blank" rel="noopener noreferrer">HarnessAudit-Bench</a></li></ul></article><article class="evaluation-area"><h3>Long-horizon loops and recovery</h3><p>Test sustained progress, accumulated obligations, and recovery from partial failures.</p><ul class="benchmark-links"><li><a href="https://arxiv.org/abs/2608.00267" target="_blank" rel="noopener noreferrer">LoopsBench</a></li><li><a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener noreferrer">Long-Horizon-Terminal-Bench</a></li><li><a href="https://arxiv.org/abs/2605.14415" target="_blank" rel="noopener noreferrer">SWE-Chain</a></li><li><a href="https://arxiv.org/abs/2607.02606" target="_blank" rel="noopener noreferrer">ChainSWE</a></li><li><a href="https://arxiv.org/abs/2508.11027" target="_blank" rel="noopener noreferrer">Hell or High Water</a></li></ul></article><article class="evaluation-area"><h3>Protocol and tool substrate</h3><p>Separate protocol conformance, tool selection, execution, and verified effects.</p><ul class="benchmark-links"><li><a href="https://arxiv.org/abs/2607.20531" target="_blank" rel="noopener noreferrer">DynamicMCPBench</a></li><li><a href="https://arxiv.org/abs/2508.20453" target="_blank" rel="noopener noreferrer">MCP-Bench</a></li><li><a href="https://arxiv.org/abs/2509.09734" target="_blank" rel="noopener noreferrer">MCP-AgentBench</a></li><li><a href="https://arxiv.org/abs/2512.24565" target="_blank" rel="noopener noreferrer">MCPAgentBench</a></li></ul></article><article class="evaluation-area"><h3>Evaluation infrastructure</h3><p>Provide repeatable runs, interchangeable agents, environments, traces, and graders.</p><ul class="benchmark-links"><li><a href="https://arxiv.org/abs/2607.13705" target="_blank" rel="noopener noreferrer">AgentCompass</a></li><li><a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener noreferrer">Harbor</a></li><li><a href="https://arxiv.org/abs/2510.11977" target="_blank" rel="noopener noreferrer">HAL</a></li></ul></article></div>
         <p class="task-environment-note" data-i18n="taskEnvironmentNote">Task environments such as OSWorld, WebArena, GAIA, and SWE-bench remain essential. They measure configured-system task performance; a harness-effect study adds controls that isolate runtime changes.</p>
       </div>
     </section>
@@ -199,7 +250,7 @@
           <div><p class="section-kicker" data-i18n="latestKicker">Literature update</p><h2 id="latest-title" data-i18n="latestTitle">Selected research updates</h2></div>
           <p class="section-intro" data-i18n="latestIntro">Seven studies added on 18 October 2026 cover benchmarks, methods, implementation testing, and security.</p>
         </div>
-        <div class="latest-list" id="latest-list"></div>
+        <div class="latest-list" id="latest-list"><article class="latest-item"><p class="latest-kind">Benchmark</p><h3><a href="https://arxiv.org/abs/2610.20344" target="_blank" rel="noopener noreferrer">Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</a></h3><p class="latest-description">Benchmarks coding agents on long-horizon harness-engineering work.</p></article><article class="latest-item"><p class="latest-kind">Benchmark and decision method</p><h3><a href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener noreferrer">JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs</a></h3><p class="latest-description">Combines a benchmark with decision-model training for control delegation between an LLM and runtime.</p></article><article class="latest-item"><p class="latest-kind">Implementation testing</p><h3><a href="https://arxiv.org/abs/2610.04921" target="_blank" rel="noopener noreferrer">Complex Agents, Shallow Tests: Demystifying and Enhancing Test Adequacy of Agent Harness in the Wild</a></h3><p class="latest-description">Studies contract-aware testing of harness implementations and test adequacy.</p></article><article class="latest-item"><p class="latest-kind">Security benchmark</p><h3><a href="https://arxiv.org/abs/2608.06984" target="_blank" rel="noopener noreferrer">HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses</a></h3><p class="latest-description">Evaluates safety risks as information and behavior persist across harness carriers.</p></article><article class="latest-item"><p class="latest-kind">Optimization method</p><h3><a href="https://arxiv.org/abs/2609.38291" target="_blank" rel="noopener noreferrer">HARDE: Optimizing Agent Harnesses for Runtime Risk Detection and Execution Control</a></h3><p class="latest-description">Presents security-oriented harness optimization; it is a method, not a benchmark suite.</p></article><article class="latest-item"><p class="latest-kind">Search method</p><h3><a href="https://arxiv.org/abs/2610.05382" target="_blank" rel="noopener noreferrer">Harness-Search: Guiding Long-Horizon Search through Multi-Agent Coordination</a></h3><p class="latest-description">Studies evidence retrieval for long-horizon search; its claim is search-specific, not a general coding-harness result.</p></article><article class="latest-item"><p class="latest-kind">Evaluated system</p><h3><a href="https://arxiv.org/abs/2608.01964" target="_blank" rel="noopener noreferrer">LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks</a></h3><p class="latest-description">Evaluates an outer Manage–Execute–Audit execution system; this paper is distinct from the versioned software snapshot in the system matrix.</p></article></div>
       </div>
     </section>
 
@@ -213,7 +264,7 @@
           <p class="section-kicker" data-i18n="agendaKicker">Research agenda</p>
           <h2 id="agenda-title" data-i18n="agendaTitle">From component coverage to testable effects</h2>
           <p class="section-intro" data-i18n="agendaIntro">The research agenda moves from documenting components to testing how their interactions shape task performance, state continuity, authority, and adaptation.</p>
-          <ul class="agenda-list" id="agenda-list"></ul>
+          <ul class="agenda-list" id="agenda-list"><li><strong>Configuration effects.</strong> Measure model, harness, environment, and policy interactions under matched conditions.</li><li><strong>State continuity.</strong> Test what survives compaction, restart, conflict, revocation, and deletion.</li><li><strong>Independent evaluation.</strong> Connect trajectories to environment outcomes and records outside the agent’s control.</li><li><strong>Bounded evolution.</strong> Evaluate versioned changes on held-out, out-of-distribution, regression, and safety tasks.</li></ul>
         </div>
 
       </div>

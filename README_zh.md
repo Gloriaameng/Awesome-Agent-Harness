@@ -11,7 +11,9 @@
 [![许可证](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-CC--BY--4.0-blue.svg)](license)
 [![项目网站](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E7%BD%91%E7%AB%99-Project%20Page-305b9d)](https://gloriaameng.github.io/Awesome-Agent-Harness/)
 
-**🌐 项目网站：[gloriaameng.github.io/Awesome-Agent-Harness](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+**🌐 [Agent Harness Survey — 交互式论文展示页](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+
+在线阅读综述框架、四个架构案例、34 个系统的比较与 harness 评测研究。
 
 </div>
 
