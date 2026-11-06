@@ -310,6 +310,7 @@ These projects are evaluated for their focused capability or research pattern ra
 - **[SkillOpt](https://github.com/microsoft/SkillOpt)** — Bounded skill optimization from scored trajectories with evaluation gates.
 - **[Harness²](https://github.com/google-research/harness2)** — Early research code for proposing, probing, and composing persistent changes to prompts, guardrails, memory, tool guidance, subagents, skills, scripts, and plugins.
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — Offline preflight checks for declared role authority, task scope, reviewer separation, handoffs, and stale task/action bindings; PASS establishes declaration consistency, not identity, evidence authenticity, runtime enforcement, or execution authority. [v1.0.0 integration boundary](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md) (accessed 2026-10-31).
+- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — Ten minimal setups for Claude Code, one harness pattern each, such as a read-only verifier whose verdict gates pushes, guarded deletes, and a retry gate that won't re-dispatch a failed subagent until the repo has changed; each folder holds all the files plus setup notes in Chinese.
 
 #### Evaluation infrastructure
 
