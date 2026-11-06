@@ -4,7 +4,7 @@
 
 # Agent Harness for Large Language Model Agents: A Survey
 
-### Official paper repository and living evidence index
+### The first survey dedicated to LLM agent harnesses · 168 references · 34 systems · 30 evaluation entries
 
 [![GitHub Stars](https://img.shields.io/github/stars/Gloriaameng/Awesome-Agent-Harness?style=social)](https://github.com/Gloriaameng/Awesome-Agent-Harness)
 [![References](https://img.shields.io/badge/References-168-2b8a3e)](#5-research-library)

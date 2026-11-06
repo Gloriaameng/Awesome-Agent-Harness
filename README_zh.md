@@ -4,7 +4,7 @@
 
 # 《Agent Harness for Large Language Model Agents: A Survey》
 
-### 论文官方仓库与持续更新的证据索引
+### 首篇 LLM Agent Harness 综述 · 168 篇参考资料 · 34 个系统 · 30 个评测相关条目
 
 [![GitHub 星标](https://img.shields.io/github/stars/Gloriaameng/Awesome-Agent-Harness?style=social)](https://github.com/Gloriaameng/Awesome-Agent-Harness)
 [![参考资料](https://img.shields.io/badge/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-168-2b8a3e)](#5-研究资料库)
