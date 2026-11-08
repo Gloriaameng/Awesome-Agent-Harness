@@ -310,7 +310,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[SkillOpt](https://github.com/microsoft/SkillOpt)** — 根据带评分的执行轨迹生成有边界的技能优化方案，并通过评测门控决定是否更新。
 - **[Harness²](https://github.com/google-research/harness2)** — 研究如何提出、探测并组合对提示词、防护机制、记忆、工具指导、子智能体、技能、脚本与插件的持久修改；当前作为早期研究代码收录。
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — 对声明的角色权限、任务范围、审查角色分离、交接及失效的任务/动作绑定进行离线预检；PASS 仅表示声明一致，不代表身份或证据真实性验证、运行时权限强制执行或执行授权。[v1.0.0 集成边界](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md)（访问日期：2026-10-31）。
-- **[deja-vu](https://github.com/vshulcz/deja-vu)** — 面向 43 种编程智能体原生本地会话存储的跨框架记忆检索、上下文压缩恢复与提交阶段轨迹审计工具，通过 CLI、TUI、MCP 与生命周期钩子运行，内置凭据脱敏且无需调用 LLM；词法 BM25 检索在 LongMemEval-S 上达到 88.9% hit@1（57.2% evidence-recall@1）、在 LoCoMo 上达到 71.9% hit@1（中位延迟约 15 ms），但在纯同义改写的偏好类问题上受限于词法匹配（43.3% hit@1）。[v0.24.0 评测基准](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html)与[格式注册表](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json)（访问日期：2026-11-06）。
+- **[deja-vu](https://github.com/vshulcz/deja-vu)** — 面向 43 种编程智能体原生本地会话存储的跨框架会话检索、上下文压缩恢复与提交阶段轨迹审计工具，通过 CLI、TUI、MCP 与生命周期钩子运行，内置正则凭据脱敏且无需调用 LLM；采用本地词法 BM25 检索，因此无共享词项的纯同义改写查询超出其词法检索范围。[v0.24.0 评测基准](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html)与[格式注册表](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json)（访问日期：2026-11-06）。
 
 #### 评测基础设施
 
