@@ -44,8 +44,8 @@ This is the official repository for **_Agent Harness for Large Language Model Ag
 ```bibtex
 @article{meng2026agentharness,
   title     = {Agent Harness for Large Language Model Agents: A Survey},
-  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wu, Wei and
-               Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and
+  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Li, Yihang and
+               Wu, Wei and Jiang, Wenyuan and Wang, Qimeng and
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},
   year      = {2026},
   doi       = {10.20944/preprints202604.0428.v3},
@@ -230,6 +230,7 @@ The four featured systems above are joined by ten coding harnesses in the compar
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** — A stateful graph runtime for durable execution, checkpoints, interrupts, streaming, and human-in-the-loop agent workflows.
 - **[Mastra](https://github.com/mastra-ai/mastra)** — A TypeScript-native application runtime with autonomous agents, graph workflows, tools and MCP, stored suspend/resume state, memory, observability, and built-in evaluation.
 - **[Sage](https://github.com/ZHangZHengEric/Sage)** — A stateful agent runtime with tools/MCP and a separate Runner–Evaluator–Tuner workflow that retains candidate package versions and evaluation evidence for explicit user adoption. [RSI documentation](https://github.com/ZHangZHengEric/Sage/blob/6904e83a3ade66d928fcc7b26f534c41d1ffd8f9/docs/en/applications/RSI.md) distinguishes general runtime MCP support from Desktop RSI, which supports simple Agents and native tools, with MCP limited to explicit stdio-isolated fixtures (accessed 2026-11-06).
+- **[theloop](https://github.com/paveler/theloop)** — A stateless HTTP agent-loop engine: each run request carries the model, key, history, tools, and limits, while history, approvals, and billing stay in the caller's backend; write tools return deferred intents instead of performing mutations.
 
 #### Persistent, meta, OS, and operational harnesses
 
