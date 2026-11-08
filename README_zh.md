@@ -229,6 +229,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)** — Microsoft 面向智能体、工作流、中间件、记忆、工具、可观测性与评测的运行时；其 [Build 2026 更新](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/)说明了当前的平台方向。
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** — 有状态的图运行时，支持持久执行、检查点、中断、流式输出与人在环工作流。
 - **[Mastra](https://github.com/mastra-ai/mastra)** — 原生支持 TypeScript 的应用运行时，组合自主智能体、图工作流、工具与 MCP、可持久化的暂停/恢复状态、记忆、可观测性和内置评测。
+- **[Sage](https://github.com/ZHangZHengEric/Sage)** — 有状态的智能体运行时，支持工具与 MCP；独立的 Runner–Evaluator–Tuner 流程保留候选包版本与评测证据，由用户明确选择采用。[RSI 文档](https://github.com/ZHangZHengEric/Sage/blob/6904e83a3ade66d928fcc7b26f534c41d1ffd8f9/docs/en/applications/RSI.md)区分通用运行时的 MCP 支持与 Desktop RSI：后者支持 simple 类型 Agent 和原生工具，MCP 仅限显式配置的 stdio 隔离测试夹具（访问日期：2026-11-06）。
 - **[theloop](https://github.com/paveler/theloop)** — 无状态的 HTTP 智能体循环引擎：每次运行请求都携带模型、密钥、历史、工具和限制，而历史、审批和计费保留在调用方后端；写操作工具只返回延迟执行的意图，不直接执行变更。
 
 #### 持久型、上层编排型、操作系统与运维型 Harness
