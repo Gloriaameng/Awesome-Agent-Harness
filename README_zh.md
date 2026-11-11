@@ -349,6 +349,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[SCLATE](https://arxiv.org/abs/2609.32391)** — 将会话、定时任务与记忆整合放到统一的事件时间线上。
 - **[TaoLive](https://arxiv.org/abs/2608.15763)** — 研究智能体如何通过感知 harness 的训练方式适应不断变化的运行时。
 - **[Meta-Harness](https://arxiv.org/abs/2603.28052)** — 对模型 harness 进行端到端优化。
+- **[PluginRSI](https://arxiv.org/abs/2609.32423)** — 基于原子化可复用插件与工作流重组递归优化智能体 harness。
 - **[AutoHarness](https://arxiv.org/abs/2603.03329)** — 围绕固定模型自动生成代码 harness，以改进智能体表现。
 - **[VeRO](https://arxiv.org/abs/2602.22480)** — 让智能体评测和优化其他智能体的评测 harness。
 - **[AgentSWE](https://arxiv.org/abs/2610.13361)** — 评测智能体创建、修改和改进智能体代码库的完整生命周期，使 harness 本身成为软件工程任务的对象。
