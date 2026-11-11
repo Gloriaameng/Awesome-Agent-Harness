@@ -587,6 +587,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>PEvo</u>: **"Implicit Behavioral Alignment of Language Agents in High-Stakes Crowd Simulations"**. *Wang et al.* EMNLP 2025. [[论文](https://arxiv.org/abs/2509.16457)]
 - <u>Agon</u>†: **"Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy"**. *Sun et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2606.24177)] [[代码](https://github.com/AutoResearch-Factory/Agon)]
 - <u>AgonAlpha</u>†: **"AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search"**. *Ye et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2608.11250)] [[代码](https://github.com/AutoResearch-Factory/AgonAlpha)]
+- <u>NeuroMAS</u>: **"NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning"**. *Lu et al.* STAI-X 2026 (Paper Award Honorable Mention). [[论文](https://arxiv.org/abs/2605.16757)] [[代码](https://github.com/haoranlustat/NeuroMAS)]
 
 #### 计算经济学
 
