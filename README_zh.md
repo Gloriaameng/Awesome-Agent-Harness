@@ -313,6 +313,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Harness²](https://github.com/google-research/harness2)** — 研究如何提出、探测并组合对提示词、防护机制、记忆、工具指导、子智能体、技能、脚本与插件的持久修改；当前作为早期研究代码收录。
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — 对声明的角色权限、任务范围、审查角色分离、交接及失效的任务/动作绑定进行离线预检；PASS 仅表示声明一致，不代表身份或证据真实性验证、运行时权限强制执行或执行授权。[v1.0.0 集成边界](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md)（访问日期：2026-10-31）。
 - **[deja-vu](https://github.com/vshulcz/deja-vu)** — 面向 43 种编程智能体原生本地会话存储的跨框架会话检索、上下文压缩恢复与提交阶段轨迹审计工具，通过 CLI、TUI、MCP 与生命周期钩子运行，内置正则凭据脱敏且无需调用 LLM；采用本地词法 BM25 检索，因此无共享词项的纯同义改写查询超出其词法检索范围。[v0.24.0 评测基准](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html)与[格式注册表](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json)（访问日期：2026-11-06）。
+- **[bulkhead](https://github.com/dooly6276/claude-bulkhead)** — 面向同一台机器上并行运行多个编程智能体会话（Claude Code、Codex、Gemini CLI、Copilot CLI、Cursor、opencode 等）的工具调用前置守护钩子：拦截会波及其他会话进程的按名称或模式结束进程、占用其他会话正在使用的端口启动开发服务器、会切换、暂存或删除其他会话工作树的 git 命令、全盘扫描与长时间前台等待，并在内存不足时暂缓重型构建与测试；仅依据确定性的 shell 解析与本机进程表判断每条命令，不调用 LLM、不联网、无依赖，因此无法判断命令文本之外的意图。[v0.3.4 守护规则说明](https://github.com/dooly6276/claude-bulkhead/blob/eb2af3f8b0ffabe71da36076d8e684a8c9872fd3/docs/guards/kill-guard.md)与[支持的智能体](https://github.com/dooly6276/claude-bulkhead/blob/eb2af3f8b0ffabe71da36076d8e684a8c9872fd3/docs/other-agents.md)（访问于 2026-11-12）。
 
 #### 评测基础设施
 
