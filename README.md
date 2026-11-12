@@ -349,6 +349,7 @@ Environment drift, task ambiguity and harness coupling can complicate attributio
 - **[SCLATE](https://arxiv.org/abs/2609.32391)** — Places sessions, scheduled tasks, and memory consolidation on a shared event timeline.
 - **[TaoLive](https://arxiv.org/abs/2608.15763)** — Studies harness-aware training for agents that must evolve with a changing runtime.
 - **[Meta-Harness](https://arxiv.org/abs/2603.28052)** — Optimizes model harnesses end to end.
+- **[PluginRSI](https://arxiv.org/abs/2609.32423)** — Optimizes agent harnesses via atomized, reusable plugins and workflow recomposition.
 - **[AutoHarness](https://arxiv.org/abs/2603.03329)** — Synthesizes code harnesses to improve an agent around a fixed model.
 - **[VeRO](https://arxiv.org/abs/2602.22480)** — Provides an evaluation harness in which agents evaluate and optimize other agents.
 - **[AgentSWE](https://arxiv.org/abs/2610.13361)** — Evaluates agents across the lifecycle of creating, editing, and improving agent codebases, making the harness itself the object of software work.
