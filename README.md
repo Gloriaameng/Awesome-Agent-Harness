@@ -284,6 +284,7 @@ These systems remain in the index while their public architecture, maturity, or 
 - **[YYLO](https://github.com/yylo-dev/yylo)** — A CLI for orchestrating coding agents with plugins, evidence capture, and longitudinal workflows.
 - **[Orbi](https://github.com/orbi-build/orbi)** — An issue-to-PR delivery harness for GitHub ([site](https://orbi.build/)): manages tasks through GitHub Issues, implements changes in isolated worktrees, and uses a separate AI session for review and fixes before applying merge gates.
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's earlier open-source terminal agent. Its consumer service migrated to Antigravity CLI in June 2026; the repository remains useful as an architectural lineage. [Migration notice](https://github.com/google-gemini/gemini-cli/discussions/27274)
+- **[Revo](https://github.com/shyringo/revo)** — A continuous-life terminal harness whose runtime is a single append-only life log rather than a session list: an endogenous continue signal when the queue is empty, human contact confined to one capability (5-minute cooldown, 4 per hour), and a checksummed snapshot that resumes unfinished intentions after restart. Evidence: [source and lifecycle tests](https://github.com/shyringo/revo).
 
 #### Long-horizon and domain-specific harnesses
 
