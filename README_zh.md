@@ -543,6 +543,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>LoCoMo</u>†: **"Evaluating Very Long-Term Conversational Memory of LLM Agents"**. *Maharana et al.* arXiv 2024. [[论文](https://arxiv.org/abs/2402.17753)]
 - <u>Memory Mechanisms Survey</u>†: **"A Survey on the Memory Mechanism of Large Language Model Based Agents"**. *Zhang et al.* arXiv 2024. [[论文](https://arxiv.org/abs/2404.13501)]
 - <u>Evo-Memory</u>†: **"Evo-Memory: Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory"**. *Wei et al.* arXiv 2025. [[论文](https://arxiv.org/abs/2511.20857)]
+- <u>MixUA</u>†: **"Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction"**. *Wang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2611.10439)]
 
 #### 规划与推理
 
