@@ -4,14 +4,16 @@
 
 # Agent Harness for Large Language Model Agents: A Survey
 
-### Official paper repository and living evidence index
+### The first survey dedicated to LLM agent harnesses · 168 references · 34 systems · 30 evaluation entries
 
 [![GitHub Stars](https://img.shields.io/github/stars/Gloriaameng/Awesome-Agent-Harness?style=social)](https://github.com/Gloriaameng/Awesome-Agent-Harness)
 [![References](https://img.shields.io/badge/References-168-2b8a3e)](#5-research-library)
 [![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)](license)
 [![Project Website](https://img.shields.io/badge/Website-Project%20Page-305b9d)](https://gloriaameng.github.io/Awesome-Agent-Harness/)
 
-**🌐 Project website: [gloriaameng.github.io/Awesome-Agent-Harness](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+**🌐 [Agent Harness Survey — interactive paper overview](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+
+Explore the survey framework, four architecture case studies, the 34-system comparison, and harness evaluation research.
 
 </div>
 
@@ -42,8 +44,8 @@ This is the official repository for **_Agent Harness for Large Language Model Ag
 ```bibtex
 @article{meng2026agentharness,
   title     = {Agent Harness for Large Language Model Agents: A Survey},
-  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wu, Wei and
-               Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and
+  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Li, Yihang and
+               Wu, Wei and Jiang, Wenyuan and Wang, Qimeng and
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},
   year      = {2026},
   doi       = {10.20944/preprints202604.0428.v3},
@@ -227,6 +229,8 @@ The four featured systems above are joined by ten coding harnesses in the compar
 - **[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)** — Microsoft's runtime for agents, workflows, middleware, memory, tools, observability, and evaluation; its [Build 2026 update](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/) documents the platform's current direction.
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** — A stateful graph runtime for durable execution, checkpoints, interrupts, streaming, and human-in-the-loop agent workflows.
 - **[Mastra](https://github.com/mastra-ai/mastra)** — A TypeScript-native application runtime with autonomous agents, graph workflows, tools and MCP, stored suspend/resume state, memory, observability, and built-in evaluation.
+- **[Sage](https://github.com/ZHangZHengEric/Sage)** — A stateful agent runtime with tools/MCP and a separate Runner–Evaluator–Tuner workflow that retains candidate package versions and evaluation evidence for explicit user adoption. [RSI documentation](https://github.com/ZHangZHengEric/Sage/blob/6904e83a3ade66d928fcc7b26f534c41d1ffd8f9/docs/en/applications/RSI.md) distinguishes general runtime MCP support from Desktop RSI, which supports simple Agents and native tools, with MCP limited to explicit stdio-isolated fixtures (accessed 2026-11-06).
+- **[theloop](https://github.com/paveler/theloop)** — A stateless HTTP agent-loop engine: each run request carries the model, key, history, tools, and limits, while history, approvals, and billing stay in the caller's backend; write tools return deferred intents instead of performing mutations.
 
 #### Persistent, meta, OS, and operational harnesses
 
@@ -308,7 +312,8 @@ These projects are evaluated for their focused capability or research pattern ra
 - **[SkillOpt](https://github.com/microsoft/SkillOpt)** — Bounded skill optimization from scored trajectories with evaluation gates.
 - **[Harness²](https://github.com/google-research/harness2)** — Early research code for proposing, probing, and composing persistent changes to prompts, guardrails, memory, tool guidance, subagents, skills, scripts, and plugins.
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — Offline preflight checks for declared role authority, task scope, reviewer separation, handoffs, and stale task/action bindings; PASS establishes declaration consistency, not identity, evidence authenticity, runtime enforcement, or execution authority. [v1.0.0 integration boundary](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md) (accessed 2026-10-31).
-- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — Ten minimal setups for Claude Code, one harness pattern each, such as a read-only verifier whose verdict gates pushes, guarded deletes, and a retry gate that won't re-dispatch a failed subagent until the repo has changed; each folder holds all the files plus setup notes in Chinese.
+- **[deja-vu](https://github.com/vshulcz/deja-vu)** — Local cross-harness session retrieval, compaction recovery, and commit-time transcript audit over the native on-disk stores of 43 coding harnesses via CLI, TUI, MCP, and lifecycle hooks with regex credential redaction and zero LLM calls; uses lexical BM25 retrieval over local transcripts, so pure-paraphrase queries without shared tokens fall outside its lexical scope. [v0.24.0 benchmarks](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html) and [format registry](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json) (accessed 2026-11-06).
+- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — Ten copyable Claude Code configurations, one harness pattern per folder, including independent verification, guarded deletion, and bounded retry policies; setup notes are in Chinese. These are configuration patterns with setup-dependent boundaries. [Retry-gate boundaries](https://github.com/Towow-ai/harness-patterns/blob/277ae4e5df9b88f8e8086a92349d88b509785935/08-retry-gate/README.md) (accessed 2026-11-17).
 
 #### Evaluation infrastructure
 

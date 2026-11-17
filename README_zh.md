@@ -4,14 +4,16 @@
 
 # 《Agent Harness for Large Language Model Agents: A Survey》
 
-### 论文官方仓库与持续更新的证据索引
+### 首篇 LLM Agent Harness 综述 · 168 篇参考资料 · 34 个系统 · 30 个评测相关条目
 
 [![GitHub 星标](https://img.shields.io/github/stars/Gloriaameng/Awesome-Agent-Harness?style=social)](https://github.com/Gloriaameng/Awesome-Agent-Harness)
 [![参考资料](https://img.shields.io/badge/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99-168-2b8a3e)](#5-研究资料库)
 [![许可证](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-CC--BY--4.0-blue.svg)](license)
 [![项目网站](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E7%BD%91%E7%AB%99-Project%20Page-305b9d)](https://gloriaameng.github.io/Awesome-Agent-Harness/)
 
-**🌐 项目网站：[gloriaameng.github.io/Awesome-Agent-Harness](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+**🌐 [Agent Harness Survey — 交互式论文展示页](https://gloriaameng.github.io/Awesome-Agent-Harness/)**
+
+在线阅读综述框架、四个架构案例、34 个系统的比较与 harness 评测研究。
 
 </div>
 
@@ -42,8 +44,8 @@ Harness统筹重复行动、上下文、状态与证据。L展示代表性生命
 ```bibtex
 @article{meng2026agentharness,
   title     = {Agent Harness for Large Language Model Agents: A Survey},
-  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Wu, Wei and
-               Li, Yihang and Jiang, Wenyuan and Wang, Qimeng and
+  author    = {Meng, Qianyu and Wang, Yanan and Chen, Liyi and Li, Yihang and
+               Wu, Wei and Jiang, Wenyuan and Wang, Qimeng and
                Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao},
   year      = {2026},
   doi       = {10.20944/preprints202604.0428.v3},
@@ -227,6 +229,8 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)** — Microsoft 面向智能体、工作流、中间件、记忆、工具、可观测性与评测的运行时；其 [Build 2026 更新](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/)说明了当前的平台方向。
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** — 有状态的图运行时，支持持久执行、检查点、中断、流式输出与人在环工作流。
 - **[Mastra](https://github.com/mastra-ai/mastra)** — 原生支持 TypeScript 的应用运行时，组合自主智能体、图工作流、工具与 MCP、可持久化的暂停/恢复状态、记忆、可观测性和内置评测。
+- **[Sage](https://github.com/ZHangZHengEric/Sage)** — 有状态的智能体运行时，支持工具与 MCP；独立的 Runner–Evaluator–Tuner 流程保留候选包版本与评测证据，由用户明确选择采用。[RSI 文档](https://github.com/ZHangZHengEric/Sage/blob/6904e83a3ade66d928fcc7b26f534c41d1ffd8f9/docs/en/applications/RSI.md)区分通用运行时的 MCP 支持与 Desktop RSI：后者支持 simple 类型 Agent 和原生工具，MCP 仅限显式配置的 stdio 隔离测试夹具（访问日期：2026-11-06）。
+- **[theloop](https://github.com/paveler/theloop)** — 无状态的 HTTP 智能体循环引擎：每次运行请求都携带模型、密钥、历史、工具和限制，而历史、审批和计费保留在调用方后端；写操作工具只返回延迟执行的意图，不直接执行变更。
 
 #### 持久型、上层编排型、操作系统与运维型 Harness
 
@@ -308,7 +312,8 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[SkillOpt](https://github.com/microsoft/SkillOpt)** — 根据带评分的执行轨迹生成有边界的技能优化方案，并通过评测门控决定是否更新。
 - **[Harness²](https://github.com/google-research/harness2)** — 研究如何提出、探测并组合对提示词、防护机制、记忆、工具指导、子智能体、技能、脚本与插件的持久修改；当前作为早期研究代码收录。
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — 对声明的角色权限、任务范围、审查角色分离、交接及失效的任务/动作绑定进行离线预检；PASS 仅表示声明一致，不代表身份或证据真实性验证、运行时权限强制执行或执行授权。[v1.0.0 集成边界](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md)（访问日期：2026-10-31）。
-- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — 十套给 Claude Code 用的最小配置，每套对应一种 harness 模式，例如用只读验收 Agent 的结论拦下推送、给删除加护栏、子 Agent 失败后仓库没变就不许再派；每个目录放全部文件和中文说明。
+- **[deja-vu](https://github.com/vshulcz/deja-vu)** — 面向 43 种编程智能体原生本地会话存储的跨框架会话检索、上下文压缩恢复与提交阶段轨迹审计工具，通过 CLI、TUI、MCP 与生命周期钩子运行，内置正则凭据脱敏且无需调用 LLM；采用本地词法 BM25 检索，因此无共享词项的纯同义改写查询超出其词法检索范围。[v0.24.0 评测基准](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html)与[格式注册表](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json)（访问日期：2026-11-06）。
+- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — 十套可直接复制使用的 Claude Code 配置，各附中文说明，一套对应一种 harness 模式，其中包括独立验收、删除护栏和有上限的重试策略；这些是配置模式，适用边界取决于具体环境与设置。[重试闸门的适用边界](https://github.com/Towow-ai/harness-patterns/blob/277ae4e5df9b88f8e8086a92349d88b509785935/08-retry-gate/README.md)（访问日期：2026-11-17）。
 
 #### 评测基础设施
 
