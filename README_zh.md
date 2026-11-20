@@ -243,6 +243,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[SandBase](https://github.com/sandbaseai/sandbase-harness)** — 本地优先的运维与安全控制平面，提供可恢复会话、审计与重放、MCP 工具集、凭据与审批策略、多种沙箱后端、类型化 SDK 和一致性测试。
 - **[CUGA](https://github.com/cuga-project/cuga-agent)** — IBM Research 基于 LangGraph 构建的开源通用智能体 harness，在可配置策略（意图防护、流程指引、工具审批）下执行 API（OpenAPI、MCP、LangChain 工具）、Web 及混合任务，并支持技能、A2A 子智能体和 ACP。[论文](https://arxiv.org/abs/2510.23856)
 - **[oh-my-agent](https://github.com/first-fluke/oh-my-agent)** — 叠加在现有编程智能体之上的开源 harness，可安装到 Claude Code、Codex CLI、Cursor 等 14 种运行时，将统一的 `.agents/skills/` 目录中的技能共享给支持的运行时，并提供可选的 Stop 钩子，在智能体结束前运行项目的类型检查、测试或代码检查脚本。
+- **[Reliant](https://github.com/reliant-labs/reliant)** — 源码可得（BSL 1.1）的运行型 harness：工作流是随代码库版本化的 YAML 图，由智能体、shell、审批与外部集成步骤以及带条件的边组成；运行可由对话、定时任务或 GitHub、Slack、Gmail、Twilio 事件触发，并在用户自己的电脑或会话之间持续运行的云端机器上执行。[工作流文档](https://docs.reliantlabs.io/workflows/overview)
 
 #### 办公与个人智能体 Harness
 
@@ -313,6 +314,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Harness²](https://github.com/google-research/harness2)** — 研究如何提出、探测并组合对提示词、防护机制、记忆、工具指导、子智能体、技能、脚本与插件的持久修改；当前作为早期研究代码收录。
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — 对声明的角色权限、任务范围、审查角色分离、交接及失效的任务/动作绑定进行离线预检；PASS 仅表示声明一致，不代表身份或证据真实性验证、运行时权限强制执行或执行授权。[v1.0.0 集成边界](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md)（访问日期：2026-10-31）。
 - **[deja-vu](https://github.com/vshulcz/deja-vu)** — 面向 43 种编程智能体原生本地会话存储的跨框架会话检索、上下文压缩恢复与提交阶段轨迹审计工具，通过 CLI、TUI、MCP 与生命周期钩子运行，内置正则凭据脱敏且无需调用 LLM；采用本地词法 BM25 检索，因此无共享词项的纯同义改写查询超出其词法检索范围。[v0.24.0 评测基准](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html)与[格式注册表](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json)（访问日期：2026-11-06）。
+- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — 十套可直接复制使用的 Claude Code 配置，各附中文说明，一套对应一种 harness 模式，其中包括独立验收、删除护栏和有上限的重试策略；这些是配置模式，适用边界取决于具体环境与设置。[重试闸门的适用边界](https://github.com/Towow-ai/harness-patterns/blob/277ae4e5df9b88f8e8086a92349d88b509785935/08-retry-gate/README.md)（访问日期：2026-11-17）。
 - **[bulkhead](https://github.com/dooly6276/claude-bulkhead)** — 工具调用前置钩子，通过确定性的命令与进程归属检查，减少受支持的本地编程智能体会话之间的相互干扰，涵盖进程终止、端口占用和工作树变更。保护范围取决于宿主集成情况和可观测的进程状态；当相关状态不可获取时，部分检查会放行命令（fail open）。不调用 LLM、不联网，无第三方软件包依赖。[v0.3.4 守护规则说明](https://github.com/dooly6276/claude-bulkhead/blob/eb2af3f8b0ffabe71da36076d8e684a8c9872fd3/docs/guards/kill-guard.md)与[支持的智能体](https://github.com/dooly6276/claude-bulkhead/blob/eb2af3f8b0ffabe71da36076d8e684a8c9872fd3/docs/other-agents.md)（访问于 2026-11-12）。
 
 #### 评测基础设施
@@ -350,6 +352,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[SCLATE](https://arxiv.org/abs/2609.32391)** — 将会话、定时任务与记忆整合放到统一的事件时间线上。
 - **[TaoLive](https://arxiv.org/abs/2608.15763)** — 研究智能体如何通过感知 harness 的训练方式适应不断变化的运行时。
 - **[Meta-Harness](https://arxiv.org/abs/2603.28052)** — 对模型 harness 进行端到端优化。
+- **[PluginRSI](https://arxiv.org/abs/2609.32423)** — 基于原子化可复用插件与工作流重组递归优化智能体 harness。
 - **[AutoHarness](https://arxiv.org/abs/2603.03329)** — 围绕固定模型自动生成代码 harness，以改进智能体表现。
 - **[VeRO](https://arxiv.org/abs/2602.22480)** — 让智能体评测和优化其他智能体的评测 harness。
 - **[AgentSWE](https://arxiv.org/abs/2610.13361)** — 评测智能体创建、修改和改进智能体代码库的完整生命周期，使 harness 本身成为软件工程任务的对象。
@@ -544,6 +547,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>LoCoMo</u>†: **"Evaluating Very Long-Term Conversational Memory of LLM Agents"**. *Maharana et al.* arXiv 2024. [[论文](https://arxiv.org/abs/2402.17753)]
 - <u>Memory Mechanisms Survey</u>†: **"A Survey on the Memory Mechanism of Large Language Model Based Agents"**. *Zhang et al.* arXiv 2024. [[论文](https://arxiv.org/abs/2404.13501)]
 - <u>Evo-Memory</u>†: **"Evo-Memory: Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory"**. *Wei et al.* arXiv 2025. [[论文](https://arxiv.org/abs/2511.20857)]
+- <u>MixUA</u>†: **"Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction"**. *Wang et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2611.10439)]
 
 #### 规划与推理
 
@@ -588,6 +592,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - <u>PEvo</u>: **"Implicit Behavioral Alignment of Language Agents in High-Stakes Crowd Simulations"**. *Wang et al.* EMNLP 2025. [[论文](https://arxiv.org/abs/2509.16457)]
 - <u>Agon</u>†: **"Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy"**. *Sun et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2606.24177)] [[代码](https://github.com/AutoResearch-Factory/Agon)]
 - <u>AgonAlpha</u>†: **"AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search"**. *Ye et al.* arXiv 2026. [[论文](https://arxiv.org/abs/2608.11250)] [[代码](https://github.com/AutoResearch-Factory/AgonAlpha)]
+- <u>NeuroMAS</u>: **"NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning"**. *Lu et al.* STAI-X 2026 (Paper Award Honorable Mention). [[论文](https://arxiv.org/abs/2605.16757)] [[代码](https://github.com/haoranlustat/NeuroMAS)]
 
 #### 计算经济学
 

@@ -243,6 +243,7 @@ The four featured systems above are joined by ten coding harnesses in the compar
 - **[SandBase](https://github.com/sandbaseai/sandbase-harness)** — A local-first operations and security control plane with resumable sessions, audit and replay, MCP toolsets, credential and approval policy, several sandbox backends, typed SDKs, and conformance tests.
 - **[CUGA](https://github.com/cuga-project/cuga-agent)** — IBM Research's open-source generalist agent harness on LangGraph that runs API (OpenAPI, MCP, LangChain tools), web, and hybrid tasks under configurable policies (intent guard, playbooks, tool approval), with skills, A2A sub-agents, and ACP. [Paper](https://arxiv.org/abs/2510.23856)
 - **[oh-my-agent](https://github.com/first-fluke/oh-my-agent)** — An open-source harness layered on existing coding agents that installs into 14 runtimes (Claude Code, Codex CLI, Cursor and others), shares skills from one `.agents/skills/` folder with supported runtimes, and has an optional Stop hook that runs the project's typecheck, test or lint script before the agent finishes.
+- **[Reliant](https://github.com/reliant-labs/reliant)** — A source-available (BSL 1.1) operational harness whose workflows are versioned YAML graphs of agent, shell, approval, and integration steps joined by conditional edges; runs start from chats, schedules, or GitHub, Slack, Gmail, and Twilio events, and execute on the user's own computer or on cloud machines that keep running between sessions. [Workflow docs](https://docs.reliantlabs.io/workflows/overview)
 
 #### Workplace and personal-agent harnesses
 
@@ -313,6 +314,7 @@ These projects are evaluated for their focused capability or research pattern ra
 - **[Harness²](https://github.com/google-research/harness2)** — Early research code for proposing, probing, and composing persistent changes to prompts, guardrails, memory, tool guidance, subagents, skills, scripts, and plugins.
 - **[Agent Role Contracts](https://github.com/suirindo/agent-role-contracts)** — Offline preflight checks for declared role authority, task scope, reviewer separation, handoffs, and stale task/action bindings; PASS establishes declaration consistency, not identity, evidence authenticity, runtime enforcement, or execution authority. [v1.0.0 integration boundary](https://github.com/suirindo/agent-role-contracts/blob/9f6771056c47de971202360952af6d41941f7625/docs/INTEGRATION.md) (accessed 2026-10-31).
 - **[deja-vu](https://github.com/vshulcz/deja-vu)** — Local cross-harness session retrieval, compaction recovery, and commit-time transcript audit over the native on-disk stores of 43 coding harnesses via CLI, TUI, MCP, and lifecycle hooks with regex credential redaction and zero LLM calls; uses lexical BM25 retrieval over local transcripts, so pure-paraphrase queries without shared tokens fall outside its lexical scope. [v0.24.0 benchmarks](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/guide/benchmarks.html) and [format registry](https://github.com/vshulcz/deja-vu/blob/910d490f6b1909fa7a469c3adf95c0ec5d5187c5/docs/registry/registry.json) (accessed 2026-11-06).
+- **[harness-patterns](https://github.com/Towow-ai/harness-patterns)** — Ten copyable Claude Code configurations, one harness pattern per folder, including independent verification, guarded deletion, and bounded retry policies; setup notes are in Chinese. These are configuration patterns with setup-dependent boundaries. [Retry-gate boundaries](https://github.com/Towow-ai/harness-patterns/blob/277ae4e5df9b88f8e8086a92349d88b509785935/08-retry-gate/README.md) (accessed 2026-11-17).
 - **[bulkhead](https://github.com/dooly6276/claude-bulkhead)** — Pre-tool-use hooks that apply deterministic command and process-ownership checks to reduce interference between supported local coding-agent sessions, including process termination, port use and working-tree changes. Coverage depends on host integration and observable process state; some checks fail open when that state is unavailable. No LLM calls, network calls or third-party package dependencies. [v0.3.4 guard reference](https://github.com/dooly6276/claude-bulkhead/blob/eb2af3f8b0ffabe71da36076d8e684a8c9872fd3/docs/guards/kill-guard.md) and [agent coverage](https://github.com/dooly6276/claude-bulkhead/blob/eb2af3f8b0ffabe71da36076d8e684a8c9872fd3/docs/other-agents.md) (accessed 2026-11-12).
 
 #### Evaluation infrastructure
@@ -350,6 +352,7 @@ Environment drift, task ambiguity and harness coupling can complicate attributio
 - **[SCLATE](https://arxiv.org/abs/2609.32391)** — Places sessions, scheduled tasks, and memory consolidation on a shared event timeline.
 - **[TaoLive](https://arxiv.org/abs/2608.15763)** — Studies harness-aware training for agents that must evolve with a changing runtime.
 - **[Meta-Harness](https://arxiv.org/abs/2603.28052)** — Optimizes model harnesses end to end.
+- **[PluginRSI](https://arxiv.org/abs/2609.32423)** — Optimizes agent harnesses via atomized, reusable plugins and workflow recomposition.
 - **[AutoHarness](https://arxiv.org/abs/2603.03329)** — Synthesizes code harnesses to improve an agent around a fixed model.
 - **[VeRO](https://arxiv.org/abs/2602.22480)** — Provides an evaluation harness in which agents evaluate and optimize other agents.
 - **[AgentSWE](https://arxiv.org/abs/2610.13361)** — Evaluates agents across the lifecycle of creating, editing, and improving agent codebases, making the harness itself the object of software work.
@@ -544,6 +547,7 @@ Tool governance spans registration, selection, dispatch, execution, result handl
 - <u>LoCoMo</u>†: **"Evaluating Very Long-Term Conversational Memory of LLM Agents"**. *Maharana et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2402.17753)]
 - <u>Memory Mechanisms Survey</u>†: **"A Survey on the Memory Mechanism of Large Language Model Based Agents"**. *Zhang et al.* arXiv 2024. [[Paper](https://arxiv.org/abs/2404.13501)]
 - <u>Evo-Memory</u>†: **"Evo-Memory: Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory"**. *Wei et al.* arXiv 2025. [[Paper](https://arxiv.org/abs/2511.20857)]
+- <u>MixUA</u>†: **"Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction"**. *Wang et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2611.10439)]
 
 #### Planning & Reasoning
 
@@ -587,6 +591,7 @@ Illustrative coordination patterns expose different identity, authority, state-c
 - <u>PEvo</u>: **"Implicit Behavioral Alignment of Language Agents in High-Stakes Crowd Simulations"**. *Wang et al.* EMNLP 2025. [[Paper](https://arxiv.org/abs/2509.16457)]
 - <u>Agon</u>†: **"Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy"**. *Sun et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2606.24177)] [[Code](https://github.com/AutoResearch-Factory/Agon)]
 - <u>AgonAlpha</u>†: **"AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search"**. *Ye et al.* arXiv 2026. [[Paper](https://arxiv.org/abs/2608.11250)] [[Code](https://github.com/AutoResearch-Factory/AgonAlpha)]
+- <u>NeuroMAS</u>: **"NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning"**. *Lu et al.* STAI-X 2026 (Paper Award Honorable Mention). [[Paper](https://arxiv.org/abs/2605.16757)] [[Code](https://github.com/haoranlustat/NeuroMAS)]
 
 #### Compute Economics
 
