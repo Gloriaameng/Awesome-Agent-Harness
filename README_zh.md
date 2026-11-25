@@ -265,6 +265,7 @@ README 沿用论文的论证顺序，而不是把项目堆成一份与综述脱�
 - **[Claude Tag](https://www.anthropic.com/news/introducing-claude-tag)** — 从 Claude Code 与 Cowork 的设计思路演化而来的共享、持久化办公交互产品；在独立运行时边界公开前，暂作为该技术路线的产品形态收录。
 - **[Claude Managed Agents](https://www.anthropic.com/news/finance-agents)** — 提供长时会话、逐工具权限、凭据保管库与审计日志；作为 Claude 运行时技术路线在办公场景的部署案例收录。
 - **[nanoMuse](https://github.com/nano-muse/nanoMuse)** — 跨手机和桌面的新开源个人智能体，提供定时目标、可编辑记忆与风险门控；系统部分基于 DeepSeek Harness 和 OpenMinis。[论文](https://arxiv.org/abs/2610.08699)
+- **[Nova Personal Agent](https://github.com/deepnovacore/NovaPersonalAgent)** — 能电话交互、边干活边聊天的端侧开源个人智能体。手机原生快慢脑，手机和电脑都能独立跑，长期记忆，主动但克制。[任务](https://github.com/deepnovacore/NovaPersonalAgent/blob/944644c790a96902ad20b15a622b82a4e9e0faa9/docs/zh-CN/tasks.md) · [安全](https://github.com/deepnovacore/NovaPersonalAgent/blob/944644c790a96902ad20b15a622b82a4e9e0faa9/docs/zh-CN/security.md)
 - **[Qwen Book](https://www.alibabacloud.com/blog/603599)** — 早期采用“操作系统即 harness”思路的办公设备，将模型、操作系统、应用、云端服务、上下文、记忆、执行与治理组合在一起；目前组件级公开证据仍然有限。
 
 #### 扩展目录
