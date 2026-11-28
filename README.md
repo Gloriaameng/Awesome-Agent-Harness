@@ -285,6 +285,7 @@ These systems remain in the index while their public architecture, maturity, or 
 - **[YYLO](https://github.com/yylo-dev/yylo)** — A CLI for orchestrating coding agents with plugins, evidence capture, and longitudinal workflows.
 - **[Orbi](https://github.com/orbi-build/orbi)** — An issue-to-PR delivery harness for GitHub ([site](https://orbi.build/)): manages tasks through GitHub Issues, implements changes in isolated worktrees, and uses a separate AI session for review and fixes before applying merge gates.
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's earlier open-source terminal agent. Its consumer service migrated to Antigravity CLI in June 2026; the repository remains useful as an architectural lineage. [Migration notice](https://github.com/google-gemini/gemini-cli/discussions/27274)
+- **[Mercury CLI](https://github.com/Whq02/MercuryCLI)** — An open-source (Apache-2.0) terminal coding agent with a built-in DAP debugger (bundled Python and JavaScript adapters) and syntax-tree search and rewrite in 57 languages, on cloud or local models.
 
 #### Long-horizon and domain-specific harnesses
 
